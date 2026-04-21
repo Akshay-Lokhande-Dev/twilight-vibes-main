@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Twilight Coven Are You? | Twilight Quiz | Twilight PNW</title>
+    <meta name="description" content="Take our Twilight quiz to discover which coven you truly belong to. Are you a Cullen, Volturi, or Wolf Pack? Find out now with our Twilight personality quiz!">
+    <meta name="keywords" content="Twilight quiz, which coven are you, Twilight personality quiz, Cullen or Volturi quiz, Twilight wolf pack quiz, Edward or Jacob, Twilight test">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Which Twilight Coven Are You? | Twilight Quiz | Twilight PNW">
+    <meta property="og:description" content="Discover which Twilight coven you belong to — Cullen, Volturi, or Wolf Pack. Take our personality quiz now!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?w=1200">
+    <meta property="og:site_name" content="Twilight PNW Portal">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://twilightpnw.com/quiz.html">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{box-sizing:border-box;}
+        body{margin:0;background-color:#030508;color:#d1d5db;font-family:'Montserrat',sans-serif;overflow-x:hidden;min-height:100vh;padding:40px 20px;display:flex;justify-content:center;align-items:flex-start;}
+        .quiz-container{max-width:680px;width:100%;}
+        h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3rem);color:#fff;text-align:center;letter-spacing:3px;margin-bottom:6px;}
+        .subtitle{text-align:center;color:#8fb3ff;font-style:italic;margin-bottom:40px;font-size:1rem;}
+        .question-block{background:rgba(15,22,38,0.82);border:1px solid rgba(143,179,255,0.15);border-radius:14px;padding:28px 32px;margin-bottom:22px;backdrop-filter:blur(10px);}
+        .question-block p{color:#dce8f0;font-weight:600;font-size:1rem;margin:0 0 18px 0;}
+        .options{display:flex;flex-direction:column;gap:10px;}
+        .option-label{display:flex;align-items:center;gap:12px;cursor:pointer;padding:12px 16px;border-radius:10px;border:1px solid rgba(143,179,255,0.12);transition:all 0.2s;color:#c5d8e8;font-size:0.9rem;}
+        .option-label:hover{background:rgba(143,179,255,0.08);border-color:rgba(143,179,255,0.35);}
+        .option-label input{accent-color:#8fb3ff;width:16px;height:16px;flex-shrink:0;}
+        .submit-btn{display:block;width:100%;padding:16px;background:linear-gradient(135deg,#1a3a5c,#2d5a8e);color:#dce8f0;border:1px solid rgba(143,179,255,0.4);border-radius:12px;font-family:'Playfair Display',serif;font-size:1.15rem;letter-spacing:2px;cursor:pointer;transition:all 0.3s;margin-top:10px;}
+        .submit-btn:hover{background:linear-gradient(135deg,#2d5a8e,#3d74b0);transform:translateY(-2px);box-shadow:0 8px 24px rgba(45,90,142,0.4);}
+        .back-link{display:block;text-align:center;margin-top:20px;color:#8fb3ff;text-decoration:none;font-size:0.9rem;}
+        @media(max-width:500px){.question-block{padding:20px 16px;}}
+    </style>
+</head>
+<body>
+<div class="quiz-container">
+    <h1>Fate Decider</h1>
+    <p class="subtitle">"The answer has always been inside you."</p>
+    <form id="quiz-form">
+        <div class="question-block">
+            <p>1. You feel most alive at...</p>
+            <div class="options">
+                <label class="option-label"><input type="radio" name="q1" value="night"><span>Night — when the world is quiet and yours alone</span></label>
+                <label class="option-label"><input type="radio" name="q1" value="dawn"><span>Dawn — the moment between dark and light</span></label>
+                <label class="option-label"><input type="radio" name="q1" value="dusk"><span>Dusk — when the hunt begins</span></label>
+            </div>
+        </div>
+        <div class="question-block">
+            <p>2. Your ideal home would be...</p>
+            <div class="options">
+                <label class="option-label"><input type="radio" name="q2" value="cold"><span>A cold glass house hidden deep in the forest</span></label>
+                <label class="option-label"><input type="radio" name="q2" value="warm"><span>A warm cabin near the coast</span></label>
+                <label class="option-label"><input type="radio" name="q2" value="underground"><span>An ancient underground palace</span></label>
+            </div>
+        </div>
+        <div class="question-block">
+            <p>3. Do you believe in keeping secrets to protect others?</p>
+            <div class="options">
+                <label class="option-label"><input type="radio" name="q3" value="yes"><span>Yes — some things are better left unsaid</span></label>
+                <label class="option-label"><input type="radio" name="q3" value="no"><span>No — honesty is always the right path</span></label>
+            </div>
+        </div>
+        <div class="question-block">
+            <p>4. When faced with a threat, you...</p>
+            <div class="options">
+                <label class="option-label"><input type="radio" name="q4" value="rules"><span>Follow established rules and order</span></label>
+                <label class="option-label"><input type="radio" name="q4" value="protect"><span>Do whatever it takes to protect your family</span></label>
+                <label class="option-label"><input type="radio" name="q4" value="fight"><span>Fight immediately and fiercely</span></label>
+            </div>
+        </div>
+        <div class="question-block">
+            <p>5. Your natural presence makes people feel...</p>
+            <div class="options">
+                <label class="option-label"><input type="radio" name="q5" value="calm"><span>Calm and drawn to you</span></label>
+                <label class="option-label"><input type="radio" name="q5" value="uneasy"><span>Uneasy and wary</span></label>
+                <label class="option-label"><input type="radio" name="q5" value="energised"><span>Energised and alive</span></label>
+            </div>
+        </div>
+        <div class="question-block">
+            <p>6. What do you value most?</p>
+            <div class="options">
+                <label class="option-label"><input type="radio" name="q6" value="power"><span>Power and order — someone must lead</span></label>
+                <label class="option-label"><input type="radio" name="q6" value="family"><span>Family and loyalty above everything</span></label>
+                <label class="option-label"><input type="radio" name="q6" value="freedom"><span>Freedom and the open wilderness</span></label>
+            </div>
+        </div>
+        <div class="question-block">
+            <p>7. Your greatest strength is also your greatest...</p>
+            <div class="options">
+                <label class="option-label"><input type="radio" name="q7" value="weakness"><span>Weakness — you feel everything deeply</span></label>
+                <label class="option-label"><input type="radio" name="q7" value="burden"><span>Burden — you carry everyone else's weight</span></label>
+                <label class="option-label"><input type="radio" name="q7" value="weapon"><span>Weapon — you have never let it limit you</span></label>
+            </div>
+        </div>
+        <div class="question-block">
+            <p>8. The colour you feel most drawn to...</p>
+            <div class="options">
+                <label class="option-label"><input type="radio" name="q8" value="dark"><span>Deep black and cold silver</span></label>
+                <label class="option-label"><input type="radio" name="q8" value="crimson"><span>Crimson and dark gold</span></label>
+                <label class="option-label"><input type="radio" name="q8" value="earth"><span>Earthy brown and forest green</span></label>
+            </div>
+        </div>
+        <button type="submit" class="submit-btn">🩸 Reveal My Fate</button>
+    </form>
+    <a href="/" class="back-link">← Return to Portal</a>
+</div>
+<script>
+document.getElementById('quiz-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(this),score=0;
+    if(d.get('q1')==='night')score+=2;
+    if(d.get('q2')==='cold')score+=2;
+    if(d.get('q3')==='yes')score+=2;
+    if(d.get('q4')==='rules')score+=1;
+    if(d.get('q5')==='calm')score+=2;
+    if(d.get('q6')==='power')score+=2;
+    if(d.get('q7')==='weakness')score+=2;
+    if(d.get('q8')==='dark')score+=2;
+    var result=score>=10?'Volturi 🩸':score>=5?'Cullen 🧛':'Wolf Pack 🐺';
+    localStorage.setItem('twilight_quiz_result',result);
+    window.location.href='/quiz-result.html';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carver Cafe Forks Washington | Twilight Diner | Twilight PNW</title>
+    <meta name="description" content="Visit the Carver Cafe in Forks, Washington — a beloved local diner in the heart of Twilight country. Perfect stop on your PNW Twilight road trip.">
+    <meta name="keywords" content="Carver Cafe Forks, Twilight diner, Forks Washington restaurant, Twilight food, PNW Twilight travel, Forks WA cafe">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Twilight PNW Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Carver Cafe Forks Washington | Twilight Diner | Twilight PNW">
+    <meta property="og:description" content="Visit the Carver Cafe in Forks, Washington — a beloved local diner in the heart of Twilight country. Perfect stop on your PNW Twilight road trip.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?w=1200">
+    <meta property="og:url" content="https://twilightpnw.com/cafe.html">
+    <meta property="og:site_name" content="Twilight PNW Portal">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carver Cafe Forks Washington | Twilight Diner | Twilight PNW">
+    <meta name="twitter:description" content="Visit the Carver Cafe in Forks, Washington — a beloved local diner in the heart of Twilight country. Perfect stop on your PNW Twilight road trip.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?w=1200">
+    <link rel="canonical" href="https://twilightpnw.com/cafe.html">
+
+    <!-- PRELOAD -->
+    <link rel="preload" as="image" href="/static/cafe.jpg">
+
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #0b0d10;
+            font-family: 'Playfair Display', serif;
+            overflow-x: hidden;
+
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* BACKGROUND (warm tone) */
+        .background-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("/static/cafe.jpg");
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.6) sepia(0.3); /* 🔥 warm cafe vibe */
+            z-index: -1;
+        }
+
+        /* PAGE */
+        .page-wrapper {
+            margin: 12vh auto;
+            width: 90%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        /* HERO CARD */
+        .hero-card {
+            position: relative;
+            min-height: 60vh;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .cafe-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7) sepia(0.2);
+            z-index: 0;
+        }
+
+        .text-overlay {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+
+            background: linear-gradient(
+                to top,
+                rgba(20, 15, 10, 1) 0%,
+                rgba(20, 15, 10, 0.9) 40%,
+                transparent 100%
+            );
+
+            padding: 60px 20px 30px;
+        }
+
+        h1 {
+            color: #f5e6d3; /* warm white */
+            font-size: 2.4rem;
+            letter-spacing: 6px;
+            margin: 0;
+        }
+
+        .tagline {
+            color: #d6b98c;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .description {
+            color: #e0d6c3;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        .address-box {
+            margin-top: 25px;
+            border-top: 1px solid rgba(214,185,140,0.3);
+            padding-top: 15px;
+        }
+
+        .address-label {
+            color: #d6b98c;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+
+        .address-text {
+            color: #ffffff;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            border: 2px solid #d6b98c;
+            color: #d6b98c;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            background: #d6b98c;
+            color: #0b0d10;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+
+            .text-overlay {
+                padding: 40px 15px;
+            }
+
+            .description {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-wrapper"></div>
+
+    <div class="page-wrapper">
+
+        <div class="hero-card">
+
+            <img src="/static/cafe.jpg" class="cafe-image">
+
+            <div class="text-overlay">
+                <h1>CARVER CAFE</h1>
+                <p class="tagline">"Here's your veggie plate, Bella."</p>
+
+                <div class="description">
+                    <p>
+                        The warm, glowing heart of the town.
+                        A place where Charlie gets his usual steak and cobbler,
+                        and the waitresses know everyone's name.
+                        A refuge from the endless Forks rain.
+                    </p>
+                    <p>
+                        The smell of coffee, the sound of rain on glass —
+                        this is where the ordinary meets the extraordinary.
+                    </p>
+                </div>
+
+                <div class="address-box">
+                    <p class="address-label">📍 Filming Location</p>
+                    <p class="address-text">16471 OR-224, Damascus, OR 97089,</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="/" class="back-link">PAY THE BILL AND LEAVE</a>
+
+    </div>
+
+    <script>
+        window.addEventListener("load", () => {
+            document.body.style.opacity = "1";
+        });
+    </script>
+
+</body>
+</html>
