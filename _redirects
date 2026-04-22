@@ -1,8 +1,1 @@
-# Cloudflare Pages handles .html extension stripping automatically.
-# Only keeping redirect rules that change the actual path.
-
-# If someone types the old /blog/twilight-filming-locations URL (no .html), CF Pages handles it.
-# These rules below are for legacy URL support only (301 redirects for old paths):
-
-# Catch-all: send unknown paths to 404 page
-/*    /404.html    404
+# Cloudflare Pages serves .html files automatically
