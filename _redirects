@@ -1,38 +1,8 @@
-# Cloudflare Pages - Clean URL support
-/lapush         /lapush.html         200
-/cullen         /cullen.html         200
-/swan           /swan.html           200
-/baseball       /baseball.html       200
-/school         /school.html         200
-/cafe           /cafe.html           200
-/vision         /vision.html         200
-/quiz           /quiz.html           200
-/quiz-result    /quiz-result.html    200
+# Cloudflare Pages handles .html extension stripping automatically.
+# Only keeping redirect rules that change the actual path.
 
-/characters/bella     /characters/bella.html     200
-/characters/edward    /characters/edward.html    200
-/characters/jacob     /characters/jacob.html     200
-/characters/volturi   /characters/volturi.html   200
-/characters/quileute  /characters/quileute.html  200
+# If someone types the old /blog/twilight-filming-locations URL (no .html), CF Pages handles it.
+# These rules below are for legacy URL support only (301 redirects for old paths):
 
-/blog/forks                      /blog/forks.html                      200
-/blog/la-push                    /blog/la-push.html                    200
-/blog/st-helens                  /blog/st-helens.html                  200
-/blog/port-angeles               /blog/port-angeles.html               200
-/blog/cullen-house               /blog/cullen-house.html               200
-/blog/twilight-filming-locations /blog/twilight-filming-locations.html  200
-/blog/seattle                    /blog/seattle.html                    200
-/blog/twilight-universe-guide    /blog/twilight-universe-guide.html    200
-/blog/vampire-rules              /blog/vampire-rules.html              200
-/blog/twilight-aesthetic         /blog/twilight-aesthetic.html         200
-/blog/team-edward-vs-jacob       /blog/team-edward-vs-jacob.html       200
-/blog/twilight-order             /blog/twilight-order.html             200
-/blog/portland-twilight          /blog/portland-twilight.html          200
-/blog/twilight-cast              /blog/twilight-cast.html              200
-/blog/twilight-quotes            /blog/twilight-quotes.html            200
-/blog/twilight-soundtrack        /blog/twilight-soundtrack.html        200
-/blog/twilight-road-trip         /blog/twilight-road-trip.html         200
-/blog/forks-vs-st-helens         /blog/forks-vs-st-helens.html         200
-/blog/twilight-trip-cost         /blog/twilight-trip-cost.html         200
-/blog/best-time-to-visit         /blog/best-time-to-visit.html         200
-/blog/quileute-legend            /blog/quileute-legend.html            200
+# Catch-all: send unknown paths to 404 page
+/*    /404.html    404
