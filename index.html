@@ -1,225 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="fT4HJkWp96E-zzoCYWQzIyKNWbJI1XPrvjBwcTxhGOg" />
-    <title>TwilightVibes | Forks Washington Twilight Guide, Characters & Aesthetic</title>
-    <meta name="description" content="Your ultimate Twilight fan portal — explore real Forks Washington, La Push Beach, Edward & Bella filming locations, character deep dives, and the full Twilight Core aesthetic.">
-    <meta name="keywords" content="Twilight PNW, Forks Washington travel, Twilight filming locations, La Push beach, Edward Cullen, Bella Swan, Twilight aesthetic, TwilightVibes, Seattle Twilight, Portland Twilight">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="TwilightVibes">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="TwilightVibes | Forks Washington Twilight Guide, Characters & Aesthetic">
-    <meta property="og:description" content="Your ultimate Twilight fan portal — explore real Forks Washington, La Push Beach, Edward & Bella filming locations, character deep dives, and the full Twilight Core aesthetic.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=1200">
-    <meta property="og:url" content="https://twilightvibes.com/">
-    <meta property="og:site_name" content="TwilightVibes">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://twilightvibes.com/">
-    <link rel="stylesheet" href="static/style.css?v=5.1">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "TwilightVibes",
-      "url": "https://twilightvibes.com",
-      "description": "The ultimate Twilight fan portal — Forks Washington travel guide, filming locations, character deep dives, and Twilight Core aesthetic.",
-      "datePublished": "2024-01-01",
-      "dateModified": "2026-04-22",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://twilightvibes.com/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwilightVibes | PNW Travel & Aesthetic</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<audio id="forest-audio" loop>
-    <source src="https://actions.google.com/sounds/v1/weather/rain_heavy_loud.ogg" type="audio/ogg">
-</audio>
+    <header class="hero" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 20px;">
+        <h1 style="font-size: 3.5rem; letter-spacing: 5px;">TWILIGHT PNW</h1>
+        <p style="font-size: 1.2rem; color: #8fb3ff; font-style: italic;">Forks Washington Travel Guide</p>
+        <p style="font-size: 1.1rem; color: #dce8f0; margin-bottom: 10px;">"Everything about you invites me in."</p>
 
-<header class="hero" style="text-align:center;padding:50px 20px 30px;">
-    <div style="margin-bottom:20px;">
-        <button id="rain-btn" onclick="toggleRain()" style="background:rgba(11,14,24,0.55);color:#8aaec8;border:1px solid rgba(91,143,201,0.32);padding:6px 18px;border-radius:20px;cursor:pointer;font-size:0.82rem;letter-spacing:0.5px;font-family:'Lora',serif;transition:all 0.25s;">🌧️ Listen to the Rain</button>
-    </div>
-    <h1 style="font-family:'Playfair Display',serif;color:#f0f4f8;letter-spacing:5px;text-transform:uppercase;font-size:clamp(1.8rem,6vw,3.5rem);margin:0 0 10px;text-shadow:2px 2px 4px rgba(0,0,0,0.8),0 0 40px rgba(91,143,201,0.35);">
-        Twilight PNW
-    </h1>
-    <p style="font-family:'Playfair Display',serif;color:#8fb3ff;font-size:clamp(0.9rem,2vw,1.15rem);font-style:italic;margin:0 0 8px;text-shadow:1px 1px 3px rgba(0,0,0,0.7);">
-        Forks Washington Travel Guide, Characters &amp; Aesthetic
-    </p>
-    <p style="color:#7a9ab8;font-size:1rem;margin:0 0 25px;font-family:'Lora',serif;">
-        <em>"Everything about you invites me in."</em>
-    </p>
+        <section class="weather-box" style="position: relative; margin: 20px auto; width: 280px; padding: 20px; border-radius: 15px; background: rgba(11,18,36,0.7); border: 1px solid #5b8fc9;">
+            <p style="font-size: 0.8rem; letter-spacing: 2px; color: #8aaec8;">🌫️ LIVE FROM FORKS</p>
+            <p style="font-size: 1.6rem; margin: 5px 0;"><strong id="w-temp">--°C</strong></p>
+            <p id="w-condition" style="font-style: italic; font-size: 0.9rem;">Loading mist...</p>
+        </section>
 
-    <section class="weather-box" aria-label="Live Forks Washington Weather" style="background:rgba(8,11,22,0.72);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border:1px solid rgba(70,110,190,0.22);border-radius:10px;padding:15px 25px;margin:0 auto 26px;display:inline-block;box-shadow:0 2px 18px rgba(0,0,0,0.45);max-width:92%;">
-        <p style="color:#dce8f0;letter-spacing:2px;margin:0 0 8px;font-size:0.8rem;font-weight:600;text-transform:uppercase;font-family:'Playfair Display',serif;opacity:0.85;">🌫️ Live from Forks, WA</p>
-        <p style="color:#c5d8e8;font-size:1.3rem;margin:0;font-family:'Playfair Display',serif;">
-            <strong style="color:#dce8f0;font-size:1.6rem;"><span id="w-temp">--</span>°C</strong>
-            <span style="color:rgba(91,143,201,0.5);margin:0 10px;">|</span>
-            <span style="color:#8aaec8;font-size:0.9rem;">Wind: <span id="w-wind">--</span> m/s</span>
-        </p>
-        <p style="color:#7a9ab8;font-size:0.86rem;margin:8px 0 0;font-family:'Lora',serif;">
-            <span id="w-condition" style="color:#8aaec8;font-weight:600;">--</span> · Fog: <span id="w-humidity">--</span>
-        </p>
+        <a href="quiz" class="quiz-btn" style="padding: 15px 30px; font-size: 1.1rem; background: #1e3a6e; color: white; border-radius: 25px; text-decoration: none;">🧛 Discover Your Coven</a>
+    </header>
+
+    <section class="characters" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 40px;">
+        <a href="characters/bella" style="text-decoration: none; color: white; text-align: center;">
+            <div class="char-card" style="width: 150px; height: 150px; background: #151e30; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">Bella</div>
+        </a>
+        <a href="characters/edward" style="text-decoration: none; color: white; text-align: center;">
+            <div class="char-card" style="width: 150px; height: 150px; background: #151e30; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">Edward</div>
+        </a>
+        <a href="characters/jacob" style="text-decoration: none; color: white; text-align: center;">
+            <div class="char-card" style="width: 150px; height: 150px; background: #151e30; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">Jacob</div>
+        </a>
     </section>
 
-    <div style="margin-top:10px;">
-        <a href="quiz.html" style="display:inline-block;padding:14px 30px;background:linear-gradient(135deg,#1a2d4a,#243d62);color:#dce8f0;font-weight:700;text-decoration:none;border-radius:10px;font-family:'Playfair Display',serif;letter-spacing:1.5px;box-shadow:0 5px 20px rgba(26,45,74,0.55);border:1px solid rgba(91,143,201,0.45);transition:all 0.3s;font-size:1rem;"
-            onmouseover="this.style.transform='scale(1.04)';this.style.background='linear-gradient(135deg,#243d62,#2d5480)'"
-            onmouseout="this.style.transform='scale(1)';this.style.background='linear-gradient(135deg,#1a2d4a,#243d62)'">
-            🧛 Discover Your Coven
-        </a>
-    </div>
-</header>
-
-<section aria-label="Twilight Filming Locations Showcase" style="margin-bottom:0;">
-    <div class="fullscreen-slider" id="main-slider">
-        <div class="slider-slide active" id="slide-0">
-            <img class="slide-bg" src="static/lapush.png" alt="La Push First Beach Wolf Territory Twilight Washington">
-            <div class="slide-overlay"></div>
-            <div class="slide-counter" id="slide-counter">1 / 6</div>
-            <div class="slide-content">
-                <span class="slide-location-tag">📍 La Push, Washington</span>
-                <p class="slide-quote">"Some things are better left unsaid. But not this beach — not this moment, not this cold."</p>
-                <p class="slide-attribution">— First Beach, the boundary between two worlds</p>
-                <a href="lapush.html" class="slide-link">Explore →</a>
-            </div>
+    <section class="destinations" style="padding: 40px; text-align: center;">
+        <h2 style="font-size: 2rem; margin-bottom: 30px;">Featured Destinations</h2>
+        <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
+            <a href="blog/seattle" style="text-decoration: none; width: 280px; padding: 20px; background: #0f1420; border-radius: 12px; color: white;">Seattle Guide</a>
+            <a href="blog/portland-twilight" style="text-decoration: none; width: 280px; padding: 20px; background: #0f1420; border-radius: 12px; color: white;">Portland Locations</a>
+            <a href="forks" style="text-decoration: none; width: 280px; padding: 20px; background: #0f1420; border-radius: 12px; color: white;">Forks Trip</a>
         </div>
-        <div class="slider-slide" id="slide-1">
-            <img class="slide-bg" src="static/swan.jpg" alt="Bella Swan House St Helens Oregon Twilight Filming Location">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">📍 St. Helens, Oregon — Swan Residence</span>
-                <p class="slide-quote">"I decided as long as I'm going to hell, I might as well do it thoroughly."</p>
-                <p class="slide-attribution">— Edward Cullen, outside Bella's window</p>
-                <a href="swan.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-        <div class="slider-slide" id="slide-2">
-            <img class="slide-bg" src="static/cullen_house.jpg" alt="Cullen House Portland Oregon West Hills Twilight Glass Mansion">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">📍 Portland West Hills — The Cullen Residence</span>
-                <p class="slide-quote">"The house was timeless, graceful — floor-to-ceiling glass pressing the forest in from every angle."</p>
-                <p class="slide-attribution">— Stephenie Meyer, Twilight</p>
-                <a href="cullen.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-        <div class="slider-slide" id="slide-3">
-            <img class="slide-bg" src="static/deer.jpg" alt="Twilight PNW Forest Deer Olympic Peninsula Washington">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">🌲 Olympic Peninsula — The Forest</span>
-                <p class="slide-quote">"We survive on a diet of strictly wild game — the forests of the Olympic Peninsula are generous, if you know how to look."</p>
-                <p class="slide-attribution">— Carlisle Cullen</p>
-                <a href="blog/forks.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-        <div class="slider-slide" id="slide-4">
-            <img class="slide-bg" src="static/school.jpg" alt="Forks High School Twilight Filming Location Kalama Washington">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">📍 Kalama, Washington — Forks High School</span>
-                <p class="slide-quote">"He was too perfect, I realized. A terrifyingly, angelically perfect face."</p>
-                <p class="slide-attribution">— Bella Swan</p>
-                <a href="school.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-        <div class="slider-slide" id="slide-5">
-            <img class="slide-bg" src="static/twilight-logo.jpg" alt="The Twilight Saga">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">✨ The Twilight Saga</span>
-                <p class="slide-quote">"About three things I was absolutely positive. First, Edward was a vampire. And third — I was unconditionally and irrevocably in love with him."</p>
-                <a href="blog/twilight-universe-guide.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-        <button class="slider-arrow left" onclick="sliderPrev()">❮</button>
-        <button class="slider-arrow right" onclick="sliderNext()">❯</button>
-        <div class="slider-dots">
-            <button class="slider-dot active" onclick="goToSlide(0)"></button>
-            <button class="slider-dot" onclick="goToSlide(1)"></button>
-            <button class="slider-dot" onclick="goToSlide(2)"></button>
-            <button class="slider-dot" onclick="goToSlide(3)"></button>
-            <button class="slider-dot" onclick="goToSlide(4)"></button>
-            <button class="slider-dot" onclick="goToSlide(5)"></button>
-        </div>
-    </div>
-</section>
-
-<section style="max-width:900px;margin:60px auto;padding:0 20px;text-align:center;">
-    <h2 style="font-family:'Playfair Display',serif;color:#dce8f0;letter-spacing:3px;text-transform:uppercase;font-size:1.5rem;margin-bottom:30px;">Explore the Characters</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px;max-width:840px;margin:0 auto;">
-        <a href="characters/bella.html" style="text-decoration:none;background:rgba(11,14,24,0.72);border:1px solid rgba(91,143,201,0.16);border-radius:12px;padding:20px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;transition:all 0.25s;">
-            <img src="static/bella.jpg" alt="Bella Swan" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:2px solid rgba(91,143,201,0.3);">
-            <strong style="color:#dce8f0;font-size:0.9rem;">Bella Swan</strong>
-        </a>
-        <a href="characters/edward.html" style="text-decoration:none;background:rgba(11,14,24,0.72);border:1px solid rgba(91,143,201,0.16);border-radius:12px;padding:20px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;transition:all 0.25s;">
-            <img src="static/edward.jpg" alt="Edward Cullen" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:2px solid rgba(91,143,201,0.3);">
-            <strong style="color:#dce8f0;font-size:0.9rem;">Edward Cullen</strong>
-        </a>
-        <a href="characters/jacob.html" style="text-decoration:none;background:rgba(11,14,24,0.72);border:1px solid rgba(196,154,60,0.18);border-radius:12px;padding:20px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;transition:all 0.25s;">
-            <img src="static/jacob.jpg" alt="Jacob Black" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:2px solid rgba(196,154,60,0.3);">
-            <strong style="color:#dce8f0;font-size:0.9rem;">Jacob Black</strong>
-        </a>
-    </div>
-</section>
-
-<section style="max-width:1000px;margin:60px auto;padding:0 20px;text-align:center;">
-    <h2 style="font-family:'Playfair Display',serif;color:#dce8f0;letter-spacing:3px;text-transform:uppercase;font-size:1.5rem;margin-bottom:10px;">Featured Destinations</h2>
-    <p style="color:#7a9ab8;font-style:italic;margin-bottom:30px;">Three cities at the heart of the Twilight world.</p>
-    <div class="destination-grid">
-        <a href="blog/portland-twilight.html" class="destination-card">
-            <img src="https://images.unsplash.com/photo-1605106702734-205df224ecce?auto=format&fit=crop&w=600&q=80" alt="Portland Oregon">
-            <div class="destination-card-body"><h3>Portland, Oregon</h3><p>Where It Was Filmed →</p></div>
-        </a>
-        <a href="lapush.html" class="destination-card">
-            <img src="static/lapush.png" alt="La Push">
-            <div class="destination-card-body"><h3>La Push, WA</h3><p>Wolf Territory →</p></div>
-        </a>
-        <a href="blog/seattle.html" class="destination-card">
-            <img src="static/seattle.jpg" alt="Seattle WA">
-            <div class="destination-card-body"><h3>Seattle, WA</h3><p>The Newborn Army →</p></div>
-        </a>
-    </div>
-</section>
-
-<script>
-function toggleRain() {
-    var a=document.getElementById("forest-audio"), b=document.getElementById("rain-btn");
-    if(a.paused){a.play();b.innerHTML="⏸️ Pause the Rain";}
-    else{a.pause();b.innerHTML="🌧️ Listen to the Rain";}
-}
-var currentSlide=0, totalSlides=6, sliderTimer;
-function goToSlide(n){
-    var s=document.querySelectorAll('.slider-slide'), d=document.querySelectorAll('.slider-dot'), c=document.getElementById('slide-counter');
-    s[currentSlide].classList.remove('active'); d[currentSlide].classList.remove('active');
-    currentSlide=(n+totalSlides)%totalSlides;
-    s[currentSlide].classList.add('active'); d[currentSlide].classList.add('active');
-    if(c)c.textContent=(currentSlide+1)+' / '+totalSlides;
-    resetTimer();
-}
-function sliderNext(){goToSlide(currentSlide+1);}
-function sliderPrev(){goToSlide(currentSlide-1);}
-function resetTimer(){clearInterval(sliderTimer); sliderTimer=setInterval(sliderNext,5500);}
-sliderTimer=setInterval(sliderNext,5500);
-</script>
-
-<script>
-(function(){
-  function show(id,val){var el=document.getElementById(id); if(el){el.textContent=val; el.style.opacity='1';}}
-  fetch('https://api.open-meteo.com/v1/forecast?latitude=47.9318&longitude=-124.3874&current=temperature_2m,wind_speed_10m,weathercode,relative_humidity_2m&timezone=America%2FLos_Angeles')
-    .then(r=>r.json()).then(d=>{
-      var c=d.current, codes={0:'Clear Sky',1:'Mainly Clear',2:'Partly Cloudy',3:'Overcast',45:'Foggy',48:'Icy Fog',51:'Light Drizzle',53:'Drizzle',55:'Heavy Drizzle',61:'Light Rain',63:'Rain',65:'Heavy Rain',80:'Rain Showers',95:'Thunderstorm'};
-      show('w-temp', Math.round(c.temperature_2m)); show('w-wind', c.wind_speed_10m); show('w-condition', codes[c.weathercode]||'Overcast'); show('w-humidity', c.relative_humidity_2m+'%');
-    }).catch(()=>{show('w-temp','11'); show('w-wind','3.8'); show('w-condition','Overcast'); show('w-humidity','88%');});
-})();
-</script>
+    </section>
 
 </body>
 </html>
