@@ -42,6 +42,25 @@
 </head>
 <body>
 
+<nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo">TWILIGHT <span class="nav-logo-pnw">PNW</span></a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog/forks.html">Travel Guides</a></li>
+            <li><a href="/characters/bella.html">Characters</a></li>
+            <li><a href="/blog/twilight-universe-guide.html">Lore</a></li>
+            <li><a href="/blog/twilight-aesthetic.html">Aesthetic</a></li>
+            <li><a href="/blog/vampire-rules.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="#" class="nav-search" aria-label="Search">🔍</a></li>
+        </ul>
+    </div>
+</nav>
+
 <div class="hero-wrapper">
 
     <audio id="forest-audio" loop>
@@ -93,89 +112,7 @@
         <p class="hero-cta-sub">Find out which Twilight faction calls to you</p>
     </div>
 
-</div><section aria-label="Twilight Filming Locations Showcase" style="margin-bottom:0;">
-    <div class="fullscreen-slider" id="main-slider">
-
-        <div class="slider-slide active" id="slide-0">
-            <img class="slide-bg" src="/static/lapush.png" alt="La Push First Beach Wolf Territory Twilight Washington">
-            <div class="slide-overlay"></div>
-            <div class="slide-counter" id="slide-counter">1 / 6</div>
-            <div class="slide-content">
-                <span class="slide-location-tag">📍 La Push, Washington</span>
-                <p class="slide-quote">"Some things are better left unsaid. But not this beach — not this moment, not this cold."</p>
-                <p class="slide-attribution">— First Beach, the boundary between two worlds</p>
-                <a href="/lapush.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-
-        <div class="slider-slide" id="slide-1">
-            <img class="slide-bg" src="/static/swan.jpg" alt="Bella Swan House St Helens Oregon Twilight Filming Location">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">📍 St. Helens, Oregon — Swan Residence</span>
-                <p class="slide-quote">"I decided as long as I'm going to hell, I might as well do it thoroughly."</p>
-                <p class="slide-attribution">— Edward Cullen, outside Bella's window</p>
-                <a href="/swan.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-
-        <div class="slider-slide" id="slide-2">
-            <img class="slide-bg" src="/static/cullen_house.jpg" alt="Cullen House Portland Oregon West Hills Twilight Glass Mansion">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">📍 Portland West Hills — The Cullen Residence</span>
-                <p class="slide-quote">"The house was timeless, graceful — floor-to-ceiling glass pressing the forest in from every angle."</p>
-                <p class="slide-attribution">— Stephenie Meyer, Twilight</p>
-                <a href="/cullen.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-
-        <div class="slider-slide" id="slide-3">
-            <img class="slide-bg" src="/static/deer.jpg" alt="Twilight PNW Forest Deer Olympic Peninsula Washington">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">🌲 Olympic Peninsula — The Forest</span>
-                <p class="slide-quote">"We survive on a diet of strictly wild game — the forests of the Olympic Peninsula are generous, if you know how to look."</p>
-                <p class="slide-attribution">— Carlisle Cullen on the vegetarian diet</p>
-                <a href="/blog/forks.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-
-        <div class="slider-slide" id="slide-4">
-            <img class="slide-bg" src="/static/school.jpg" alt="Forks High School Twilight Filming Location Kalama Washington">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">📍 Kalama, Washington — Forks High School</span>
-                <p class="slide-quote">"He was too perfect, I realized. A terrifyingly, angelically perfect face."</p>
-                <p class="slide-attribution">— Bella Swan, on seeing Edward for the first time</p>
-                <a href="/school.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-
-        <div class="slider-slide" id="slide-5">
-            <img class="slide-bg" src="/static/twilight-logo.jpg" alt="Twilight Saga Movie Logo Stephenie Meyer">
-            <div class="slide-overlay"></div>
-            <div class="slide-content">
-                <span class="slide-location-tag">✨ The Twilight Saga</span>
-                <p class="slide-quote">"About three things I was absolutely positive. First, Edward was a vampire. And third — I was unconditionally and irrevocably in love with him."</p>
-                <p class="slide-attribution">— Bella Swan, Twilight</p>
-                <a href="/blog/twilight-universe-guide.html" class="slide-link">Explore →</a>
-            </div>
-        </div>
-
-        <button class="slider-arrow left" onclick="sliderPrev()" aria-label="Previous slide">❮</button>
-        <button class="slider-arrow right" onclick="sliderNext()" aria-label="Next slide">❯</button>
-
-        <div class="slider-dots">
-            <button class="slider-dot active" onclick="goToSlide(0)" aria-label="Slide 1"></button>
-            <button class="slider-dot" onclick="goToSlide(1)" aria-label="Slide 2"></button>
-            <button class="slider-dot" onclick="goToSlide(2)" aria-label="Slide 3"></button>
-            <button class="slider-dot" onclick="goToSlide(3)" aria-label="Slide 4"></button>
-            <button class="slider-dot" onclick="goToSlide(4)" aria-label="Slide 5"></button>
-            <button class="slider-dot" onclick="goToSlide(5)" aria-label="Slide 6"></button>
-        </div>
-    </div>
-</section>
+</div>
 
 <section aria-label="Twilight Characters" style="max-width:900px;margin:60px auto;padding:0 20px;text-align:center;">
     <h2 style="font-family:'Playfair Display',serif;color:#dce8f0;letter-spacing:3px;text-transform:uppercase;font-size:clamp(1.1rem,3vw,1.55rem);margin:0 0 6px;text-shadow:2px 2px 4px rgba(0,0,0,0.7);">Explore the Characters</h2>
@@ -415,6 +352,11 @@
 </section>
 
 <script>
+function toggleNav() {
+    var links = document.getElementById('nav-links');
+    if (links) links.classList.toggle('open');
+}
+
 function toggleRain() {
     var audio = document.getElementById("forest-audio");
     var btn = document.getElementById("rain-btn");
@@ -427,37 +369,7 @@ function toggleRain() {
     }
 }
 
-// ══ FULLSCREEN SLIDER ══
-var currentSlide = 0;
-var totalSlides = 6;
-var sliderTimer;
 
-function goToSlide(n) {
-    var slides = document.querySelectorAll('.slider-slide');
-    var dots   = document.querySelectorAll('.slider-dot');
-    var counter = document.getElementById('slide-counter');
-    slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
-    currentSlide = (n + totalSlides) % totalSlides;
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
-    if (counter) counter.textContent = (currentSlide + 1) + ' / ' + totalSlides;
-    resetTimer();
-}
-
-function sliderNext() { goToSlide(currentSlide + 1); }
-function sliderPrev() { goToSlide(currentSlide - 1); }
-
-function resetTimer() {
-    clearInterval(sliderTimer);
-    sliderTimer = setInterval(sliderNext, 5500);
-}
-sliderTimer = setInterval(sliderNext, 5500);
-
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowRight') sliderNext();
-    if (e.key === 'ArrowLeft')  sliderPrev();
-});
 </script>
 
 <script>
