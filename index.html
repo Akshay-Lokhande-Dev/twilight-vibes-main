@@ -378,19 +378,21 @@ function toggleRain() {
     el.textContent=val;
     el.classList.add('loaded');
   }
-  fetch('https://api.open-meteo.com/v1/forecast?latitude=47.9318&longitude=-124.3874&current=temperature_2m,wind_speed_10m,weathercode,relative_humidity_2m&timezone=America%2FLos_Angeles')
+  // Yahan URL mein humne US units call ki hain
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=47.9318&longitude=-124.3874&current=temperature_2m,wind_speed_10m,weathercode,relative_humidity_2m&timezone=America%2FLos_Angeles&temperature_unit=fahrenheit&wind_speed_unit=mph')
     .then(function(r){return r.json();})
     .then(function(d){
       var c=d.current;
       var codes={0:'Clear Sky',1:'Mainly Clear',2:'Partly Cloudy',3:'Overcast',45:'Foggy',48:'Icy Fog',51:'Light Drizzle',53:'Drizzle',55:'Heavy Drizzle',61:'Light Rain',63:'Rain',65:'Heavy Rain',80:'Rain Showers',95:'Thunderstorm'};
-      show('w-temp', Math.round(c.temperature_2m)+'°C');
-      show('w-wind', c.wind_speed_10m+' m/s');
+      show('w-temp', Math.round(c.temperature_2m)+'°F'); // °C se °F ho gaya
+      show('w-wind', Math.round(c.wind_speed_10m)+' mph'); // m/s se mph ho gaya (aur maine round off kar diya clear look ke liye)
       show('w-condition', codes[c.weathercode]||'Overcast');
       show('w-humidity', c.relative_humidity_2m+'%');
     })
     .catch(function(){
-      show('w-temp','11°C');
-      show('w-wind','3.8 m/s');
+      // Agar error aaye toh US wale default values dikhenge
+      show('w-temp','52°F');
+      show('w-wind','8 mph');
       show('w-condition','Overcast');
       show('w-humidity','88%');
     });
