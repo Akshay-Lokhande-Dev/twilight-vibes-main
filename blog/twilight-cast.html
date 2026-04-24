@@ -29,9 +29,99 @@
 
     <link rel="canonical" href="https://twilightvibes.com/blog/twilight-cast">
     <link rel="icon" type="image/png" href="/static/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: #09090f;
+            background-image:
+                linear-gradient(180deg, rgba(9,9,15,0.93) 0%, rgba(11,14,24,0.88) 40%, rgba(9,9,15,0.95) 100%),
+                url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            color: #c5d8e8;
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.05rem;
+            line-height: 1.85;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+
+        h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,6vw,3.5rem); font-weight:800; color:#f0f4f8; letter-spacing:6px; text-transform:uppercase; text-shadow:2px 2px 4px rgba(0,0,0,0.8),0 0 40px rgba(91,143,201,0.3); line-height:1.2; }
+        h2 { font-family:'Playfair Display',serif; font-size:clamp(1.2rem,3vw,1.6rem); font-weight:700; color:#dce8f0; line-height:1.35; text-shadow:2px 2px 4px rgba(0,0,0,0.7); }
+        h3 { font-family:'Playfair Display',serif; font-size:clamp(1rem,2.5vw,1.2rem); font-weight:600; color:#c5d8e8; line-height:1.4; }
+        p { font-family:'Lora',Georgia,serif; font-size:1.05rem; line-height:1.85; color:#c5d8e8; }
+
+        /* ── BLOG HEADER ── */
+        .blog-header { height:44vh; min-height:260px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; }
+        .hero-p { font-style:italic; color:#8fb3ff; font-size:1.1rem; margin-top:12px; max-width:620px; }
+
+        /* ── CONTENT WRAPPER + BLOG CARD ── */
+        .content-wrapper { max-width:900px; margin:-40px auto 100px auto; padding:0 20px; }
+        .blog-card { background:rgba(10,15,25,0.5); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(143,179,255,0.15); border-radius:16px; padding:55px 45px; box-shadow:0 20px 60px rgba(0,0,0,0.8); }
+        @media(max-width:600px){ .blog-card{padding:32px 20px;} .content-wrapper{margin-top:-20px;} }
+
+        /* ── FEATURED IMAGE HERO ── */
+        .featured-image-figure { width:calc(100% + 90px); margin:0 -45px 36px -45px; border-radius:12px 12px 0 0; overflow:hidden; position:relative; line-height:0; }
+        .featured-image { display:block; width:100%; height:auto; max-height:520px; object-fit:cover; object-position:center center; border-radius:12px 12px 0 0; filter:brightness(0.92) saturate(0.82) hue-rotate(175deg); }
+        .featured-image-figure figcaption { background:rgba(9,9,15,0.82); color:#8fb3ff; font-family:'Lora',Georgia,serif; font-size:0.82rem; font-style:italic; line-height:1.6; padding:10px 20px 12px; text-align:center; border-top:1px solid rgba(143,179,255,0.15); border-radius:0 0 8px 8px; letter-spacing:0.3px; }
+        @media(max-width:600px){
+            .featured-image-figure { width:calc(100% + 40px); margin:0 -20px 28px -20px; border-radius:8px 8px 0 0; }
+            .featured-image { border-radius:8px 8px 0 0; max-height:260px; }
+        }
+
+        /* ── SECTION IMAGES ── */
+        .section-image-figure { margin:6px 0 16px; line-height:0; border-radius:8px; overflow:hidden; border:1px solid rgba(143,179,255,0.16); box-shadow:0 4px 14px rgba(0,0,0,0.5); max-width:180px; }
+        .section-image-figure--right { float:right; margin:4px 0 16px 20px; }
+        .section-image-figure--left  { float:left;  margin:4px 20px 16px 0; }
+        .section-image { display:block; width:100%; height:auto; max-height:160px; object-fit:cover; object-position:top center; filter:brightness(0.88) saturate(0.75) hue-rotate(172deg); transition:filter 0.3s ease; }
+        .section-image--portrait { max-height:180px; }
+        .section-image-figure:hover .section-image { filter:brightness(0.95) saturate(0.88) hue-rotate(172deg); }
+        .section-image-figure figcaption { background:rgba(9,9,15,0.88); color:#7a9ab8; font-family:'Lora',Georgia,serif; font-size:0.72rem; font-style:italic; line-height:1.45; padding:5px 8px 7px; text-align:center; border-top:1px solid rgba(143,179,255,0.12); }
+        .cast-grid { overflow:hidden; }
+        @media(max-width:700px){
+            .section-image-figure--right, .section-image-figure--left { float:none; max-width:140px; margin:0 0 16px 0; }
+            .section-image { max-height:130px; }
+            .section-image--portrait { max-height:150px; }
+        }
+
+        /* ── SECTION TITLES ── */
+        h2.section-title { font-family:'Playfair Display',serif; font-size:clamp(1.4rem,4vw,2rem); color:#dce8f0; margin:52px 0 16px; border-left:3px solid #8fb3ff; padding-left:16px; clear:both; }
+        h3.sub-title { font-family:'Playfair Display',serif; font-size:1.15rem; color:#c8d8e8; margin:32px 0 12px; clear:both; }
+        p { margin:0 0 18px; color:#b8c8d8; font-size:0.97rem; }
+
+        /* ── CAST GRID ── */
+        .cast-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; margin:24px 0 36px; }
+        .cast-card { background:rgba(143,179,255,0.06); border:1px solid rgba(143,179,255,0.14); border-radius:14px; padding:22px 20px; transition:border-color 0.2s; }
+        .cast-card:hover { border-color:rgba(143,179,255,0.35); }
+        .cast-card .actor { font-family:'Playfair Display',serif; color:#eef5e8; font-size:1.05rem; font-weight:700; margin-bottom:3px; }
+        .cast-card .character { color:#8fb3ff; font-size:0.88rem; margin-bottom:8px; font-weight:600; }
+        .cast-card .desc { color:#a0b0c0; font-size:0.82rem; line-height:1.6; }
+
+        /* ── HIGHLIGHT BOX ── */
+        .highlight-box { background:rgba(143,179,255,0.07); border-left:3px solid #8fb3ff; border-radius:0 12px 12px 0; padding:20px 24px; margin:30px 0; font-family:'Playfair Display',serif; font-style:italic; color:#c8d8f0; font-size:1.02rem; line-height:1.7; clear:both; }
+
+        /* ── FAQ ── */
+        .faq-item { border-top:1px solid rgba(143,179,255,0.1); padding:22px 0; }
+        .faq-q { font-family:'Playfair Display',serif; color:#dce8f0; font-weight:700; margin:0 0 8px; font-size:1rem; }
+        .faq-a { color:#b0c0d0; font-size:0.92rem; margin:0; }
+
+        /* ── BREADCRUMB ── */
+        .breadcrumb { font-size:0.8rem; color:#6a7a8a; margin-bottom:28px; }
+        .breadcrumb a { color:#8fb3ff; text-decoration:none; }
+
+        /* ── FILM PILLS ── */
+        .film-row { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 28px; }
+        .film-pill { background:rgba(143,179,255,0.1); border:1px solid rgba(143,179,255,0.2); border-radius:20px; padding:5px 16px; font-size:0.82rem; color:#8fb3ff; }
+
+        /* ── MOBILE ── */
+        @media(max-width:768px){ body{font-size:1rem;line-height:1.8;} h1{letter-spacing:3px;} h2{font-size:1.2rem;} }
+        @media(max-width:480px){ body{font-size:0.98rem;} }
+    </style>
 
     <!-- Structured Data — Article with primary image -->
     <script type="application/ld+json">
