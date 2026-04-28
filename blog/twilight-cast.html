@@ -190,17 +190,19 @@
         .hero-p { font-style:italic; color:var(--steel); font-size:1.1rem; margin-top:12px; max-width:620px; }
 
         /* ── CONTENT WRAPPER + BLOG CARD ── */
-        .content-wrapper { max-width:920px; margin:-40px auto 100px auto; padding:0 20px; }
+        .content-wrapper { width:100%; max-width:100%; margin:-40px 0 100px 0; padding:0; }
         .blog-card {
             background: var(--card-bg);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 55px 45px;
+            border: none;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            border-radius: 0;
+            padding: 55px clamp(16px, 5vw, 80px);
             box-shadow: 0 20px 60px rgba(0,0,0,0.8);
         }
-        @media(max-width:600px){ .blog-card{padding:32px 20px;} .content-wrapper{margin-top:-20px;} }
+        @media(max-width:600px){ .blog-card{padding:32px 16px;} .content-wrapper{margin-top:-20px;} }
 
         /* ── BREADCRUMB ── */
         .breadcrumb { font-size:0.8rem; color:var(--dim); margin-bottom:28px; }
@@ -214,9 +216,10 @@
         .hero-image-wrap {
             width: 100%;
             margin: 0 0 36px;
-            border-radius: 12px;
+            border-radius: 0;
             overflow: hidden;
-            border: 1px solid var(--border);
+            border: none;
+            border-bottom: 1px solid var(--border);
             box-shadow: 0 8px 32px rgba(0,0,0,0.6);
             line-height: 0;
         }
@@ -224,7 +227,7 @@
             display: block;
             width: 100%;
             height: auto;
-            max-height: 420px;
+            max-height: 500px;
             object-fit: cover;
             object-position: center 20%;
             filter: brightness(0.92) saturate(0.85);
@@ -304,7 +307,7 @@
             clear: both;
         }
         @media(max-width:480px)  { .actor-trio { grid-template-columns: 1fr; gap:16px; } }
-        @media(min-width:481px) and (max-width:860px) { .actor-trio { grid-template-columns: repeat(2,1fr); } }
+        @media(min-width:481px) and (max-width:900px) { .actor-trio { grid-template-columns: repeat(2,1fr); } }
 
         .actor-card {
             background: rgba(143,179,255,0.05);
@@ -318,7 +321,7 @@
         .actor-card:hover { border-color: rgba(143,179,255,0.38); transform: translateY(-3px); }
         .actor-card img {
             width: 100%;
-            height: 260px;
+            height: 280px;
             object-fit: cover;
             object-position: top center;
             display: block;
@@ -326,7 +329,7 @@
             filter: brightness(0.92) saturate(0.80);
             transition: filter 0.3s;
         }
-        @media(max-width:480px) { .actor-card img { height: 240px; } }
+        @media(max-width:480px) { .actor-card img { height: 260px; } }
         .actor-card:hover img { filter: brightness(0.97) saturate(0.88); }
         .actor-card-body { padding: 16px 16px 18px; flex:1; }
         .actor-card-body .actor-name { font-family:'Playfair Display',serif; color:#eef5f8; font-size:1rem; font-weight:700; margin-bottom:2px; }
@@ -354,12 +357,13 @@
         /* ── CAST GRID ── */
         .cast-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
             gap: 16px;
             margin: 24px 0 36px;
             clear: both;
         }
         @media(max-width:480px) { .cast-grid { grid-template-columns: 1fr; } }
+        @media(min-width:1200px) { .cast-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } }
         .cast-card {
             background: rgba(143,179,255,0.06);
             border: 1px solid var(--border);
@@ -372,7 +376,7 @@
         .cast-card:hover { border-color:rgba(143,179,255,0.35); }
         .cast-card img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
             object-position: top center;
             display: block;
@@ -448,8 +452,8 @@
             }
             .section-img-figure img,
             .actor-portrait img { height: 220px; }
-            .cast-card img { height: 180px; }
-            .actor-card img { height: 220px; }
+            .cast-card img { height: 200px; }
+            .actor-card img { height: 240px; }
         }
 
         /* ── HIGHLIGHT BOX ── */
@@ -667,22 +671,22 @@
 
     <div class="cast-grid">
         <div class="cast-card">
-            <img src="/static/images/peter.jpg" alt="Peter Facinelli as Dr Carlisle Cullen in Twilight" width="300" height="300" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;display:block;">
+            <img src="/static/images/peter.jpg" alt="Peter Facinelli as Dr Carlisle Cullen in Twilight" width="300" height="300" loading="lazy">
             <div class="actor">Peter Facinelli</div>
             <div class="character">Dr. Carlisle Cullen</div>
             <div class="desc">The compassionate 300-year-old patriarch who somehow manages to be a surgeon without losing control. Facinelli's quiet authority gave the Cullen family its moral centre. Since Twilight he has starred in <strong>Nurse Jackie</strong>, <strong>The Neighborhood</strong>, and multiple film projects. He is a regular at Twilight fan conventions and reunited with the Cullen cast at Epic Cons Chicago in 2024.</div>
         </div><div class="cast-card">
-            <img src="/static/images/Elizabeth.jpg" alt="Elizabeth Reaser as Esme Cullen in Twilight" width="300" height="300" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/Elizabeth.jpg" alt="Elizabeth Reaser as Esme Cullen in Twilight" width="300" height="300" loading="lazy">
             <div class="actor">Elizabeth Reaser</div>
             <div class="character">Esme Cullen</div>
             <div class="desc">The warm, endlessly nurturing heart of the Cullen household who gave up everything human — and found a better family. Reaser's post-Twilight career is arguably the strongest of the Cullen ensemble: <strong>The Haunting of Hill House</strong>, <strong>The Haunting of Bly Manor</strong> (both Netflix, massive critical hits), and recurring prestige TV roles. One of the most underrated actors in the franchise.</div>
         </div><div class="cast-card">
-            <img src="/static/images/ashley.jpg" alt="Ashley Greene as Alice Cullen in Twilight" width="300" height="300" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/ashley.jpg" alt="Ashley Greene as Alice Cullen in Twilight" width="300" height="300" loading="lazy">
             <div class="actor">Ashley Greene</div>
             <div class="character">Alice Cullen</div>
             <div class="desc">The pixie-cut, future-seeing, fashion-obsessed fan favourite who became Bella's closest vampire ally. Alice's visions drove the plot of three films. Greene married rugby player Paul Khoury in 2018 and gave birth to their daughter Kingsley in 2022. She remains very active in the Twilight fan community and was part of the Cullen family reunion at Epic Cons Chicago in 2024.</div>
         </div><div class="cast-card">
-            <img src="/static/images/lutz.jpg" alt="Kellan Lutz as Emmett Cullen in Twilight" width="300" height="300" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/lutz.jpg" alt="Kellan Lutz as Emmett Cullen in Twilight" width="300" height="300" loading="lazy">
             <div class="actor">Kellan Lutz</div>
             <div class="character">Emmett Cullen</div>
             <div class="desc">The physically massive, perpetually cheerful muscle of the Cullen family — the one who always seems to be genuinely enjoying being a vampire. Lutz's baseball scene remains one of the most purely fun moments of the saga. Since Twilight he has starred in <strong>FBI: Most Wanted</strong> on CBS and multiple action films. He and wife Brittany Gonzales welcomed a daughter in 2019. Reunited with the Cullens at Emerald City Comic Con 2024.</div>
@@ -691,7 +695,7 @@
             <div class="character">Rosalie Hale</div>
             <div class="desc">The most conflicted Cullen — achingly beautiful, deeply bitter about what she lost, and the one who most wants the human life she was robbed of. Reed's performance gave Rosalie far more depth than the books. Off-screen, Reed married <em>Vampire Diaries</em> star Ian Somerhalder in 2015 — yes, she married another vampire actor. They have a daughter, Bodhi, born 2017. Reed has become a prominent wellness, sustainability, and ethical fashion advocate.</div>
         </div><div class="cast-card">
-            <img src="/static/images/jackson.jpg" alt="Jackson Rathbone — Jasper Hale in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/jackson.jpg" alt="Jackson Rathbone — Jasper Hale in Twilight" loading="lazy">
             <div class="actor">Jackson Rathbone</div>
             <div class="character">Jasper Hale</div>
             <div class="desc">The Confederate-era vampire who can manipulate the emotions of everyone around him — and looks visibly pained by every meal. Rathbone's portrayal of Jasper's constant internal struggle became a beloved source of fan affection and memes. He is an active musician (leading the band 100 Monkeys) and appeared alongside his Cullen co-stars at multiple fan conventions through 2024.</div>
@@ -745,27 +749,27 @@
 
     <div class="cast-grid">
         <div class="cast-card">
-            <img src="/static/images/billy.jpeg" alt="Billy Burke as Charlie Swan in Twilight" width="300" height="300" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/billy.jpeg" alt="Billy Burke as Charlie Swan in Twilight" width="300" height="300" loading="lazy">
             <div class="actor">Billy Burke</div>
             <div class="character">Charlie Swan</div>
             <div class="desc">Bella's quiet, emotionally restrained father and the Forks police chief — arguably the saga's most consistently underrated and beloved character. Burke's dry, deadpan delivery made Charlie the audience's most relatable anchor throughout all five films. Since Twilight he has starred in <strong>Revolution</strong> (NBC), <strong>Zoo</strong> (CBS), <strong>Removed</strong>, and multiple film roles. Consistently cited by fans as the character they'd most want to have a beer with.</div>
         </div><div class="cast-card">
-            <img src="/static/images/anna-kendrick.jpg" alt="Anna Kendrick as Jessica Stanley in Twilight" width="300" height="300" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/anna-kendrick.jpg" alt="Anna Kendrick as Jessica Stanley in Twilight" width="300" height="300" loading="lazy">
             <div class="actor">Anna Kendrick</div>
             <div class="character">Jessica Stanley</div>
             <div class="desc">Bella's slightly competitive, gossip-prone best friend who delivered some of the saga's sharpest comic moments. Kendrick's timing made Jessica far more entertaining than the role required on paper. Since Twilight: <strong>Up in the Air</strong> (Oscar nomination), <strong>Pitch Perfect</strong> franchise, <strong>A Simple Favor</strong>, Alice Darling. Currently filming <strong>Embassy</strong> (spy thriller series with J.K. Simmons, London 2026) and comedy <strong>Babies</strong> with Seth Rogen. Reportedly dating British comedian Alex Edelman since late 2024.</div>
         </div><div class="cast-card">
-            <img src="/static/images/michealwelch.jpg" alt="Michael Welch — Mike Newton in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/michealwelch.jpg" alt="Michael Welch — Mike Newton in Twilight" loading="lazy">
             <div class="actor">Michael Welch</div>
             <div class="character">Mike Newton</div>
             <div class="desc">The good-natured, hopelessly smitten boy-next-door who never stood a chance against a century-old vampire. Mike's bumbling affection served as the franchise's most reliable source of gentle comedy and humanised the Forks school setting effectively across all five films.</div>
         </div><div class="cast-card">
-            <img src="/static/images/christian.jpg" alt="Christian Serratos — Angela Weber in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/christian.jpg" alt="Christian Serratos — Angela Weber in Twilight" loading="lazy">
             <div class="actor">Christian Serratos</div>
             <div class="character">Angela Weber</div>
             <div class="desc">Bella's genuinely kind, non-judgemental school friend — the one human relationship that felt warm without comic exaggeration. Serratos went on to play <strong>Rosita Espinosa</strong> in <strong>The Walking Dead</strong> for nine full seasons, one of the longest runs in that show's history. A remarkable post-Twilight career ascent.</div>
         </div><div class="cast-card">
-            <img src="/static/images/justinchon.jpg" alt="Justin Chon — Eric Yorkie in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/justinchon.jpg" alt="Justin Chon — Eric Yorkie in Twilight" loading="lazy">
             <div class="actor">Justin Chon</div>
             <div class="character">Eric Yorkie</div>
             <div class="desc">The school journalist and Bella's persistent, enthusiastic admirer — providing consistent comic relief across the franchise. Chon has since become a critically respected independent filmmaker, writing and directing <strong>Gook</strong> (2017, Sundance), <strong>Ms. Purple</strong> (2019), and <strong>Blue Bayou</strong> (2021, Cannes). One of the most impressive directorial careers to emerge from the Twilight cast.</div>
@@ -775,7 +779,7 @@
     <h2 class="section-title">The Volturi</h2>
 
     <figure class="actor-portrait actor-portrait--right">
-        <img src="/static/images/michealsheen.jpg" alt="Michael Sheen as Aro of the Volturi in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+        <img src="/static/images/michealsheen.jpg" alt="Michael Sheen as Aro of the Volturi in Twilight" loading="lazy">
         <figcaption>Michael Sheen — Aro, the Volturi</figcaption>
     </figure>
 
@@ -783,22 +787,22 @@
 
     <div class="cast-grid">
         <div class="cast-card">
-            <img src="/static/images/michealsheen.jpg" alt="Michael Sheen — Aro of the Volturi in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/michealsheen.jpg" alt="Michael Sheen — Aro of the Volturi in Twilight" loading="lazy">
             <div class="actor">Michael Sheen</div>
             <div class="character">Aro</div>
             <div class="desc">The ancient, theatrically delighted ruler of the vampire world — the Volturi's supreme leader who performs absolute power with barely-contained glee. Sheen's Aro is widely considered one of the saga's greatest performances, bringing Shakespearean camp to a character who could have been merely sinister. His laugh in <em>Breaking Dawn Part 2</em> became the franchise's most beloved meme. Since Twilight: <strong>Good Omens</strong> (Amazon), <strong>Quiz</strong>, <strong>The Damned</strong>. Widely regarded as one of the finest British actors of his generation.</div>
         </div><div class="cast-card">
-            <img src="/static/images/dakota.jpg" alt="Dakota Fanning — Jane of the Volturi in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/dakota.jpg" alt="Dakota Fanning — Jane of the Volturi in Twilight" loading="lazy">
             <div class="actor">Dakota Fanning</div>
             <div class="character">Jane</div>
             <div class="desc">The Volturi's most feared weapon — able to create the illusion of unbearable pain with a single glance. Fanning's cold, almost bored stillness made Jane genuinely unsettling in every scene. Since Twilight she has built a formidable arthouse career: <strong>The Runaways</strong>, <strong>Effie Gray</strong>, <strong>Once Upon a Time in Hollywood</strong>, <strong>The Alienist</strong>, and <strong>The Watchers</strong> (2024). One of the most respected actresses of her generation.</div>
         </div><div class="cast-card">
-            <img src="/static/images/jamie.jpg" alt="Jamie Campbell Bower — Volturi Twilight and Vecna Stranger Things" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/jamie.jpg" alt="Jamie Campbell Bower — Volturi Twilight and Vecna Stranger Things" loading="lazy">
             <div class="actor">Jamie Campbell Bower</div>
             <div class="character">Young Caius / Volturi Guard</div>
             <div class="desc">Started in Twilight as a minor Volturi figure — and went on to achieve one of the most dramatic career ascents of any franchise cast member. Bower played <strong>Vecna / Henry Creel</strong> in <strong>Stranger Things Season 4</strong> (2022), arguably the show's most celebrated villain performance. His casting reveal became one of Netflix's biggest moments of 2022. A remarkable full-circle for a Twilight actor.</div>
         </div><div class="cast-card">
-            <img src="/static/images/cameron.jpg" alt="Cameron Bright — Alec of the Volturi in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/cameron.jpg" alt="Cameron Bright — Alec of the Volturi in Twilight" loading="lazy">
             <div class="actor">Cameron Bright</div>
             <div class="character">Alec</div>
             <div class="desc">Jane's twin brother and the Volturi's other ultimate weapon — able to numb all senses simultaneously, rendering victims helpless before the kill. Bright's quiet, unnerving menace complemented Fanning's icy cruelty perfectly across <em>New Moon</em>, <em>Eclipse</em>, and <em>Breaking Dawn</em>.</div>
@@ -809,17 +813,17 @@
 
     <div class="cast-grid">
         <div class="cast-card">
-            <img src="/static/images/cam.jpg" alt="Cam Gigandet — James the Tracker in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/cam.jpg" alt="Cam Gigandet — James the Tracker in Twilight" loading="lazy">
             <div class="actor">Cam Gigandet</div>
             <div class="character">James</div>
             <div class="desc">The tracker — a vampire who hunts purely for sport — and the primary antagonist of the original <em>Twilight</em> (2008). Gigandet's predatory stillness and dangerous physicality made James one of the saga's most effective villains in limited screen time. The ballet studio confrontation remains one of the franchise's tensest sequences.</div>
         </div><div class="cast-card">
-            <img src="/static/images/rachel.jpg" alt="Rachelle Lefevre — Victoria in Twilight" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/rachel.jpg" alt="Rachelle Lefevre — Victoria in Twilight" loading="lazy">
             <div class="actor">Rachelle Lefevre / Bryce Dallas Howard</div>
             <div class="character">Victoria</div>
             <div class="desc">The fiery, revenge-obsessed mate of James whose pursuit of Bella drives the threat across three films. <strong>Rachelle Lefevre</strong> played Victoria in <em>Twilight</em> and <em>New Moon</em> with feral, red-haired intensity. She was controversially replaced by <strong>Bryce Dallas Howard</strong> for <em>Eclipse</em> due to a scheduling conflict — a recasting that Lefevre publicly called devastating and that fans never fully accepted. Howard's version was capable but the switch broke continuity the audience felt.</div>
         </div><div class="cast-card">
-            <img src="/static/images/xavier.jpg" alt="Xavier Samuel — Riley Biers in Twilight Eclipse" loading="lazy" style="width:100%;height:200px;object-fit:cover;object-position:top center;border-radius:8px 8px 0 0;display:block;">
+            <img src="/static/images/xavier.jpg" alt="Xavier Samuel — Riley Biers in Twilight Eclipse" loading="lazy">
             <div class="actor">Xavier Samuel</div>
             <div class="character">Riley Biers</div>
             <div class="desc">Victoria's unwitting general in <em>Eclipse</em> — the young man who genuinely believed he was loved while being manipulated into building a newborn army destined for slaughter. Samuel brought unexpected pathos to a character with limited screen time, making Riley one of the more tragic figures in the franchise. Since Twilight he has worked steadily in Australian and international cinema.</div>
