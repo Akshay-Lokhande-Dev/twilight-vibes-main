@@ -28,7 +28,7 @@
     <meta name="twitter:image:alt" content="Kristen Stewart, Robert Pattinson and Taylor Lautner at the 2009 MTV Movie Awards">
 
     <link rel="canonical" href="https://twilightvibes.com/blog/twilight-cast">
-    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../static/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
     <!-- Structured Data — Article with real image -->
@@ -383,6 +383,16 @@
             flex-shrink: 0;
             filter: brightness(0.90) saturate(0.78);
             transition: filter 0.3s;
+            border-radius: 0;
+        }
+        @media(max-width:600px){
+            .cast-card img { height: 170px; }
+            .actor-card img { height: 200px; }
+            .cast-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        }
+        @media(max-width:380px){
+            .cast-grid { grid-template-columns: 1fr; }
+            .cast-card img { height: 220px; }
         }
         .cast-card:hover img { filter: brightness(0.97) saturate(0.88); }
         .cast-card-text { padding: 18px 18px 20px; flex:1; }
@@ -524,6 +534,32 @@
         /* ── MOBILE ── */
         @media(max-width:768px){ body{font-size:1rem;line-height:1.8;} h1{letter-spacing:3px;} }
         @media(max-width:480px){ body{font-size:0.97rem;} }
+
+        /* Wolf pack avatar placeholder */
+        .cast-avatar {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, rgba(21,30,48,0.9) 0%, rgba(11,14,24,0.95) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        .cast-avatar .av-icon {
+            font-size: 3rem;
+            opacity: 0.55;
+            filter: grayscale(0.4);
+        }
+        .cast-avatar .av-label {
+            font-family: 'Lora', serif;
+            font-size: 0.72rem;
+            color: rgba(143,179,255,0.5);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        @media(max-width:600px){ .cast-avatar { height: 170px; } .cast-avatar .av-icon { font-size: 2rem; } }
     </style>
 </head>
 <body>
@@ -708,31 +744,37 @@
 
     <div class="cast-grid">
         <div class="cast-card">
+            <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Chaske Spencer</div>
             <div class="character">Sam Uley</div>
             <div class="desc">The pack alpha — composed, powerful, and burdened by what the transformation costs. Spencer has gone on to significant TV work including Rutherford Falls.</div>
         </div>
         <div class="cast-card">
+            <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Alex Meraz</div>
             <div class="character">Paul</div>
             <div class="desc">The most volatile member of the pack — quick-tempered, fast to shift, and fierce in battle. Meraz brought believable unpredictability to Paul's explosive scenes.</div>
         </div>
         <div class="cast-card">
+            <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Bronson Pelletier</div>
             <div class="character">Jared</div>
             <div class="desc">The loyal, steady member of the pack whose ease with the wolf life contrasted with Jacob's resistance.</div>
         </div>
         <div class="cast-card">
+            <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Kiowa Gordon</div>
             <div class="character">Embry Call</div>
             <div class="desc">One of Jacob's closest friends before and after the transformation, with a bond to the pack that felt genuinely warm across the ensemble.</div>
         </div>
         <div class="cast-card">
+            <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Tyson Houseman</div>
             <div class="character">Quil Ateara</div>
             <div class="desc">Part of Jacob's inner circle, with one of the more unusual subplot arcs in the later books.</div>
         </div>
         <div class="cast-card">
+            <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">BooBoo Stewart</div>
             <div class="character">Seth Clearwater</div>
             <div class="desc">Leah's younger brother — the youngest, most optimistic member of the pack, and Jacob's most earnest ally in Eclipse and Breaking Dawn.</div>
@@ -743,7 +785,7 @@
     <h2 class="section-title">Forks Humans — Bella's School Friends</h2>
 
     <figure class="actor-portrait actor-portrait--left">
-        <img src="/static/images/anna-kendrick.jpg" alt="Anna Kendrick as Jessica Stanley in Twilight" width="300" height="450" loading="lazy">
+        <img src="/static/images/anna.jpeg" alt="Anna Kendrick as Jessica Stanley in Twilight" width="300" height="450" loading="lazy">
         <figcaption>Anna Kendrick — Jessica Stanley</figcaption>
     </figure>
 
@@ -754,7 +796,7 @@
             <div class="character">Charlie Swan</div>
             <div class="desc">Bella's quiet, emotionally restrained father and the Forks police chief — arguably the saga's most consistently underrated and beloved character. Burke's dry, deadpan delivery made Charlie the audience's most relatable anchor throughout all five films. Since Twilight he has starred in <strong>Revolution</strong> (NBC), <strong>Zoo</strong> (CBS), <strong>Removed</strong>, and multiple film roles. Consistently cited by fans as the character they'd most want to have a beer with.</div>
         </div><div class="cast-card">
-            <img src="/static/images/anna-kendrick.jpg" alt="Anna Kendrick as Jessica Stanley in Twilight" width="300" height="300" loading="lazy">
+            <img src="/static/images/anna.jpeg" alt="Anna Kendrick as Jessica Stanley in Twilight" width="300" height="300" loading="lazy">
             <div class="actor">Anna Kendrick</div>
             <div class="character">Jessica Stanley</div>
             <div class="desc">Bella's slightly competitive, gossip-prone best friend who delivered some of the saga's sharpest comic moments. Kendrick's timing made Jessica far more entertaining than the role required on paper. Since Twilight: <strong>Up in the Air</strong> (Oscar nomination), <strong>Pitch Perfect</strong> franchise, <strong>A Simple Favor</strong>, Alice Darling. Currently filming <strong>Embassy</strong> (spy thriller series with J.K. Simmons, London 2026) and comedy <strong>Babies</strong> with Seth Rogen. Reportedly dating British comedian Alex Edelman since late 2024.</div>
