@@ -802,3 +802,90 @@ p {
     body { font-size:0.98rem; }
     #kofi-popup-card { max-width:200px; padding:14px; }
 }
+
+/* ━━━ MOBILE RESPONSIVE FIXES (v4.1) ━━━ */
+
+/* Prevent horizontal scroll on all devices */
+html, body { max-width: 100%; overflow-x: hidden; }
+
+/* Hero wrapper mobile */
+@media(max-width:768px) {
+    .hero-wrapper {
+        padding: 90px 16px 40px;
+        min-height: auto;
+        background-attachment: scroll;
+    }
+    body { background-attachment: scroll; }
+    h1 { font-size: clamp(1.5rem, 8vw, 2.4rem); letter-spacing: 3px; }
+    h2 { font-size: clamp(1.1rem, 4vw, 1.4rem); }
+}
+
+/* Carousel / card containers on mobile */
+@media(max-width:600px) {
+    .carousel-wrapper { padding: 0 12px; }
+    .scroll-btn { width:34px; height:34px; font-size:15px; display:none; }
+    .card-container { gap: 10px; padding: 16px 2px; }
+    .location-card { width: 168px; min-width: 168px; padding: 14px 12px; }
+    .travel-card { width: 100%; }
+}
+
+/* Blog layout mobile fixes */
+@media(max-width:768px) {
+    .content-wrapper { margin: -20px 0 60px 0; }
+    .blog-card { padding: 20px 16px 32px; }
+    .blog-intro { font-size: 0.95rem; }
+    .section-img-figure--right,
+    .section-img-figure--left {
+        float: none !important;
+        margin: 0 auto 20px !important;
+        max-width: 100% !important;
+    }
+    .actor-portrait { float: none !important; margin: 0 auto 20px !important; max-width: 100% !important; }
+}
+
+/* Cast grid mobile - 2 columns on small screens */
+@media(max-width:600px) {
+    .cast-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .cast-card img { height: 160px; }
+    .cast-card .actor { font-size: 0.85rem; padding: 10px 10px 0; }
+    .cast-card .character { font-size: 0.75rem; padding: 0 10px; }
+    .cast-card .desc { font-size: 0.75rem; padding: 0 10px 12px; }
+    .actor-card img { height: 220px; }
+}
+@media(max-width:380px) {
+    .cast-grid { grid-template-columns: 1fr; }
+}
+
+/* Navigation mobile */
+@media(max-width:768px) {
+    .nav-links li a { font-size: 0.9rem; padding: 12px 20px; }
+    .site-nav { padding: 0 14px; }
+}
+
+/* Tables on mobile */
+@media(max-width:600px) {
+    table { font-size: 0.82rem; }
+    td, th { padding: 8px 6px; }
+}
+
+/* Footer mobile */
+@media(max-width:600px) {
+    .site-footer { padding: 30px 16px 20px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+    .footer-links { flex-wrap: wrap; gap: 8px; }
+}
+
+/* General card fixes */
+@media(max-width:600px) {
+    .highlight-box { padding: 16px 14px; font-size: 0.9rem; }
+    .faq-item { padding: 16px 14px; }
+    .section-title { font-size: 1.1rem; letter-spacing: 2px; padding: 0 0 10px; }
+    .travel-section { padding: 24px 14px; margin: 30px auto; width: 96%; }
+}
+
+/* Image fixes for mobile */
+@media(max-width:600px) {
+    .hero-image { max-height: 220px; object-fit: cover; }
+    .section-img-figure img,
+    .actor-portrait img { height: 200px; width: 100%; object-fit: cover; border-radius: 10px; }
+}
