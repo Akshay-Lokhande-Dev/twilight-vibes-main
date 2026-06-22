@@ -18,27 +18,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            background-color: #0b0d10;
-            background-image: linear-gradient(rgba(11,13,16,0.75), rgba(11,13,16,0.97)),
-                              url('../static/forks-bg.jpg');
-            background-size: cover;
-            background-position: center top;
-            background-attachment: scroll;
-            background-repeat: no-repeat;
-            color: #d1d7e0;
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-        .blog-header { height:30vh; background:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,1)); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; }
+        body { margin:0; background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=1920'); background-size:cover; background-position:center; background-attachment:fixed; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.8; overflow-x:hidden; }
+        .blog-header { height:65vh; background:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,1)); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; }
         h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,7vw,4rem); margin:0; color:#fff; letter-spacing:2px; text-shadow:0 0 20px rgba(255,255,255,0.15); }
         .hero-p { font-style:italic; color:#8fb3ff; font-size:1.15rem; margin-top:12px; max-width:650px; }
         .content-wrapper { max-width:860px; margin:-50px auto 100px auto; padding:0 20px; position:relative; }
-        .blog-card { background:rgba(10,15,25,0.85); border:1px solid rgba(143,179,255,0.15); border-radius:16px; padding:55px 45px; box-shadow:0 20px 60px rgba(0,0,0,0.8); }
+        .blog-card { background:rgba(10,15,25,0.45); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(143,179,255,0.15); border-radius:16px; padding:55px 45px; box-shadow:0 20px 60px rgba(0,0,0,0.8); }
         .region-title { font-family:'Playfair Display',serif; color:#8fb3ff; font-size:2rem; margin-top:60px; border-bottom:2px solid rgba(143,179,255,0.25); padding-bottom:14px; }
-        .location-block { border:none; border-bottom:1px solid rgba(143,179,255,0.1); padding:28px 0 22px; margin:8px 0; background:transparent; }
+        .location-block { border:1px solid rgba(143,179,255,0.13); border-radius:12px; padding:28px 28px 22px; margin:28px 0; background:rgba(143,179,255,0.03); }
         .location-name { font-family:'Playfair Display',serif; color:#dce8f0; font-size:1.3rem; margin:0 0 6px 0; }
         .scene-list { list-style:none; padding:0; margin:12px 0 14px 0; }
         .scene-list li { color:#a8bdd0; font-size:0.88rem; padding:4px 0; border-bottom:1px solid rgba(143,179,255,0.07); }
@@ -148,13 +135,7 @@
             </ul>
             <a href="https://www.google.com/maps/search/Forks+Washington" target="_blank" class="map-btn">📍 Forks, WA</a>
             <a href="/blog/forks" class="read-btn">Read Full Guide →</a>
-            <div style="background:rgba(143,179,255,0.06);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:0.83rem;color:#a8bdd0;line-height:1.9;">
-                <strong style="color:#dce8f0;">📋 Visitor Info</strong><br>
-                📍 GPS: 47.9499° N, 124.3853° W &nbsp;|&nbsp; Forks, WA 98331<br>
-                🅿️ Parking: Free street parking throughout town, no time limits<br>
-                🕐 Best time: Forks Visitor Center open Mon–Sat 10am–4pm (check forkswachamber.com for current hours)<br>
-                💡 Tip: The "Reserved for Dr. Cullen" sign is at Forks Community Hospital — free to visit, just walk the car park. No entry fee for any Forks fan stops.
-            </div>
+        </div>
 
         <div class="location-block">
             <h3 class="location-name">La Push, Washington — First Beach</h3>
@@ -166,13 +147,7 @@
             </ul>
             <a href="https://www.google.com/maps/search/First+Beach+La+Push+Washington" target="_blank" class="map-btn">📍 First Beach</a>
             <a href="/blog/la-push" class="read-btn">Read Full Guide →</a>
-            <div style="background:rgba(143,179,255,0.06);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:0.83rem;color:#a8bdd0;line-height:1.9;">
-                <strong style="color:#dce8f0;">📋 Visitor Info</strong><br>
-                📍 GPS: 47.9094° N, 124.6374° W &nbsp;|&nbsp; La Push Rd, La Push, WA 98350<br>
-                🅿️ Parking: Free parking lot directly at First Beach<br>
-                🕐 Best time: Year-round. Fog and grey skies most atmospheric Oct–Mar. Summer has better weather but more crowds.<br>
-                ⚠️ La Push is on the Quileute Reservation — respect the land and community. Swimming is dangerous due to cold water and currents.
-            </div>
+        </div>
 
         <div class="location-block">
             <h3 class="location-name">Kalama High School, Kalama WA — Forks High School</h3>
@@ -185,13 +160,7 @@
                 <li>Classroom biology scene — Edward smelling Bella</li>
             </ul>
             <a href="https://www.google.com/maps/search/Kalama+High+School+Washington" target="_blank" class="map-btn">📍 Kalama High School</a>
-            <div style="background:rgba(143,179,255,0.06);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:0.83rem;color:#a8bdd0;line-height:1.9;">
-                <strong style="color:#dce8f0;">📋 Visitor Info</strong><br>
-                📍 GPS: 45.9934° N, 122.8317° W &nbsp;|&nbsp; 2002 China Garden Rd, Kalama, WA 98625<br>
-                🅿️ Parking: School parking lot (visit outside school hours only)<br>
-                ⚠️ This is an active school — do not enter the building or visit during school hours. Exterior only, from the street or car park.<br>
-                💡 Tip: The iconic covered walkways that Bella walks through on her first day are clearly visible from outside.
-            </div>
+        </div>
 
         <div class="location-block">
             <h3 class="location-name">Port Angeles, Washington</h3>
@@ -204,13 +173,7 @@
             </ul>
             <a href="https://www.google.com/maps/search/Bella+Italia+Port+Angeles+Washington" target="_blank" class="map-btn">📍 Bella Italia</a>
             <a href="/blog/port-angeles" class="read-btn">Read Full Guide →</a>
-            <div style="background:rgba(143,179,255,0.06);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:0.83rem;color:#a8bdd0;line-height:1.9;">
-                <strong style="color:#dce8f0;">📋 Visitor Info</strong><br>
-                📍 Bella Italia GPS: 48.1175° N, 123.4307° W &nbsp;|&nbsp; 118 E 1st St, Port Angeles, WA 98362<br>
-                🕐 Hours: Typically Tue–Sun from 4pm (check bellaitalia.com for current hours)<br>
-                🍽️ Must order: The mushroom ravioli — specifically mentioned in the novel. Make a reservation in advance, especially in summer.<br>
-                💡 Tip: Port Angeles is 60 miles east of Forks — combine both in a single day trip from the east side of the peninsula.
-            </div>
+        </div>
 
         <!-- OREGON -->
         <h2 class="region-title">🌲 Oregon</h2>
@@ -228,14 +191,7 @@
             </ul>
             <a href="https://www.google.com/maps/search/1st+Street+St+Helens+Oregon" target="_blank" class="map-btn">📍 St. Helens, OR</a>
             <a href="/blog/st-helens" class="read-btn">Read Full Guide →</a>
-            <div style="background:rgba(143,179,255,0.06);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:0.83rem;color:#a8bdd0;line-height:1.9;">
-                <strong style="color:#dce8f0;">📋 Visitor Info</strong><br>
-                📍 GPS (Swan House area): 45.8621° N, 122.8037° W &nbsp;|&nbsp; St. Helens, OR 97051<br>
-                📍 GPS (1st St Alleyway): 45.8657° N, 122.8068° W &nbsp;|&nbsp; 1st St, St. Helens, OR<br>
-                🅿️ Parking: Free public parking along the waterfront / Riverfront District<br>
-                ⚠️ Swan House is a private residence — view from the street only, do not approach or enter the property.<br>
-                💡 Tip: The alleyway, bookstore building, and riverfront are all within a 5-minute walk of each other. St. Helens is the most rewarding single-stop filming location in the saga.
-            </div>
+        </div>
 
         <div class="location-block">
             <h3 class="location-name">Hoke Road House, Portland Oregon — The Cullen House</h3>
@@ -250,12 +206,7 @@
             </ul>
             <a href="https://www.google.com/maps/search/Hoke+Road+Portland+Oregon" target="_blank" class="map-btn">📍 Hoke Road Area</a>
             <a href="/blog/cullen-house" class="read-btn">Cullen House Guide →</a>
-            <div style="background:rgba(143,179,255,0.06);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:0.83rem;color:#a8bdd0;line-height:1.9;">
-                <strong style="color:#dce8f0;">📋 Visitor Info</strong><br>
-                📍 GPS (approximate area): 45.5231° N, 122.7134° W &nbsp;|&nbsp; West Hills, Portland, OR<br>
-                ⚠️ This is a private residential property — the exact address is not published out of respect for the current residents. View from the road only if you locate it.<br>
-                💡 Tip: The house is not formally signed or marked. Many fans skip the exterior and visit St. Helens instead, which offers far more accessible and clearly marked filming locations.
-            </div>
+        </div>
 
         <div class="location-block">
             <h3 class="location-name">Silver Falls State Park, Oregon — Forest Scenes</h3>
@@ -267,13 +218,7 @@
                 <li>Various atmospheric forest establishing shots</li>
             </ul>
             <a href="https://www.google.com/maps/search/Silver+Falls+State+Park+Oregon" target="_blank" class="map-btn">📍 Silver Falls State Park</a>
-            <div style="background:rgba(143,179,255,0.06);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:0.83rem;color:#a8bdd0;line-height:1.9;">
-                <strong style="color:#dce8f0;">📋 Visitor Info</strong><br>
-                📍 GPS: 44.8774° N, 122.6552° W &nbsp;|&nbsp; 20024 Silver Falls Hwy SE, Sublimity, OR 97385<br>
-                💵 Entry: $5 day-use fee per vehicle (Oregon State Parks annual pass accepted)<br>
-                🕐 Hours: Open daily, dawn to dusk. Visitor center hours vary seasonally.<br>
-                💡 Tip: The Trail of Ten Falls (7.2 miles) passes through the most atmospheric old-growth sections used for filming. Allow 3–4 hours for the full loop.
-            </div>
+        </div>
 
         <div class="location-block">
             <h3 class="location-name">Carver, Oregon — Meadow Scene</h3>
@@ -329,13 +274,7 @@
                 <li>Underground Volturi lair (built on set in Vancouver)</li>
             </ul>
             <a href="https://www.google.com/maps/search/Montepulciano+Tuscany+Italy" target="_blank" class="map-btn">📍 Montepulciano, Italy</a>
-            <div style="background:rgba(143,179,255,0.06);border-radius:8px;padding:14px 18px;margin-top:16px;font-size:0.83rem;color:#a8bdd0;line-height:1.9;">
-                <strong style="color:#dce8f0;">📋 Visitor Info</strong><br>
-                📍 GPS (Piazza Grande): 43.0991° N, 11.7813° E &nbsp;|&nbsp; Piazza Grande, Montepulciano, Siena, Italy<br>
-                🚗 Getting there: ~1.5 hours from Florence or Siena by car. Limited train access — rental car recommended.<br>
-                🕐 Best time: April–June or September–October to avoid peak summer crowds.<br>
-                💡 Tip: The Sant'Agostino square where Edward steps into the sunlight is a short walk downhill from Piazza Grande. Most fans visit both in a 2–3 hour walking tour of the historic centre.
-            </div>
+        </div>
 
         <div class="location-block">
             <h3 class="location-name">Paraty & Ilha Grande, Brazil — Isle Esme (Breaking Dawn)</h3>
