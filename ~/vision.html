@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alice Cullen — Visions & Future Sight | TwilightVibes</title>
+    <meta name="description" content="Step into Alice Cullen's world of visions. An immersive Twilight experience exploring the power of sight and the future of the Cullen coven.">
+    <meta name="keywords" content="Alice Cullen visions, Alice Twilight powers, Twilight future sight, Alice Cullen abilities, Twilight interactive experience">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="TwilightVibes">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alice Cullen — Visions & Future Sight | TwilightVibes">
+    <meta property="og:description" content="Step into Alice Cullen's world of visions. An immersive Twilight experience exploring the power of sight and the future of the Cullen coven.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?w=1200">
+    <meta property="og:url" content="https://twilightvibes.com/vision">
+    <meta property="og:site_name" content="TwilightVibes">
+    <meta name="twitter:site" content="@TwilightVibes">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alice's Visions | Twilight Future Sight | Twilight PNW">
+    <meta name="twitter:description" content="Step into Alice Cullen's world of visions. An immersive Twilight experience exploring the power of sight and the future of the Cullen coven.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?w=1200">
+    <link rel="canonical" href="https://twilightvibes.com/vision">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0; 
+            background-color: #02050a; 
+            color: #d1d5db;
+            font-family: 'Montserrat', sans-serif; 
+            overflow-x: hidden;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            min-height: 100vh; 
+            padding: 20px; 
+            box-sizing: border-box;
+        }
+
+        /* 🌫️ MAGICAL FOG & MOONLIGHT BACKGROUND */
+        .bg-wrapper {
+            position: fixed; 
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(2, 5, 10, 0.7), rgba(2, 5, 10, 1)), 
+                        url('https://images.unsplash.com/photo-1488197047962-b48492212cda?q=80&w=1920'); 
+            background-size: cover; 
+            background-position: center; 
+            z-index: -1;
+            filter: brightness(0.85) contrast(1.2);
+            transition: filter 1s ease;
+        }
+
+        /* ✨ PREMIUM GLASS CARD */
+        .vision-container {
+            background: rgba(15, 25, 40, 0.4);
+            backdrop-filter: blur(15px); 
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(143, 179, 255, 0.2);
+            border-radius: 20px; 
+            padding: 50px 40px; 
+            max-width: 650px; 
+            width: 100%;
+            text-align: center; 
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), inset 0 0 20px rgba(143, 179, 255, 0.05);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .icon-top {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            opacity: 0.8;
+            text-shadow: 0 0 15px rgba(143, 179, 255, 0.5);
+        }
+
+        h1 { 
+            font-family: 'Playfair Display', serif; 
+            color: #ffffff; 
+            font-size: 2.4rem; 
+            letter-spacing: 4px; 
+            margin-top: 0;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: #8fb3ff;
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        /* THE VISION TEXT DISPLAY */
+        .vision-box {
+            min-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        #vision-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: #ffffff;
+            font-style: italic;
+            opacity: 0; /* Hidden initially for animation */
+            transform: scale(0.95);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Animation class */
+        #vision-text.revealed {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* THE MAGICAL BUTTON */
+        .vision-btn {
+            background: rgba(143, 179, 255, 0.1);
+            color: #8fb3ff;
+            border: 1px solid #8fb3ff;
+            padding: 16px 35px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+            box-shadow: 0 0 15px rgba(143, 179, 255, 0.1);
+            margin-bottom: 25px;
+            width: 80%;
+            max-width: 300px;
+        }
+
+        .vision-btn:hover:not(:disabled) {
+            background: #8fb3ff;
+            color: #02050a;
+            box-shadow: 0 0 25px rgba(143, 179, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .vision-btn:disabled {
+            border-color: #4a5d80;
+            color: #4a5d80;
+            cursor: not-allowed;
+            background: transparent;
+        }
+
+        .back-link {
+            display: block;
+            color: #6b7a90;
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover { color: #ffffff; }
+
+        /* 📱 MOBILE RESPONSIVENESS */
+        @media (max-width: 600px) {
+            .vision-container { padding: 40px 20px; width: 95%; margin-top: 20px; }
+            h1 { font-size: 1.8rem; letter-spacing: 2px; }
+            .subtitle { font-size: 0.9rem; margin-bottom: 30px; }
+            .vision-box { min-height: 120px; padding: 0 10px; margin-bottom: 30px; }
+            #vision-text { font-size: 1.25rem; }
+            .vision-btn { width: 100%; padding: 15px; font-size: 0.9rem; }
+        }
+    </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="48x48" href="static/favicon.png">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Alice Cullen — Visions & Future Sight","description":"Alice Cullen's gift of vision in the Twilight Saga explained.","publisher":{"@type":"Organization","name":"TwilightVibes","url":"https://twilightvibes.com"}}
+</script>
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ8PP42X6W"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+
+
+  gtag('config', 'G-VQ8PP42X6W');
+
+</script> </head>
+<body>
+<div class="bg-wrapper" id="page-bg"></div>
+
+    <div class="vision-container">
+        <div class="icon-top">👁️</div>
+        <h1>Alice's Visions</h1>
+        <p class="subtitle">"The future is subjective. Every decision changes it."</p>
+
+        <div class="vision-box">
+            <p id="vision-text" class="revealed">"Close your eyes. Focus your mind..."</p>
+        </div>
+
+        <button class="vision-btn" id="trigger-btn" onclick="generateVision()">See the Future</button>
+
+        <a href="/" class="back-link">Return to Forks</a>
+    </div>
+
+    <script>
+        // 🎬 MOVIE ACCURATE QUOTES
+        const visions = [
+            "The Volturi... they're coming for us. I saw them in the snow.",
+            "He's not going to bite you. I've already seen it.",
+            "Edward is in Volterra. He thinks you're dead. He's going to the Volturi.",
+            "She's going to be one of us. I've seen exactly what you'll be.",
+            "They're coming. And they have no intention of listening to us.",
+            "I see a red sports car speeding down a wet highway... trouble is following.",
+            "A storm is brewing in La Push. The wolves are phasing.",
+            "I see a fierce battle in a clearing... but you are standing at the end of it.",
+            "It's a subjective thing, the future. You just changed it.",
+            "The newborn army is advancing. We don't have much time."
+        ];
+
+        const visionText = document.getElementById("vision-text");
+        const btn = document.getElementById("trigger-btn");
+        const pageBg = document.getElementById("page-bg");
+
+        function generateVision() {
+            // Disable button so user can't spam click and break animation
+            btn.disabled = true;
+            btn.innerText = "Seeing...";
+            
+            // Add a subtle flash effect to background
+            pageBg.style.filter = "brightness(1.5) contrast(1.2)";
+
+            // Fade out current text
+            visionText.classList.remove("revealed");
+
+            setTimeout(() => {
+                // Change background back
+                pageBg.style.filter = "brightness(0.85) contrast(1.2)";
+
+                // Pick a random movie quote
+                const randomIndex = Math.floor(Math.random() * visions.length);
+                visionText.innerText = `"${visions[randomIndex]}"`;
+
+                // Fade in new text
+                visionText.classList.add("revealed");
+                
+                // Re-enable button
+                btn.disabled = false;
+                btn.innerText = "Glimpse Again";
+            }, 800); // Waits exactly for the CSS fade-out to finish
+        }
+    </script>
+<footer style="text-align: center; padding: 20px; margin-top: 50px; border-top: 1px solid #333; font-size: 14px;">
+    <p>&copy; 2026 TwilightVibes.com | The Ultimate PNW Travel Guide</p>
+    <div class="footer-links">
+        <a href="/about" style="margin: 0 10px; text-decoration: none; color: inherit;">About Us</a> |
+        <a href="/contact" style="margin: 0 10px; text-decoration: none; color: inherit;">Contact Us</a> |
+        <a href="/privacy-policy" style="margin: 0 10px; text-decoration: none; color: inherit;">Privacy Policy</a> |
+        <a href="/disclaimer" style="margin: 0 10px; text-decoration: none; color: inherit;">Disclaimer</a>
+    </div>
+</footer>
+</body>
+</html>
