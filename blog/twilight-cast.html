@@ -142,12 +142,12 @@
         :root {
             --midnight: #09090f;
             --deep-blue: #0b0e18;
-            --frost: #c5d8e8;
-            --silver: #b8c8d8;
-            --steel: #8fb3ff;
-            --dim: #6a7a8a;
-            --card-bg: rgba(10,15,25,0.55);
-            --border: rgba(143,179,255,0.16);
+            --frost: #dce8f2;
+            --silver: #cdddea;
+            --steel: #9fc0ff;
+            --dim: #93a6b8;
+            --card-bg: rgba(10,15,25,0.72);
+            --border: rgba(143,179,255,0.2);
         }
 
         body {
@@ -228,7 +228,7 @@
             max-height: 500px;
             object-fit: cover;
             object-position: center 20%;
-            filter: brightness(0.92) saturate(0.85);
+            filter: brightness(1.0) saturate(0.98);
         }
         .hero-image-wrap figcaption {
             background: rgba(9,9,15,0.85);
@@ -262,40 +262,6 @@
             border: 0;
         }
 
-        /* ── ACTOR PORTRAIT (floating inline) ── */
-        .actor-portrait {
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.5);
-            line-height: 0;
-            background: rgba(10,12,20,0.7);
-        }
-        .actor-portrait--right { float:right; margin:4px 0 20px 24px; width:200px; }
-        .actor-portrait--left  { float:left;  margin:4px 24px 20px 0; width:200px; }
-        .actor-portrait img {
-            display:block;
-            width:100%;
-            height:240px;
-            object-fit:cover;
-            object-position: top center;
-            filter: brightness(0.88) saturate(0.75) hue-rotate(172deg);
-            transition: filter 0.3s ease;
-        }
-        .actor-portrait:hover img { filter: brightness(0.96) saturate(0.85) hue-rotate(172deg); }
-        .actor-portrait figcaption {
-            background:rgba(9,9,15,0.9);
-            color:#7a9ab8;
-            font-family:'Lora',serif;
-            font-size:0.7rem;
-            font-style:italic;
-            line-height:1.4;
-            padding:6px 10px 8px;
-            text-align:center;
-            border-top:1px solid var(--border);
-        }
-        .actor-portrait figcaption a { color:var(--steel); text-decoration:none; }
-
         /* ── THREE-COLUMN ACTOR GRID ── */
         .actor-trio {
             display: grid;
@@ -324,15 +290,15 @@
             object-position: top center;
             display: block;
             flex-shrink: 0;
-            filter: brightness(0.92) saturate(0.80);
+            filter: brightness(1.0) saturate(0.95);
             transition: filter 0.3s;
         }
         @media(max-width:480px) { .actor-card img { height: 260px; } }
-        .actor-card:hover img { filter: brightness(0.97) saturate(0.88); }
+        .actor-card:hover img { filter: brightness(1.04) saturate(1.0); }
         .actor-card-body { padding: 16px 16px 18px; flex:1; }
         .actor-card-body .actor-name { font-family:'Playfair Display',serif; color:#eef5f8; font-size:1rem; font-weight:700; margin-bottom:2px; }
         .actor-card-body .char-name  { color:var(--steel); font-size:0.83rem; font-weight:600; margin-bottom:8px; }
-        .actor-card-body .actor-desc { color:#9aacbc; font-size:0.82rem; line-height:1.62; margin:0; }
+        .actor-card-body .actor-desc { color:#b8c9d8; font-size:0.82rem; line-height:1.62; margin:0; }
         .actor-card figcaption {
             font-size:0.68rem; color:#556677; font-style:italic;
             padding:4px 10px 6px; border-top:1px solid rgba(143,179,255,0.08);
@@ -379,7 +345,7 @@
             object-position: top center;
             display: block;
             flex-shrink: 0;
-            filter: brightness(0.90) saturate(0.78);
+            filter: brightness(0.98) saturate(0.92);
             transition: filter 0.3s;
             border-radius: 0;
         }
@@ -392,11 +358,11 @@
             .cast-grid { grid-template-columns: 1fr; }
             .cast-card img { height: 220px; }
         }
-        .cast-card:hover img { filter: brightness(0.97) saturate(0.88); }
+        .cast-card:hover img { filter: brightness(1.04) saturate(1.0); }
         .cast-card-text { padding: 18px 18px 20px; flex:1; }
         .cast-card .actor  { font-family:'Playfair Display',serif; color:#eef5e8; font-size:1rem; font-weight:700; margin-bottom:3px; padding: 18px 18px 0; }
         .cast-card .character { color:var(--steel); font-size:0.85rem; margin-bottom:8px; font-weight:600; padding: 0 18px; }
-        .cast-card .desc   { color:#9aacbc; font-size:0.82rem; line-height:1.6; padding: 0 18px 18px; }
+        .cast-card .desc   { color:#b8c9d8; font-size:0.82rem; line-height:1.6; padding: 0 18px 18px; }
 
         /* ── SECTION IMAGE (floating) ── */
         .section-img-figure {
@@ -411,7 +377,7 @@
         .section-img-figure img {
             display:block; width:100%; height:180px;
             object-fit:cover; object-position:top center;
-            filter: brightness(0.90) saturate(0.78);
+            filter: brightness(0.98) saturate(0.92);
             transition:filter 0.3s;
         }
         .section-img-figure:hover img { filter:brightness(0.97) saturate(0.88); }
@@ -436,7 +402,7 @@
         .actor-portrait img {
             display:block; width:100%; height:200px;
             object-fit:cover; object-position:top center;
-            filter: brightness(0.90) saturate(0.78);
+            filter: brightness(0.98) saturate(0.92);
             transition:filter 0.3s;
         }
         .actor-portrait figcaption {
@@ -482,7 +448,7 @@
         /* ── FAQ ── */
         .faq-item { border-top:1px solid rgba(143,179,255,0.1); padding:22px 0; }
         .faq-q { font-family:'Playfair Display',serif; color:#dce8f0; font-weight:700; margin:0 0 8px; font-size:1rem; }
-        .faq-a { color:#a0b4c4; font-size:0.9rem; margin:0; }
+        .faq-a { color:#b8cadb; font-size:0.9rem; margin:0; }
 
         /* ── IMAGE CREDIT GLOBAL ── */
         .img-credit { font-size:0.68rem; color:#445566; font-style:italic; text-align:center; padding:4px 0 0; }
@@ -636,11 +602,11 @@
                 <p class="actor-desc">The emotional anchor of all five Twilight films. Stewart brought fierce interiority and quiet magnetism to a role that could have been passive — making Bella the beating, conflicted heart of the saga.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Married screenwriter <strong style='color:#c8d8e8;'>Dylan Meyer</strong> on April 20, 2025, in a 170-guest ceremony at Casita Del Campo restaurant in Los Angeles. Stewart called 2025 "the craziest year of my life." The couple have spoken openly about wanting children.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Married screenwriter <strong style='color:#c8d8e8;'>Dylan Meyer</strong> on April 20, 2025, in a 170-guest ceremony at Casita Del Campo restaurant in Los Angeles. Stewart called 2025 "the craziest year of my life." The couple have spoken openly about wanting children.</p>
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Chronology of Water</strong> (her directorial debut, Cannes 2025) — 91% on Rotten Tomatoes, 6.5-min standing ovation at Cannes. <strong style='color:#c8d8e8;'>The Challenger</strong> (Amazon, 2026) — plays NASA astronaut Sally Ride. <strong style='color:#c8d8e8;'>The Wrong Girls</strong> (filming 2025) — stoner comedy she wrote and produced. <strong style='color:#c8d8e8;'>Flesh of the Gods</strong> — vampire thriller with Elizabeth Olsen.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Chronology of Water</strong> (her directorial debut, Cannes 2025) — 91% on Rotten Tomatoes, 6.5-min standing ovation at Cannes. <strong style='color:#c8d8e8;'>The Challenger</strong> (Amazon, 2026) — plays NASA astronaut Sally Ride. <strong style='color:#c8d8e8;'>The Wrong Girls</strong> (filming 2025) — stoner comedy she wrote and produced. <strong style='color:#c8d8e8;'>Flesh of the Gods</strong> — vampire thriller with Elizabeth Olsen.</p>
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0;">Has publicly said she wants to <strong style='color:#c8d8e8;'>direct a feminist Twilight remake</strong> — darker, more complex, her way. The internet is not calm about this.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0;">Has publicly said she wants to <strong style='color:#c8d8e8;'>direct a feminist Twilight remake</strong> — darker, more complex, her way. The internet is not calm about this.</p>
                 </div>
             </div>
         </figure>
@@ -652,11 +618,11 @@
                 <p class="actor-desc">The vampire who had to be simultaneously beautiful, terrifying, and lovestruck. Pattinson survived the franchise's overwhelming fame and methodically rebuilt himself into one of cinema's most daring and respected actors.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Engaged to British singer-actress <strong style='color:#c8d8e8;'>Suki Waterhouse</strong>. Together since 2018. Welcomed a <strong style='color:#c8d8e8;'>baby girl in early 2024</strong> — Rob has gushed about fatherhood: "It's the most fun thing. My kid, you can actually hang with her. She's great." Secret marriage rumours are swirling after a cryptic press-tour moment with co-star Zendaya in March 2026.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Engaged to British singer-actress <strong style='color:#c8d8e8;'>Suki Waterhouse</strong>. Together since 2018. Welcomed a <strong style='color:#c8d8e8;'>baby girl in early 2024</strong> — Rob has gushed about fatherhood: "It's the most fun thing. My kid, you can actually hang with her. She's great." Secret marriage rumours are swirling after a cryptic press-tour moment with co-star Zendaya in March 2026.</p>
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Drama</strong> (A24, April 2026) — romantic thriller with Zendaya, already generating Oscar buzz. <strong style='color:#c8d8e8;'>The Odyssey</strong> (Christopher Nolan, July 2026) — alongside Matt Damon, Anne Hathaway, Tom Holland. <strong style='color:#c8d8e8;'>The Batman Part II</strong> — begins filming April 2026, release October 2027. <strong style='color:#c8d8e8;'>Dune: Part Three</strong> — rumoured role as Scytale.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Drama</strong> (A24, April 2026) — romantic thriller with Zendaya, already generating Oscar buzz. <strong style='color:#c8d8e8;'>The Odyssey</strong> (Christopher Nolan, July 2026) — alongside Matt Damon, Anne Hathaway, Tom Holland. <strong style='color:#c8d8e8;'>The Batman Part II</strong> — begins filming April 2026, release October 2027. <strong style='color:#c8d8e8;'>Dune: Part Three</strong> — rumoured role as Scytale.</p>
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0;">During The Drama press tour Rob and Zendaya were asked about their biggest secret. Rob turned to her and said <strong style='color:#c8d8e8;'>"It's the same one that you have"</strong> — sparking massive speculation he and Suki secretly married. Neither has confirmed or denied it.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0;">During The Drama press tour Rob and Zendaya were asked about their biggest secret. Rob turned to her and said <strong style='color:#c8d8e8;'>"It's the same one that you have"</strong> — sparking massive speculation he and Suki secretly married. Neither has confirmed or denied it.</p>
                 </div>
             </div>
         </figure>
@@ -668,34 +634,19 @@
                 <p class="actor-desc">The warm-blooded, deeply human counterpoint to Edward's icy vampire control. Lautner's physical transformation between Twilight and New Moon — gaining ~30lbs of muscle to keep the role — became one of Hollywood's most legendary glow-ups.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Married <strong style='color:#c8d8e8;'>Taylor Dome</strong> — a registered nurse and mental health advocate — on November 11, 2022, at Epoch Estate Winery, California. In March 2026 they <strong style='color:#c8d8e8;'>announced their first pregnancy</strong>. Both are legally named Taylor Lautner after she took his surname — yes, package delivery is chaotic.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Married <strong style='color:#c8d8e8;'>Taylor Dome</strong> — a registered nurse and mental health advocate — on November 11, 2022, at Epoch Estate Winery, California. In March 2026 they <strong style='color:#c8d8e8;'>announced their first pregnancy</strong>. Both are legally named Taylor Lautner after she took his surname — yes, package delivery is chaotic.</p>
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>Taylor Lautner: Werewolf Hunter</strong> (Amazon MGM, in development) — he plays a fictionalized version of himself: Hollywood actor by day, actual werewolf hunter by night. Created by Daisy Gardner, directed by Radio Silence. <strong style='color:#c8d8e8;'>The Squeeze Podcast</strong> — weekly mental health and wellness podcast co-hosted with wife Taylor Dome.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>Taylor Lautner: Werewolf Hunter</strong> (Amazon MGM, in development) — he plays a fictionalized version of himself: Hollywood actor by day, actual werewolf hunter by night. Created by Daisy Gardner, directed by Radio Silence. <strong style='color:#c8d8e8;'>The Squeeze Podcast</strong> — weekly mental health and wellness podcast co-hosted with wife Taylor Dome.</p>
                     <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#9aacbc;font-size:0.82rem;line-height:1.6;margin:0;">Reunited with ex <strong style='color:#c8d8e8;'>Taylor Swift</strong> for her Eras Tour in 2023, appearing in her "I Can See You" music video. The Taylor² reunion broke the internet. He confirmed on Call Her Daddy that yes, Swift ended their 2009 relationship — and he's totally fine with it.</p>
+                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0;">Reunited with ex <strong style='color:#c8d8e8;'>Taylor Swift</strong> for her Eras Tour in 2023, appearing in her "I Can See You" music video. The Taylor² reunion broke the internet. He confirmed on Call Her Daddy that yes, Swift ended their 2009 relationship — and he's totally fine with it.</p>
                 </div>
             </div>
         </figure></div><!-- /.actor-trio -->
 
     
 
-    <!-- ═══ SECOND GROUP PHOTO ═══ -->
-    <figure class="hero-image-wrap" style="margin-bottom:30px;">
-        <img loading="lazy" src="/static/images/TwilightatMTV2009.jpg" alt="Twilight cast at 2009 MTV Movie Awards" width="900" height="571" loading="lazy" class="hero-image" style="max-height:360px;object-position:center 30%;">
-        <figcaption>
-            The Twilight trio — Kristen Stewart, Taylor Lautner and Robert Pattinson — at the 2009 MTV Movie Awards, where the film swept multiple categories.
-            Photo: <a href="https://commons.wikimedia.org/wiki/File:Twilight_cast.JPG" target="_blank" rel="noopener">Philip Nelson / Wikimedia Commons</a>,
-            <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a>
-        </figcaption>
-    </figure>
-
     <!-- ═══ CULLEN FAMILY ═══ -->
     <h2 class="section-title">The Cullen Family</h2>
-
-    <figure class="section-img-figure section-img-figure--right">
-        <img loading="lazy" src="/static/images/peter.jpg" alt="Peter Facinelli as Dr Carlisle Cullen in Twilight" width="300" height="375" loading="lazy">
-        <figcaption>Peter Facinelli — Dr. Carlisle Cullen</figcaption>
-    </figure>
 
     <div class="cast-grid">
         <div class="cast-card">
@@ -719,6 +670,7 @@
             <div class="character">Emmett Cullen</div>
             <div class="desc">The physically massive, perpetually cheerful muscle of the Cullen family — the one who always seems to be genuinely enjoying being a vampire. Lutz's baseball scene remains one of the most purely fun moments of the saga. Since Twilight he has starred in <strong>FBI: Most Wanted</strong> on CBS and multiple action films. He and wife Brittany Gonzales welcomed a daughter in 2019. Reunited with the Cullens at Emerald City Comic Con 2024.</div>
         </div><div class="cast-card">
+            <div class="cast-avatar"><div class="av-icon">🩸</div><div class="av-label">No photo available</div></div>
             <div class="actor">Nikki Reed</div>
             <div class="character">Rosalie Hale</div>
             <div class="desc">The most conflicted Cullen — achingly beautiful, deeply bitter about what she lost, and the one who most wants the human life she was robbed of. Reed's performance gave Rosalie far more depth than the books. Off-screen, Reed married <em>Vampire Diaries</em> star Ian Somerhalder in 2015 — yes, she married another vampire actor. They have a daughter, Bodhi, born 2017. Reed has become a prominent wellness, sustainability, and ethical fashion advocate.</div>
@@ -732,54 +684,49 @@
     <!-- ═══ WOLF PACK ═══ -->
     <h2 class="section-title">The Wolf Pack</h2>
 
-    <p>The wolf pack was expanded significantly for <em>New Moon</em> (2009), introducing six new cast members who portrayed the shape-shifting Quileute warriors of La Push. Casting director Rene Haynes, known for films with large Native American casts, led the search for authentic representation.</p>
+    <p>The wolf pack was expanded significantly for <em>New Moon</em> (2009), introducing six new cast members who portrayed the shape-shifting Quileute warriors of La Push. Casting director Rene Haynes, known for films with large Native American casts, led the search for authentic representation — and several of these actors have gone on to build some of the most substantial post-Twilight careers in the franchise.</p>
 
     <div class="cast-grid">
         <div class="cast-card">
             <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Chaske Spencer</div>
             <div class="character">Sam Uley</div>
-            <div class="desc">The pack alpha — composed, powerful, and burdened by what the transformation costs. Spencer has gone on to significant TV work including Rutherford Falls.</div>
+            <div class="desc">The pack alpha — composed, powerful, and burdened by what the transformation costs. Spencer, who is Lakota Sioux, won Best Actor twice at the American Indian Film Festival (for <strong>Shouting Secrets</strong>, 2011, and <strong>Winter in the Blood</strong>, 2013). He earned a BAFTA nomination for the BBC/Amazon Prime series <strong>The English</strong> (2022), and had recurring roles in <strong>Banshee</strong>, <strong>Sneaky Pete</strong>, and <strong>Blindspot</strong>. He recently appeared in Peacock's <strong>Teacup</strong> (2024) alongside Yvonne Strahovski.</div>
         </div>
         <div class="cast-card">
             <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Alex Meraz</div>
             <div class="character">Paul</div>
-            <div class="desc">The most volatile member of the pack — quick-tempered, fast to shift, and fierce in battle. Meraz brought believable unpredictability to Paul's explosive scenes.</div>
+            <div class="desc">The most volatile member of the pack — quick-tempered, fast to shift, and fierce in battle. Meraz, a dancer and martial artist of Purépecha (Indigenous Mexican) descent, brought believable unpredictability to Paul's explosive scenes. He appeared in <strong>The New World</strong> (2005) before Twilight and later in <strong>Suicide Squad</strong> (2016). He currently plays Border Patrol agent Ivan Muñoz in AMC's <strong>Dark Winds</strong>.</div>
         </div>
         <div class="cast-card">
             <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Bronson Pelletier</div>
             <div class="character">Jared</div>
-            <div class="desc">The loyal, steady member of the pack whose ease with the wolf life contrasted with Jacob's resistance.</div>
+            <div class="desc">The loyal, steady member of the pack whose ease with the wolf life contrasted with Jacob's resistance. Pelletier, of Plains Cree and French heritage, was already known in Canada for <strong>renegadepress.com</strong>, which earned him Gemini and Leo Award nominations. Since Twilight he has moved into behind-the-scenes producing work.</div>
         </div>
         <div class="cast-card">
             <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Kiowa Gordon</div>
             <div class="character">Embry Call</div>
-            <div class="desc">One of Jacob's closest friends before and after the transformation, with a bond to the pack that felt genuinely warm across the ensemble.</div>
+            <div class="desc">One of Jacob's closest friends before and after the transformation, with a bond to the pack that felt genuinely warm across the ensemble. Gordon, of Hualapai descent, won Best Supporting Actor at the 2013 American Indian Film Festival for <strong>The Lesser Blessed</strong> and was a series regular on Sundance's <strong>The Red Road</strong> and FX's acclaimed <strong>Reservation Dogs</strong>. He now stars as Jim Chee in AMC's <strong>Dark Winds</strong>, produced by George R.R. Martin and Robert Redford — arguably the standout post-Twilight career among the wolf pack.</div>
         </div>
         <div class="cast-card">
             <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">Tyson Houseman</div>
             <div class="character">Quil Ateara</div>
-            <div class="desc">Part of Jacob's inner circle, with one of the more unusual subplot arcs in the later books.</div>
+            <div class="desc">Part of Jacob's inner circle, with one of the more unusual subplot arcs in the later books. Houseman, who is of Cree descent and grew up in Edmonton, trained at the Victoria School of the Arts before studying in the Bachelor of Fine Arts program at Concordia University in Montreal. He continues to perform with professional theatre companies internationally and is an active advocate and motivational speaker for Indigenous youth.</div>
         </div>
         <div class="cast-card">
             <div class="cast-avatar"><div class="av-icon">🐺</div><div class="av-label">No photo available</div></div>
             <div class="actor">BooBoo Stewart</div>
             <div class="character">Seth Clearwater</div>
-            <div class="desc">Leah's younger brother — the youngest, most optimistic member of the pack, and Jacob's most earnest ally in Eclipse and Breaking Dawn.</div>
+            <div class="desc">Leah's younger brother — the youngest, most optimistic member of the pack, and Jacob's most earnest ally in Eclipse and Breaking Dawn. Stewart, of Blackfoot, Chinese, Japanese, Korean, Russian, and Scottish heritage, went on to play Warpath in <strong>X-Men: Days of Future Past</strong>, Jay in Disney's <strong>Descendants</strong> franchise, Luca in <strong>Good Trouble</strong>, and Willie in <strong>Julie and the Phantoms</strong>. He is also a musician and visual artist.</div>
         </div>
     </div>
 
     <!-- ═══ FORKS HUMANS ═══ -->
     <h2 class="section-title">Forks Humans — Bella's School Friends</h2>
-
-    <figure class="actor-portrait actor-portrait--left">
-        <img loading="lazy" src="/static/images/anna.jpeg" alt="Anna Kendrick as Jessica Stanley in Twilight" width="300" height="450" loading="lazy">
-        <figcaption>Anna Kendrick — Jessica Stanley</figcaption>
-    </figure>
 
     <div class="cast-grid">
         <div class="cast-card">
@@ -811,11 +758,6 @@
 
     <!-- ═══ THE VOLTURI ═══ -->
     <h2 class="section-title">The Volturi</h2>
-
-    <figure class="actor-portrait actor-portrait--right">
-        <img loading="lazy" src="/static/images/michealsheen.jpg" alt="Michael Sheen as Aro of the Volturi in Twilight" loading="lazy">
-        <figcaption>Michael Sheen — Aro, the Volturi</figcaption>
-    </figure>
 
     <p>Introduced in <em>New Moon</em> (2009), the Volturi are the ancient, ruling class of the vampire world — based in Volterra, Italy. Michael Sheen's portrayal of Aro became one of the franchise's most celebrated performances and a source of enduring meme culture.</p>
 
