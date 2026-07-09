@@ -20,8 +20,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
+        /* HYBRID THEME: cinematic dark hero (mood) + warm, high-contrast reading card (content) */
         body {
             margin: 0;
+            background-color: #0f1116;
             background-image: linear-gradient(rgba(11,13,16,0.3), rgba(11,13,16,0.7)),
                               url('../static/forks-bg.jpg');
             background-size: cover;
@@ -39,22 +41,22 @@
             text-align: center; padding: 20px;
         }
         h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 8vw, 4.5rem); margin: 0; color: #fff; letter-spacing: 2px; text-shadow: 0 0 20px rgba(255,255,255,0.15); }
-        .hero-p { font-style: italic; color: #8fb3ff; font-size: 1.2rem; margin-top: 12px; max-width: 600px; }
+        .hero-p { font-style: italic; color: #a9c4e8; font-size: 1.2rem; margin-top: 12px; max-width: 600px; }
         .content-wrapper { max-width: 820px; margin: -50px auto 100px auto; padding: 0 20px; position: relative; }
-        .blog-card { background: rgba(10,15,25,0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(143,179,255,0.15); border-radius: 16px; padding: 55px 45px; box-shadow: 0 20px 60px rgba(0,0,0,0.8), inset 0 0 20px rgba(143,179,255,0.04); }
-        .section-title { font-family: 'Playfair Display', serif; color: #8fb3ff; font-size: 1.85rem; margin-top: 55px; border-bottom: 1px solid rgba(143,179,255,0.2); padding-bottom: 12px; }
-        .sub-title { font-family: 'Playfair Display', serif; color: #c5d8e8; font-size: 1.25rem; margin-top: 35px; margin-bottom: 8px; }
-        p { color: #c5d8e8; margin-bottom: 16px; }
-        .highlight-box { background: rgba(143,179,255,0.07); border-left: 3px solid #8fb3ff; border-radius: 0 10px 10px 0; padding: 18px 24px; margin: 28px 0; color: #dce8f0; font-style: italic; font-size: 1.05rem; }
-        .map-btn { display: inline-block; background: rgba(143,179,255,0.1); border: 1px solid #8fb3ff; color: #8fb3ff; padding: 10px 22px; border-radius: 30px; text-decoration: none; font-size: 0.9rem; font-weight: 600; margin-top: 12px; transition: all 0.3s ease; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; }
-        .map-btn:hover { background: #8fb3ff; color: #0b0d10; box-shadow: 0 0 15px rgba(143,179,255,0.4); }
-        .back-link { display: inline-block; margin-bottom: 28px; color: #8fb3ff; text-decoration: none; font-weight: bold; letter-spacing: 1px; font-size: 0.9rem; }
-        .tips-list { padding-left: 22px; color: #b0b8c1; }
+        .blog-card { background: #e8e2d4; border: 1px solid rgba(30,45,70,0.1); border-radius: 16px; padding: 55px 45px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+        .section-title { font-family: 'Playfair Display', serif; color: #000000; font-weight:800; font-size: 1.85rem; margin-top: 55px; border-bottom: 2px solid #e4ddd0; padding-bottom: 12px; }
+        .sub-title { font-family: 'Playfair Display', serif; color: #000000; font-weight:700; font-size: 1.25rem; margin-top: 35px; margin-bottom: 8px; }
+        p { color: #000000; font-weight: 600; margin-bottom: 16px; }
+        .highlight-box { background: #eef4fa; border-left: 3px solid #3a6ea5; border-radius: 0 10px 10px 0; padding: 18px 24px; margin: 28px 0; color: #000000; font-weight:600; font-style: italic; font-size: 1.05rem; }
+        .map-btn { display: inline-block; background: #1e3a5f; border: 1px solid #1e3a5f; color: #fff; padding: 10px 22px; border-radius: 30px; text-decoration: none; font-size: 0.9rem; font-weight: 600; margin-top: 12px; transition: all 0.3s ease; font-family: sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+        .map-btn:hover { background: #3a6ea5; border-color: #3a6ea5; box-shadow: 0 4px 15px rgba(30,58,95,0.35); }
+        .back-link { display: inline-block; margin-bottom: 28px; color: #a9c4e8; text-decoration: none; font-weight: bold; letter-spacing: 1px; font-size: 0.9rem; }
+        .tips-list { padding-left: 22px; color: #000000; }
         .tips-list li { margin-bottom: 14px; }
         .faq-item { margin-bottom: 32px; }
-        .faq-q { color: #dce8f0; font-weight: 700; font-size: 1.05rem; margin-bottom: 8px; }
-        .faq-a { color: #a8bdd0; margin: 0; }
-        .location-chip { display: inline-block; background: rgba(143,179,255,0.1); border: 1px solid rgba(143,179,255,0.25); color: #a8c0d6; padding: 4px 14px; border-radius: 20px; font-size: 0.8rem; margin: 4px 4px 4px 0; font-family: sans-serif; }
+        .faq-q { color: #000000; font-weight: 700; font-size: 1.05rem; margin-bottom: 8px; }
+        .faq-a { color: #000000; margin: 0; }
+        .location-chip { display: inline-block; background: #eef4fa; border: 1px solid #cfe0f0; color: #2a5580; padding: 4px 14px; border-radius: 20px; font-size: 0.8rem; margin: 4px 4px 4px 0; font-family: sans-serif; }
         @media (max-width: 600px) { .blog-card { padding: 32px 20px; } h1 { font-size: 2rem; } .section-title { font-size: 1.5rem; } }
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
@@ -128,7 +130,7 @@
     <article class="blog-card">
 
         <h2 class="section-title" style="margin-top:0;">Is Forks Washington Worth Visiting?</h2>
-        <p>Short answer: <strong style="color:#dce8f0;">Yes — if you know what you're going for.</strong> Forks is a tiny logging town of around 4,000 people on the Olympic Peninsula. It has no major tourist attractions in the traditional sense. What it has is something rarer: an <em>atmosphere</em> that is completely unlike anywhere else in the United States.</p>
+        <p>Short answer: <strong style="color:#1c2e44; font-weight:600;">Yes — if you know what you're going for.</strong> Forks is a tiny logging town of around 4,000 people on the Olympic Peninsula. It has no major tourist attractions in the traditional sense. What it has is something rarer: an <em>atmosphere</em> that is completely unlike anywhere else in the United States.</p>
         <p>The town receives an average of 120 inches of rain per year — more than almost anywhere else in the continental US. Ancient moss-covered trees line every road. The sky is permanently grey from October through June. The forest presses in close from every direction. And since Stephenie Meyer chose this town by opening an atlas and pointing at the rainiest place she could find, Forks has become a genuine pilgrimage site for millions of Twilight fans worldwide.</p>
 
         <div class="highlight-box">
@@ -164,7 +166,7 @@
         <a href="https://maps.google.com/?q=Forks+Timber+Museum" target="_blank" class="map-btn">📍 Visit Timber Museum</a>
 
         <h2 class="section-title">Forever Twilight in Forks Festival</h2>
-        <p>Every September, Forks hosts <strong style="color:#dce8f0;">Forever Twilight in Forks</strong> — the official annual fan festival. The town transforms completely: cast members make appearances, guided location tours run all weekend, themed dinners and trivia fill every venue, and late-night atmospheric walks move through darkened forest roads. The community's enthusiasm is completely genuine.</p>
+        <p>Every September, Forks hosts <strong style="color:#1c2e44; font-weight:600;">Forever Twilight in Forks</strong> — the official annual fan festival. The town transforms completely: cast members make appearances, guided location tours run all weekend, themed dinners and trivia fill every venue, and late-night atmospheric walks move through darkened forest roads. The community's enthusiasm is completely genuine.</p>
 
         <div class="highlight-box">
             Pro tip: Book accommodation 3–4 months in advance for the September festival. The Miller Tree Inn, Forks Motel, and nearby vacation rentals fill completely.
@@ -190,17 +192,17 @@
         <span class="location-chip">🌲 Olympic Suites Inn</span>
         <span class="location-chip">⛺ Hoh Rainforest Campground</span>
         <span class="location-chip">🏕 Mora Campground</span>
-        <p style="margin-top:18px;">For the full Twilight experience, the <strong style="color:#dce8f0;">Miller Tree Inn</strong> is the obvious choice. For budget travellers, the Forks Motel is clean and well-located. For campers, the Hoh Rainforest campground puts you inside one of the most beautiful ecosystems on earth.</p>
+        <p style="margin-top:18px;">For the full Twilight experience, the <strong style="color:#1c2e44; font-weight:600;">Miller Tree Inn</strong> is the obvious choice. For budget travellers, the Forks Motel is clean and well-located. For campers, the Hoh Rainforest campground puts you inside one of the most beautiful ecosystems on earth.</p>
         <a href="https://www.tripadvisor.com/Hotels-g58463-Forks_Washington-Hotels.html" target="_blank" class="map-btn">🛏 Browse Forks Hotels</a>
 
         <h2 class="section-title">Forks Washington Travel Tips</h2>
         <ul class="tips-list">
-            <li><strong style="color:#dce8f0;">Getting There:</strong> About 3 hours from Seattle by car via Highway 101. The drive is spectacular — give yourself extra time for stops.</li>
-            <li><strong style="color:#dce8f0;">What to Pack:</strong> Waterproof jacket, waterproof shoes, and layers. Do not bring an umbrella — locals don't use them. The rain is light and constant, not heavy and dramatic.</li>
-            <li><strong style="color:#dce8f0;">Best Time to Visit:</strong> September for the Forever Twilight festival. November–February for peak atmosphere — maximum fog, rain, and the full Twilight mood. Summer is pleasant but you lose the moodiness.</li>
-            <li><strong style="color:#dce8f0;">How Long to Stay:</strong> Minimum two days for Forks and La Push. Three to four days to add Hoh Rainforest and Ruby Beach. A full week for the entire Olympic Peninsula.</li>
-            <li><strong style="color:#dce8f0;">Cell Service:</strong> Limited or absent in much of the Olympic Peninsula. Download offline maps before you leave — this actually adds to the atmosphere considerably.</li>
-            <li><strong style="color:#dce8f0;">Dining:</strong> Pacific Pizza is genuinely excellent and loved by locals. Forks Coffee Shop is the authentic small-town diner experience. Stock up on supplies if camping.</li>
+            <li><strong style="color:#1c2e44; font-weight:600;">Getting There:</strong> About 3 hours from Seattle by car via Highway 101. The drive is spectacular — give yourself extra time for stops.</li>
+            <li><strong style="color:#1c2e44; font-weight:600;">What to Pack:</strong> Waterproof jacket, waterproof shoes, and layers. Do not bring an umbrella — locals don't use them. The rain is light and constant, not heavy and dramatic.</li>
+            <li><strong style="color:#1c2e44; font-weight:600;">Best Time to Visit:</strong> September for the Forever Twilight festival. November–February for peak atmosphere — maximum fog, rain, and the full Twilight mood. Summer is pleasant but you lose the moodiness.</li>
+            <li><strong style="color:#1c2e44; font-weight:600;">How Long to Stay:</strong> Minimum two days for Forks and La Push. Three to four days to add Hoh Rainforest and Ruby Beach. A full week for the entire Olympic Peninsula.</li>
+            <li><strong style="color:#1c2e44; font-weight:600;">Cell Service:</strong> Limited or absent in much of the Olympic Peninsula. Download offline maps before you leave — this actually adds to the atmosphere considerably.</li>
+            <li><strong style="color:#1c2e44; font-weight:600;">Dining:</strong> Pacific Pizza is genuinely excellent and loved by locals. Forks Coffee Shop is the authentic small-town diner experience. Stock up on supplies if camping.</li>
         </ul>
 
         <h2 class="section-title">Frequently Asked Questions</h2>
@@ -227,11 +229,11 @@
         </div>
 
 <div style="text-align:center; margin-top:65px; padding-top:45px; border-top: 1px solid rgba(143,179,255,0.12);">
-            <p style="color:#8fb3ff; font-weight:bold; font-size:1.1rem; margin-bottom:20px;">Ready to step into the story?</p>
+            <p style="color:#1e3a5f; font-weight:bold; font-size:1.1rem; margin-bottom:20px;">Ready to step into the story?</p>
             
-            <a href="https://www.tripadvisor.com/Hotels-g58463-Forks_Washington-Hotels.html" target="_blank" style="background:#8fb3ff; color:#0b0d10; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; font-family:sans-serif; letter-spacing:1px; margin:8px;">🛏 Book a Stay in Forks</a>
+            <a href="https://www.tripadvisor.com/Hotels-g58463-Forks_Washington-Hotels.html" target="_blank" style="background:#1e3a5f; color:#fff; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; font-family:sans-serif; letter-spacing:1px; margin:8px;">🛏 Book a Stay in Forks</a>
             
-            <a href="/blog/la-push" style="background:transparent; color:#8fb3ff; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:8px;">🌊 Next: La Push Guide →</a>
+            <a href="/blog/la-push" style="background:transparent; color:#1e3a5f; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #1e3a5f; font-family:sans-serif; letter-spacing:1px; margin:8px;">🌊 Next: La Push Guide →</a>
         </div>
     </article>
 </div>
