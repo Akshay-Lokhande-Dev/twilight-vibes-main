@@ -18,35 +18,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { margin:0; background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=1920'); background-size:cover; background-position:center; background-attachment:fixed; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.85; overflow-x:hidden; font-weight:600; font-size:17px; }
+        body { margin:0; background-color:#0f1116; background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=1920'); background-size:cover; background-position:center; background-attachment:fixed; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.85; overflow-x:hidden; font-weight:600; font-size:17px; }
         .blog-header { height:65vh; background:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,1)); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; }
         h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,7vw,4rem); margin:0; color:#fff; letter-spacing:2px; text-shadow:0 0 20px rgba(255,255,255,0.15); }
-        .hero-p { font-style:italic; color:#8fb3ff; font-size:1.15rem; margin-top:12px; max-width:650px; }
+        .hero-p { font-style:italic; color:#a9c4e8; font-size:1.15rem; margin-top:12px; max-width:650px; }
         .content-wrapper { max-width:860px; margin:-50px auto 100px auto; padding:0 20px; position:relative; }
-        .blog-card { background:rgba(10,15,25,0.45); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(143,179,255,0.15); border-radius:16px; padding:55px 45px; box-shadow:0 20px 60px rgba(0,0,0,0.8); }
-        .region-title { font-family:'Playfair Display',serif; color:#8fb3ff; font-size:2rem; margin-top:60px; border-bottom:2px solid rgba(143,179,255,0.25); padding-bottom:14px; }
-        .location-block { border:1px solid rgba(143,179,255,0.13); border-radius:12px; padding:28px 28px 22px; margin:28px 0; background:rgba(143,179,255,0.03); }
-        .location-name { font-family:'Playfair Display',serif; color:#dce8f0; font-size:1.4rem; margin:0 0 6px 0; }
+        .blog-card { background:#e8e2d4; border:1px solid rgba(30,45,70,0.1); border-radius:16px; padding:55px 45px; box-shadow:0 20px 60px rgba(0,0,0,0.5); }
+        .region-title { font-family:'Playfair Display',serif; color:#000000; font-weight:800; font-size:2rem; margin-top:60px; border-bottom:2px solid #cfc6b0; padding-bottom:14px; }
+        .location-block { border:1px solid rgba(30,45,70,0.15); border-radius:12px; padding:28px 28px 22px; margin:28px 0; background:#f3efe3; }
+        .location-name { font-family:'Playfair Display',serif; color:#000000; font-weight:700; font-size:1.4rem; margin:0 0 6px 0; }
         .scene-list { list-style:none; padding:0; margin:12px 0 14px 0; }
-        .scene-list li { color:#a8bdd0; font-size:0.95rem; font-weight:600; padding:5px 0; border-bottom:1px solid rgba(143,179,255,0.07); }
+        .scene-list li { color:#000000; font-size:0.95rem; font-weight:600; padding:5px 0; border-bottom:1px solid rgba(30,45,70,0.12); }
         .scene-list li:last-child { border:none; }
         .scene-list li::before { content:"🎬 "; }
-        p { color:#c5d8e8; margin-bottom:14px; font-size:1.02rem; font-weight:600; }
-        .film-tag { display:inline-block; background:rgba(143,179,255,0.1); border:1px solid rgba(143,179,255,0.25); color:#8fb3ff; padding:2px 10px; border-radius:20px; font-size:0.75rem; margin:0 4px 8px 0; font-family:sans-serif; }
-        .map-btn { display:inline-block; background:rgba(143,179,255,0.1); border:1px solid #8fb3ff; color:#8fb3ff; padding:8px 18px; border-radius:30px; text-decoration:none; font-size:0.85rem; font-weight:600; margin-top:10px; margin-right:8px; transition:all 0.3s ease; font-family:sans-serif; letter-spacing:1px; text-transform:uppercase; }
-        .map-btn:hover { background:#8fb3ff; color:#0b0d10; }
-        .read-btn { display:inline-block; background:transparent; border:1px solid rgba(143,179,255,0.4); color:#a8c0d6; padding:8px 18px; border-radius:30px; text-decoration:none; font-size:0.85rem; font-weight:600; margin-top:10px; font-family:sans-serif; letter-spacing:1px; text-transform:uppercase; transition:all 0.3s; }
-        .read-btn:hover { border-color:#8fb3ff; color:#dce8f0; }
-        .back-link { display:inline-block; margin-bottom:28px; color:#8fb3ff; text-decoration:none; font-weight:bold; letter-spacing:1px; font-size:0.9rem; }
-        .highlight-box { background:rgba(143,179,255,0.07); border-left:3px solid #8fb3ff; border-radius:0 10px 10px 0; padding:18px 24px; margin:28px 0; color:#dce8f0; font-style:italic; }
-        .intro-p { font-size:1.12rem; color:#c5d8e8; margin-bottom:18px; font-weight:600; }
+        p { color:#000000; margin-bottom:14px; font-size:1.02rem; font-weight:600; }
+        .film-tag { display:inline-block; background:#eef4fa; border:1px solid #cfe0f0; color:#1e3a5f; padding:2px 10px; border-radius:20px; font-size:0.75rem; margin:0 4px 8px 0; font-family:sans-serif; }
+        .map-btn { display:inline-block; background:#1e3a5f; border:1px solid #1e3a5f; color:#fff; padding:8px 18px; border-radius:30px; text-decoration:none; font-size:0.85rem; font-weight:600; margin-top:10px; margin-right:8px; transition:all 0.3s ease; font-family:sans-serif; letter-spacing:1px; text-transform:uppercase; }
+        .map-btn:hover { background:#3a6ea5; border-color:#3a6ea5; }
+        .read-btn { display:inline-block; background:transparent; border:1px solid #1e3a5f; color:#1e3a5f; padding:8px 18px; border-radius:30px; text-decoration:none; font-size:0.85rem; font-weight:600; margin-top:10px; font-family:sans-serif; letter-spacing:1px; text-transform:uppercase; transition:all 0.3s; }
+        .read-btn:hover { border-color:#3a6ea5; color:#3a6ea5; }
+        .back-link { display:inline-block; margin-bottom:28px; color:#a9c4e8; text-decoration:none; font-weight:bold; letter-spacing:1px; font-size:0.9rem; }
+        .highlight-box { background:#eef4fa; border-left:3px solid #3a6ea5; border-radius:0 10px 10px 0; padding:18px 24px; margin:28px 0; color:#000000; font-weight:600; font-style:italic; }
+        .intro-p { font-size:1.12rem; color:#000000; margin-bottom:18px; font-weight:600; }
         .faq-item { margin-bottom:28px; }
-        .faq-q { color:#dce8f0; font-weight:700; font-size:1.05rem; margin-bottom:8px; }
-        .faq-a { color:#a8bdd0; margin:0; font-size:1rem; font-weight:600; }
+        .faq-q { color:#000000; font-weight:700; font-size:1.05rem; margin-bottom:8px; }
+        .faq-a { color:#000000; margin:0; font-size:1rem; font-weight:600; }
         .tip-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0; }
-        .tip-card { background:rgba(143,179,255,0.06); border:1px solid rgba(143,179,255,0.15); border-radius:10px; padding:16px 18px; }
-        .tip-card strong { color:#8fb3ff; display:block; margin-bottom:5px; font-size:0.95rem; }
-        .tip-card span { color:#a8bdd0; font-size:0.88rem; font-weight:600; }
+        .tip-card { background:#f3efe3; border:1px solid rgba(30,45,70,0.15); border-radius:10px; padding:16px 18px; }
+        .tip-card strong { color:#000000; display:block; margin-bottom:5px; font-size:0.95rem; }
+        .tip-card span { color:#000000; font-size:0.88rem; font-weight:600; }
         @media(max-width:600px){ .blog-card{padding:28px 16px;} h1{font-size:1.8rem;} .region-title{font-size:1.6rem;} .location-block{padding:20px 16px;} .tip-grid{grid-template-columns:1fr;} }
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
@@ -110,14 +110,14 @@
 <body>
 <div class="blog-header">
     <h1>ALL TWILIGHT FILMING LOCATIONS</h1>
-        <p class="byline" style="font-size:0.82rem;color:#7a9ab8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
+        <p class="byline" style="font-size:0.82rem;color:#3a4250;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
     <p class="hero-p">"Every scene. Every address. Every real place behind the story."</p>
 </div>
 <div class="content-wrapper">
     <a href="/" class="back-link">← Return to Portal</a>
     <article class="blog-card">
 
-        <p class="intro-p">The Twilight Saga was filmed across <strong style="color:#dce8f0;">Washington State, Oregon, and British Columbia</strong> over five films from 2008 to 2012. Despite being set in Forks, Washington, the majority of filming actually took place in Oregon — primarily in Portland, St. Helens, and the Columbia River Gorge — and later in the Vancouver, BC area for the sequels.</p>
+        <p class="intro-p">The Twilight Saga was filmed across <strong style="color:#000000; font-weight:800;">Washington State, Oregon, and British Columbia</strong> over five films from 2008 to 2012. Despite being set in Forks, Washington, the majority of filming actually took place in Oregon — primarily in Portland, St. Helens, and the Columbia River Gorge — and later in the Vancouver, BC area for the sequels.</p>
         <p class="intro-p">This is the complete, comprehensive guide to every real-world location used across all five films, organised by region, with scene references, addresses, and travel tips for visiting each one.</p>
 
         <div class="highlight-box">
@@ -156,7 +156,7 @@
         <div class="location-block">
             <h3 class="location-name">Kalama High School, Kalama WA — Forks High School</h3>
             <span class="film-tag">Twilight (2008)</span>
-            <p>The actual high school scenes from the first film — including Bella's arrival, the famous cafeteria scene, and the parking lot near-accident — were filmed at <strong style="color:#dce8f0;">Kalama High School</strong> in Kalama, Washington, about 45 minutes north of Portland. The school's distinctive covered outdoor walkways and layout were perfect for the Forks High School look.</p>
+            <p>The actual high school scenes from the first film — including Bella's arrival, the famous cafeteria scene, and the parking lot near-accident — were filmed at <strong style="color:#000000; font-weight:800;">Kalama High School</strong> in Kalama, Washington, about 45 minutes north of Portland. The school's distinctive covered outdoor walkways and layout were perfect for the Forks High School look.</p>
             <ul class="scene-list">
                 <li>Bella's first day arrival and cafeteria scene</li>
                 <li>Parking lot — Edward stops the van from crushing Bella</li>
@@ -215,7 +215,7 @@
         <div class="location-block">
             <h3 class="location-name">Silver Falls State Park, Oregon — Forest Scenes</h3>
             <span class="film-tag">Twilight (2008)</span>
-            <p>Several of the deep forest scenes — including sequences where Edward moves at vampire speed through trees — were filmed in <strong style="color:#dce8f0;">Silver Falls State Park</strong>, Oregon's largest state park. The park's old-growth forest, covered in deep moss and dramatic falls, provided the perfect PNW rainforest backdrop.</p>
+            <p>Several of the deep forest scenes — including sequences where Edward moves at vampire speed through trees — were filmed in <strong style="color:#000000; font-weight:800;">Silver Falls State Park</strong>, Oregon's largest state park. The park's old-growth forest, covered in deep moss and dramatic falls, provided the perfect PNW rainforest backdrop.</p>
             <ul class="scene-list">
                 <li>Edward running through forest at vampire speed</li>
                 <li>Forest edge scenes near the Cullen house</li>
@@ -227,7 +227,7 @@
         <div class="location-block">
             <h3 class="location-name">Carver, Oregon — Meadow Scene</h3>
             <span class="film-tag">Twilight (2008)</span>
-            <p>The famous meadow scene — where Edward reveals himself in full sunlight and the sparkling skin effect is first shown — was filmed near <strong style="color:#dce8f0;">Carver, Oregon</strong>, in the Clackamas River area southeast of Portland. The actual meadow was on private land and is not publicly accessible, but the Carver area gives a sense of the landscape.</p>
+            <p>The famous meadow scene — where Edward reveals himself in full sunlight and the sparkling skin effect is first shown — was filmed near <strong style="color:#000000; font-weight:800;">Carver, Oregon</strong>, in the Clackamas River area southeast of Portland. The actual meadow was on private land and is not publicly accessible, but the Carver area gives a sense of the landscape.</p>
             <ul class="scene-list">
                 <li>Edward sparkles in sunlight — "This is the skin of a killer, Bella"</li>
                 <li>First meadow sequence — Edward and Bella's honest conversation</li>
@@ -239,7 +239,7 @@
         <div class="location-block">
             <h3 class="location-name">Vernonia, Oregon — Baseball Field</h3>
             <span class="film-tag">Twilight (2008)</span>
-            <p>The iconic Cullen family baseball game — played during a thunderstorm in a mountain clearing — was filmed at an area near <strong style="color:#dce8f0;">Vernonia, Oregon</strong>. The mountain clearing and dramatic sky created the perfect arena for the scene that introduces the full Cullen family dynamic and leads directly into the arrival of James's coven.</p>
+            <p>The iconic Cullen family baseball game — played during a thunderstorm in a mountain clearing — was filmed at an area near <strong style="color:#000000; font-weight:800;">Vernonia, Oregon</strong>. The mountain clearing and dramatic sky created the perfect arena for the scene that introduces the full Cullen family dynamic and leads directly into the arrival of James's coven.</p>
             <ul class="scene-list">
                 <li>Full Cullen family baseball game in thunderstorm</li>
                 <li>Arrival of James, Victoria, and Laurent</li>
@@ -255,7 +255,7 @@
         <div class="location-block">
             <h3 class="location-name">Vancouver & British Columbia — Films 2 through 5</h3>
             <span class="film-tag">New Moon (2009) · Eclipse (2010) · Breaking Dawn (2011–12)</span>
-            <p>From New Moon onwards, the Twilight production relocated almost entirely to <strong style="color:#dce8f0;">Vancouver, British Columbia</strong> and the surrounding area. The lower production costs, generous tax incentives, and the Pacific Northwest landscape of the BC coast made it the obvious choice for continuing the saga. Specific filming locations in BC include:</p>
+            <p>From New Moon onwards, the Twilight production relocated almost entirely to <strong style="color:#000000; font-weight:800;">Vancouver, British Columbia</strong> and the surrounding area. The lower production costs, generous tax incentives, and the Pacific Northwest landscape of the BC coast made it the obvious choice for continuing the saga. Specific filming locations in BC include:</p>
             <ul class="scene-list">
                 <li>Minnekhada Regional Park — forest scenes replacing Oregon locations</li>
                 <li>University of British Columbia — various school scenes</li>
@@ -270,7 +270,7 @@
         <div class="location-block">
             <h3 class="location-name">Montepulciano, Italy — Volterra (New Moon)</h3>
             <span class="film-tag">New Moon (2009)</span>
-            <p>The stunning Volturi city of Volterra was filmed in the <strong style="color:#dce8f0;">real Italian hill town of Montepulciano</strong> in Tuscany. The ancient stone streets, the central piazza, and the dramatic medieval architecture made it a perfect stand-in for the ageless city of the Volturi. The production closed the town's famous Sant'Agostino square for filming the Saint Marcus Day festival scene.</p>
+            <p>The stunning Volturi city of Volterra was filmed in the <strong style="color:#000000; font-weight:800;">real Italian hill town of Montepulciano</strong> in Tuscany. The ancient stone streets, the central piazza, and the dramatic medieval architecture made it a perfect stand-in for the ageless city of the Volturi. The production closed the town's famous Sant'Agostino square for filming the Saint Marcus Day festival scene.</p>
             <ul class="scene-list">
                 <li>Saint Marcus Day festival — the entire red-cloaked crowd sequence</li>
                 <li>Bella running through the streets to reach Edward in time</li>
@@ -283,7 +283,7 @@
         <div class="location-block">
             <h3 class="location-name">Paraty & Ilha Grande, Brazil — Isle Esme (Breaking Dawn)</h3>
             <span class="film-tag">Breaking Dawn Part 1 (2011)</span>
-            <p>The honeymoon sequences on Isle Esme were filmed on location in <strong style="color:#dce8f0;">Paraty and Ilha Grande on Brazil's Green Coast</strong> — one of the most beautiful stretches of coastline in South America. The combination of jungle-covered islands, crystal-clear water, and remote beaches created the perfect paradise for the Cullen honeymoon.</p>
+            <p>The honeymoon sequences on Isle Esme were filmed on location in <strong style="color:#000000; font-weight:800;">Paraty and Ilha Grande on Brazil's Green Coast</strong> — one of the most beautiful stretches of coastline in South America. The combination of jungle-covered islands, crystal-clear water, and remote beaches created the perfect paradise for the Cullen honeymoon.</p>
             <ul class="scene-list">
                 <li>Isle Esme arrival and honeymoon beach scenes</li>
                 <li>Underwater sequences — Bella and Edward swimming at night</li>
@@ -325,13 +325,13 @@
         </div>
 
         <div style="text-align:center; margin-top:65px; padding-top:45px; border-top:1px solid rgba(143,179,255,0.12);">
-            <p style="color:#8fb3ff; font-weight:bold; font-size:1.1rem; margin-bottom:22px;">Plan your complete Twilight filming locations road trip.</p>
-            <a href="/blog/forks" style="background:#8fb3ff; color:#0b0d10; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; font-family:sans-serif; letter-spacing:1px; margin:6px;">🌲 Forks Travel Guide</a>
-            <a href="/blog/st-helens" style="background:transparent; color:#8fb3ff; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:6px;">🎬 St. Helens Guide</a>
-            <a href="/blog/la-push" style="background:transparent; color:#8fb3ff; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:6px;">🌊 La Push Beach</a>
-            <a href="/blog/port-angeles" style="background:transparent; color:#8fb3ff; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:6px;">🍽️ Port Angeles</a>
-            <a href="/blog/twilight-road-trip" style="background:transparent; color:#8fb3ff; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:6px;">🗺️ Full Road Trip Itinerary</a>
-            <a href="/blog/portland-twilight" style="background:transparent; color:#8fb3ff; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:6px;">🌆 Portland Guide</a>
+            <p style="color:#1e3a5f; font-weight:bold; font-size:1.1rem; margin-bottom:22px;">Plan your complete Twilight filming locations road trip.</p>
+            <a href="/blog/forks" style="background:#1e3a5f; color:#fff; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; font-family:sans-serif; letter-spacing:1px; margin:6px;">🌲 Forks Travel Guide</a>
+            <a href="/blog/st-helens" style="background:transparent; color:#1e3a5f; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #1e3a5f; font-family:sans-serif; letter-spacing:1px; margin:6px;">🎬 St. Helens Guide</a>
+            <a href="/blog/la-push" style="background:transparent; color:#1e3a5f; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #1e3a5f; font-family:sans-serif; letter-spacing:1px; margin:6px;">🌊 La Push Beach</a>
+            <a href="/blog/port-angeles" style="background:transparent; color:#1e3a5f; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #1e3a5f; font-family:sans-serif; letter-spacing:1px; margin:6px;">🍽️ Port Angeles</a>
+            <a href="/blog/twilight-road-trip" style="background:transparent; color:#1e3a5f; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #1e3a5f; font-family:sans-serif; letter-spacing:1px; margin:6px;">🗺️ Full Road Trip Itinerary</a>
+            <a href="/blog/portland-twilight" style="background:transparent; color:#1e3a5f; padding:14px 30px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #1e3a5f; font-family:sans-serif; letter-spacing:1px; margin:6px;">🌆 Portland Guide</a>
         </div>
     </article>
 </div>
