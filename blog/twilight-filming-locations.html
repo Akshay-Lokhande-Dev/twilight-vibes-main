@@ -16,9 +16,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://twilightvibes.com/blog/twilight-filming-locations">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { margin:0; background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=1920'); background-size:cover; background-position:center; background-attachment:fixed; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.8; overflow-x:hidden; }
+        body { margin:0; background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=1920'); background-size:cover; background-position:center; background-attachment:fixed; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.85; overflow-x:hidden; font-weight:600; font-size:17px; }
         .blog-header { height:65vh; background:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,1)); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; }
         h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,7vw,4rem); margin:0; color:#fff; letter-spacing:2px; text-shadow:0 0 20px rgba(255,255,255,0.15); }
         .hero-p { font-style:italic; color:#8fb3ff; font-size:1.15rem; margin-top:12px; max-width:650px; }
@@ -26,12 +26,12 @@
         .blog-card { background:rgba(10,15,25,0.45); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(143,179,255,0.15); border-radius:16px; padding:55px 45px; box-shadow:0 20px 60px rgba(0,0,0,0.8); }
         .region-title { font-family:'Playfair Display',serif; color:#8fb3ff; font-size:2rem; margin-top:60px; border-bottom:2px solid rgba(143,179,255,0.25); padding-bottom:14px; }
         .location-block { border:1px solid rgba(143,179,255,0.13); border-radius:12px; padding:28px 28px 22px; margin:28px 0; background:rgba(143,179,255,0.03); }
-        .location-name { font-family:'Playfair Display',serif; color:#dce8f0; font-size:1.3rem; margin:0 0 6px 0; }
+        .location-name { font-family:'Playfair Display',serif; color:#dce8f0; font-size:1.4rem; margin:0 0 6px 0; }
         .scene-list { list-style:none; padding:0; margin:12px 0 14px 0; }
-        .scene-list li { color:#a8bdd0; font-size:0.88rem; padding:4px 0; border-bottom:1px solid rgba(143,179,255,0.07); }
+        .scene-list li { color:#a8bdd0; font-size:0.95rem; font-weight:600; padding:5px 0; border-bottom:1px solid rgba(143,179,255,0.07); }
         .scene-list li:last-child { border:none; }
         .scene-list li::before { content:"🎬 "; }
-        p { color:#c5d8e8; margin-bottom:14px; }
+        p { color:#c5d8e8; margin-bottom:14px; font-size:1.02rem; font-weight:600; }
         .film-tag { display:inline-block; background:rgba(143,179,255,0.1); border:1px solid rgba(143,179,255,0.25); color:#8fb3ff; padding:2px 10px; border-radius:20px; font-size:0.75rem; margin:0 4px 8px 0; font-family:sans-serif; }
         .map-btn { display:inline-block; background:rgba(143,179,255,0.1); border:1px solid #8fb3ff; color:#8fb3ff; padding:8px 18px; border-radius:30px; text-decoration:none; font-size:0.85rem; font-weight:600; margin-top:10px; margin-right:8px; transition:all 0.3s ease; font-family:sans-serif; letter-spacing:1px; text-transform:uppercase; }
         .map-btn:hover { background:#8fb3ff; color:#0b0d10; }
@@ -39,11 +39,15 @@
         .read-btn:hover { border-color:#8fb3ff; color:#dce8f0; }
         .back-link { display:inline-block; margin-bottom:28px; color:#8fb3ff; text-decoration:none; font-weight:bold; letter-spacing:1px; font-size:0.9rem; }
         .highlight-box { background:rgba(143,179,255,0.07); border-left:3px solid #8fb3ff; border-radius:0 10px 10px 0; padding:18px 24px; margin:28px 0; color:#dce8f0; font-style:italic; }
-        .intro-p { font-size:1.05rem; color:#c5d8e8; margin-bottom:18px; }
+        .intro-p { font-size:1.12rem; color:#c5d8e8; margin-bottom:18px; font-weight:600; }
         .faq-item { margin-bottom:28px; }
         .faq-q { color:#dce8f0; font-weight:700; font-size:1.05rem; margin-bottom:8px; }
-        .faq-a { color:#a8bdd0; margin:0; }
-        @media(max-width:600px){ .blog-card{padding:28px 16px;} h1{font-size:1.8rem;} .region-title{font-size:1.6rem;} .location-block{padding:20px 16px;} }
+        .faq-a { color:#a8bdd0; margin:0; font-size:1rem; font-weight:600; }
+        .tip-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0; }
+        .tip-card { background:rgba(143,179,255,0.06); border:1px solid rgba(143,179,255,0.15); border-radius:10px; padding:16px 18px; }
+        .tip-card strong { color:#8fb3ff; display:block; margin-bottom:5px; font-size:0.95rem; }
+        .tip-card span { color:#a8bdd0; font-size:0.88rem; font-weight:600; }
+        @media(max-width:600px){ .blog-card{padding:28px 16px;} h1{font-size:1.8rem;} .region-title{font-size:1.6rem;} .location-block{padding:20px 16px;} .tip-grid{grid-template-columns:1fr;} }
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="48x48" href="../static/favicon.png">
@@ -286,6 +290,18 @@
                 <li>Jungle and beach location scenes</li>
             </ul>
             <a href="https://www.google.com/maps/search/Paraty+Brazil+Green+Coast" target="_blank" class="map-btn">📍 Paraty, Brazil</a>
+        </div>
+
+        <!-- PRACTICAL TIPS -->
+        <h2 class="region-title">🧭 Practical Tips for Visiting</h2>
+        <p>Planning to actually visit these locations? Here's what to know before you go — most of the film sites are spread across a fairly wide area, and a little prep goes a long way.</p>
+        <div class="tip-grid">
+            <div class="tip-card"><strong>Best time to visit</strong><span>Late spring through early fall (May–September) gives the driest weather and longest daylight for the PNW's notoriously rainy climate.</span></div>
+            <div class="tip-card"><strong>Private property notice</strong><span>The Swan House and the Hoke Road Cullen house are private residences — view respectfully from the street, do not trespass or knock.</span></div>
+            <div class="tip-card"><strong>How much time to allow</strong><span>St. Helens locations can be covered on foot in 2–3 hours. A full Washington + Oregon route realistically needs 3–4 days.</span></div>
+            <div class="tip-card"><strong>Getting around</strong><span>A car is essential — locations are spread across two states and public transit between them is minimal to non-existent.</span></div>
+            <div class="tip-card"><strong>Closest airport</strong><span>Portland International Airport (PDX) is the most practical hub for reaching both the Oregon and Washington locations.</span></div>
+            <div class="tip-card"><strong>Combine with nature</strong><span>Silver Falls State Park and the La Push coastline are worth visiting for their own beauty, independent of the Twilight connection.</span></div>
         </div>
 
         <!-- FAQ -->

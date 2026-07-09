@@ -38,8 +38,9 @@ body {
     background-attachment: fixed;
     color: #c5d8e8;
     font-family: 'Lora', Georgia, serif;
-    font-size: 1.05rem;
-    line-height: 1.85;
+    font-size: 1.12rem;
+    font-weight: 500;
+    line-height: 1.9;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -74,8 +75,9 @@ h3 {
 }
 p {
     font-family: 'Lora', Georgia, serif;
-    font-size: 1.05rem;
-    line-height: 1.85;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.9;
     color: #c5d8e8;
 }
 
