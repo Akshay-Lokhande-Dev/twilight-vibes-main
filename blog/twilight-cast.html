@@ -208,7 +208,7 @@
 
         /* ── FILM PILLS ── */
         .film-row { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 28px; }
-        .film-pill { background:rgba(143,179,255,0.1); border:1px solid rgba(143,179,255,0.2); border-radius:20px; padding:5px 16px; font-size:0.82rem; color:var(--steel); }
+        .film-pill { background:rgba(143,179,255,0.1); border:1px solid rgba(143,179,255,0.2); border-radius:20px; padding:5px 16px; font-size:0.94rem; color:var(--steel); }
 
         /* ── HERO IMAGE (Featured) ── */
         .hero-image-wrap {
@@ -234,7 +234,7 @@
             background: rgba(9,9,15,0.85);
             color:var(--dim);
             font-family:'Lora',serif;
-            font-size:0.78rem;
+            font-size:0.85rem;
             font-style:italic;
             line-height:1.5;
             padding:8px 16px 10px;
@@ -285,7 +285,7 @@
         .actor-card:hover { border-color: rgba(143,179,255,0.38); transform: translateY(-3px); }
         .actor-card img {
             width: 100%;
-            height: 280px;
+            height: 420px;
             object-fit: cover;
             object-position: top center;
             display: block;
@@ -293,12 +293,12 @@
             filter: brightness(1.0) saturate(0.95);
             transition: filter 0.3s;
         }
-        @media(max-width:480px) { .actor-card img { height: 260px; } }
+        @media(max-width:480px) { .actor-card img { height: 400px; } }
         .actor-card:hover img { filter: brightness(1.04) saturate(1.0); }
-        .actor-card-body { padding: 16px 16px 18px; flex:1; }
-        .actor-card-body .actor-name { font-family:'Playfair Display',serif; color:#eef5f8; font-size:1rem; font-weight:700; margin-bottom:2px; }
-        .actor-card-body .char-name  { color:var(--steel); font-size:0.83rem; font-weight:600; margin-bottom:8px; }
-        .actor-card-body .actor-desc { color:#b8c9d8; font-size:0.82rem; line-height:1.62; margin:0; }
+        .actor-card-body { padding: 20px 18px 22px; }
+        .actor-card-body .actor-name { font-family:'Playfair Display',serif; color:#eef5f8; font-size:1.35rem; font-weight:700; margin-bottom:3px; }
+        .actor-card-body .char-name  { color:var(--steel); font-size:1.02rem; font-weight:600; margin-bottom:12px; }
+        .actor-card-body .actor-desc { color:#c2d2e0; font-size:0.98rem; line-height:1.72; margin:0; }
         .actor-card figcaption {
             font-size:0.68rem; color:#556677; font-style:italic;
             padding:4px 10px 6px; border-top:1px solid rgba(143,179,255,0.08);
@@ -350,19 +350,18 @@
             border-radius: 0;
         }
         @media(max-width:600px){
-            .cast-card img { height: 170px; }
-            .actor-card img { height: 200px; }
+            .cast-card img { height: 200px; }
             .cast-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
         }
         @media(max-width:380px){
             .cast-grid { grid-template-columns: 1fr; }
-            .cast-card img { height: 220px; }
+            .cast-card img { height: 240px; }
         }
         .cast-card:hover img { filter: brightness(1.04) saturate(1.0); }
         .cast-card-text { padding: 18px 18px 20px; flex:1; }
-        .cast-card .actor  { font-family:'Playfair Display',serif; color:#eef5e8; font-size:1rem; font-weight:700; margin-bottom:3px; padding: 18px 18px 0; }
-        .cast-card .character { color:var(--steel); font-size:0.85rem; margin-bottom:8px; font-weight:600; padding: 0 18px; }
-        .cast-card .desc   { color:#b8c9d8; font-size:0.82rem; line-height:1.6; padding: 0 18px 18px; }
+        .cast-card .actor  { font-family:'Playfair Display',serif; color:#eef5e8; font-size:1.15rem; font-weight:700; margin-bottom:3px; padding: 18px 18px 0; }
+        .cast-card .character { color:var(--steel); font-size:0.95rem; margin-bottom:10px; font-weight:600; padding: 0 18px; }
+        .cast-card .desc   { color:#c2d2e0; font-size:0.92rem; line-height:1.68; padding: 0 18px 18px; }
 
         /* ── SECTION IMAGE (floating) ── */
         .section-img-figure {
@@ -426,8 +425,6 @@
             }
             .section-img-figure img,
             .actor-portrait img { height: 220px; }
-            .cast-card img { height: 200px; }
-            .actor-card img { height: 240px; }
         }
 
         /* ── HIGHLIGHT BOX ── */
@@ -545,7 +542,7 @@
 <body>
 <div class="blog-header">
     <h1>The Twilight Cast</h1>
-        <p class="byline" style="font-size:0.82rem;color:#7a9ab8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
+        <p class="byline" style="font-size:0.94rem;color:#7a9ab8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
     <p class="hero-p">Every actor, every character, across all five films — and where they are now in 2026.</p>
 </div>
 
@@ -601,12 +598,12 @@
                 <div class="char-name">Bella Swan</div>
                 <p class="actor-desc">The emotional anchor of all five Twilight films. Stewart brought fierce interiority and quiet magnetism to a role that could have been passive — making Bella the beating, conflicted heart of the saga.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Married screenwriter <strong style='color:#c8d8e8;'>Dylan Meyer</strong> on April 20, 2025, in a 170-guest ceremony at Casita Del Campo restaurant in Los Angeles. Stewart called 2025 "the craziest year of my life." The couple have spoken openly about wanting children.</p>
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Chronology of Water</strong> (her directorial debut, Cannes 2025) — 91% on Rotten Tomatoes, 6.5-min standing ovation at Cannes. <strong style='color:#c8d8e8;'>The Challenger</strong> (Amazon, 2026) — plays NASA astronaut Sally Ride. <strong style='color:#c8d8e8;'>The Wrong Girls</strong> (filming 2025) — stoner comedy she wrote and produced. <strong style='color:#c8d8e8;'>Flesh of the Gods</strong> — vampire thriller with Elizabeth Olsen.</p>
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0;">Has publicly said she wants to <strong style='color:#c8d8e8;'>direct a feminist Twilight remake</strong> — darker, more complex, her way. The internet is not calm about this.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0 0 12px;">Married screenwriter <strong style='color:#c8d8e8;'>Dylan Meyer</strong> on April 20, 2025, in a 170-guest ceremony at Casita Del Campo restaurant in Los Angeles. Stewart called 2025 "the craziest year of my life." The couple have spoken openly about wanting children.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Chronology of Water</strong> (her directorial debut, Cannes 2025) — 91% on Rotten Tomatoes, 6.5-min standing ovation at Cannes. <strong style='color:#c8d8e8;'>The Challenger</strong> (Amazon, 2026) — plays NASA astronaut Sally Ride. <strong style='color:#c8d8e8;'>The Wrong Girls</strong> (filming 2025) — stoner comedy she wrote and produced. <strong style='color:#c8d8e8;'>Flesh of the Gods</strong> — vampire thriller with Elizabeth Olsen.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0;">Has publicly said she wants to <strong style='color:#c8d8e8;'>direct a feminist Twilight remake</strong> — darker, more complex, her way. The internet is not calm about this.</p>
                 </div>
             </div>
         </figure>
@@ -617,12 +614,12 @@
                 <div class="char-name">Edward Cullen</div>
                 <p class="actor-desc">The vampire who had to be simultaneously beautiful, terrifying, and lovestruck. Pattinson survived the franchise's overwhelming fame and methodically rebuilt himself into one of cinema's most daring and respected actors.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Engaged to British singer-actress <strong style='color:#c8d8e8;'>Suki Waterhouse</strong>. Together since 2018. Welcomed a <strong style='color:#c8d8e8;'>baby girl in early 2024</strong> — Rob has gushed about fatherhood: "It's the most fun thing. My kid, you can actually hang with her. She's great." Secret marriage rumours are swirling after a cryptic press-tour moment with co-star Zendaya in March 2026.</p>
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Drama</strong> (A24, April 2026) — romantic thriller with Zendaya, already generating Oscar buzz. <strong style='color:#c8d8e8;'>The Odyssey</strong> (Christopher Nolan, July 2026) — alongside Matt Damon, Anne Hathaway, Tom Holland. <strong style='color:#c8d8e8;'>The Batman Part II</strong> — begins filming April 2026, release October 2027. <strong style='color:#c8d8e8;'>Dune: Part Three</strong> — rumoured role as Scytale.</p>
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0;">During The Drama press tour Rob and Zendaya were asked about their biggest secret. Rob turned to her and said <strong style='color:#c8d8e8;'>"It's the same one that you have"</strong> — sparking massive speculation he and Suki secretly married. Neither has confirmed or denied it.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0 0 12px;">Engaged to British singer-actress <strong style='color:#c8d8e8;'>Suki Waterhouse</strong>. Together since 2018. Welcomed a <strong style='color:#c8d8e8;'>baby girl in early 2024</strong> — Rob has gushed about fatherhood: "It's the most fun thing. My kid, you can actually hang with her. She's great." Secret marriage rumours are swirling after a cryptic press-tour moment with co-star Zendaya in March 2026.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Drama</strong> (A24, April 2026) — romantic thriller with Zendaya, already generating Oscar buzz. <strong style='color:#c8d8e8;'>The Odyssey</strong> (Christopher Nolan, July 2026) — alongside Matt Damon, Anne Hathaway, Tom Holland. <strong style='color:#c8d8e8;'>The Batman Part II</strong> — begins filming April 2026, release October 2027. <strong style='color:#c8d8e8;'>Dune: Part Three</strong> — rumoured role as Scytale.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0;">During The Drama press tour Rob and Zendaya were asked about their biggest secret. Rob turned to her and said <strong style='color:#c8d8e8;'>"It's the same one that you have"</strong> — sparking massive speculation he and Suki secretly married. Neither has confirmed or denied it.</p>
                 </div>
             </div>
         </figure>
@@ -633,12 +630,12 @@
                 <div class="char-name">Jacob Black</div>
                 <p class="actor-desc">The warm-blooded, deeply human counterpoint to Edward's icy vampire control. Lautner's physical transformation between Twilight and New Moon — gaining ~30lbs of muscle to keep the role — became one of Hollywood's most legendary glow-ups.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;">Married <strong style='color:#c8d8e8;'>Taylor Dome</strong> — a registered nurse and mental health advocate — on November 11, 2022, at Epoch Estate Winery, California. In March 2026 they <strong style='color:#c8d8e8;'>announced their first pregnancy</strong>. Both are legally named Taylor Lautner after she took his surname — yes, package delivery is chaotic.</p>
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>Taylor Lautner: Werewolf Hunter</strong> (Amazon MGM, in development) — he plays a fictionalized version of himself: Hollywood actor by day, actual werewolf hunter by night. Created by Daisy Gardner, directed by Radio Silence. <strong style='color:#c8d8e8;'>The Squeeze Podcast</strong> — weekly mental health and wellness podcast co-hosted with wife Taylor Dome.</p>
-                    <p style="color:#8fc8a0;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#b8c9d8;font-size:0.82rem;line-height:1.6;margin:0;">Reunited with ex <strong style='color:#c8d8e8;'>Taylor Swift</strong> for her Eras Tour in 2023, appearing in her "I Can See You" music video. The Taylor² reunion broke the internet. He confirmed on Call Her Daddy that yes, Swift ended their 2009 relationship — and he's totally fine with it.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0 0 12px;">Married <strong style='color:#c8d8e8;'>Taylor Dome</strong> — a registered nurse and mental health advocate — on November 11, 2022, at Epoch Estate Winery, California. In March 2026 they <strong style='color:#c8d8e8;'>announced their first pregnancy</strong>. Both are legally named Taylor Lautner after she took his surname — yes, package delivery is chaotic.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>Taylor Lautner: Werewolf Hunter</strong> (Amazon MGM, in development) — he plays a fictionalized version of himself: Hollywood actor by day, actual werewolf hunter by night. Created by Daisy Gardner, directed by Radio Silence. <strong style='color:#c8d8e8;'>The Squeeze Podcast</strong> — weekly mental health and wellness podcast co-hosted with wife Taylor Dome.</p>
+                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
+                    <p style="color:#b8c9d8;font-size:0.94rem;line-height:1.6;margin:0;">Reunited with ex <strong style='color:#c8d8e8;'>Taylor Swift</strong> for her Eras Tour in 2023, appearing in her "I Can See You" music video. The Taylor² reunion broke the internet. He confirmed on Call Her Daddy that yes, Swift ended their 2009 relationship — and he's totally fine with it.</p>
                 </div>
             </div>
         </figure></div><!-- /.actor-trio -->
