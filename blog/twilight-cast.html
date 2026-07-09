@@ -215,11 +215,11 @@
         /* ── HERO IMAGE (Featured) ── */
         .hero-image-wrap {
             width: 100%;
-            margin: 0 0 36px;
-            border-radius: 0;
+            max-width: 640px;
+            margin: 0 auto 36px;
+            border-radius: 10px;
             overflow: hidden;
-            border: none;
-            border-bottom: 1px solid var(--border);
+            border: 1px solid var(--border);
             box-shadow: 0 8px 32px rgba(0,0,0,0.6);
             line-height: 0;
         }
@@ -227,10 +227,10 @@
             display: block;
             width: 100%;
             height: auto;
-            max-height: 500px;
+            max-height: 460px;
             object-fit: cover;
             object-position: center 20%;
-            filter: brightness(1.0) saturate(0.98);
+            filter: brightness(1.06) contrast(1.14) saturate(1.2);
         }
         .hero-image-wrap figcaption {
             background: rgba(9,9,15,0.85);
@@ -300,7 +300,7 @@
         .actor-card-body { padding: 20px 18px 22px; }
         .actor-card-body .actor-name { font-family:'Playfair Display',serif; color:#eef5f8; font-size:1.35rem; font-weight:700; margin-bottom:3px; }
         .actor-card-body .char-name  { color:var(--steel); font-size:1.02rem; font-weight:600; margin-bottom:12px; }
-        .actor-card-body .actor-desc { color:#d5e2ee; font-size:1rem; font-weight:600; line-height:1.72; margin:0; }
+        .actor-card-body .actor-desc { color:#e4edf5; font-size:1rem; font-weight:700; line-height:1.72; margin:0; }
         .actor-card figcaption {
             font-size:0.68rem; color:#556677; font-style:italic;
             padding:4px 10px 6px; border-top:1px solid rgba(143,179,255,0.08);
@@ -572,20 +572,6 @@
         <span class="film-pill">🎬 Eclipse (2010)</span>
         <span class="film-pill">🎬 Breaking Dawn Part 1 (2011)</span>
         <span class="film-pill">🎬 Breaking Dawn Part 2 (2012)</span>
-    </div>
-
-    <!-- ═══ OFFICIAL TRAILER ═══ -->
-    <div class="video-section">
-        <p class="video-label">📽️ Watch the Official Twilight (2008) Trailer</p>
-        <div class="video-wrap">
-            <iframe
-                src="https://www.youtube.com/embed/nxvGVSc6Ls8"
-                title="Twilight (2008) Official Trailer — Kristen Stewart, Robert Pattinson"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                loading="lazy"
-            ></iframe>
-        </div>
     </div>
 
     <!-- ═══ THE CORE THREE ═══ -->
