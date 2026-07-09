@@ -15,31 +15,36 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://twilightvibes.com/characters/volturi">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body{margin:0;background-image:linear-gradient(rgba(8,5,12,0.85),rgba(8,5,12,0.98)),url('https://images.unsplash.com/photo-1541519227354-08fa5d50c820?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;}
+        body{margin:0;background-image:linear-gradient(rgba(8,5,12,0.85),rgba(8,5,12,0.98)),url('https://images.unsplash.com/photo-1541519227354-08fa5d50c820?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;font-weight:600;}
         .hdr{height:62vh;background:linear-gradient(rgba(8,5,12,0.3),rgba(8,5,12,1));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
         h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,8vw,5rem);margin:0;color:#fff;letter-spacing:4px;text-shadow:0 0 30px rgba(150,0,0,0.5);}
-        .tag{color:#c84040;font-style:italic;font-size:1.2rem;margin-top:12px;max-width:580px;}
+        .tag{color:#c84040;font-style:italic;font-size:1.2rem;margin-top:12px;max-width:580px;font-weight:600;}
         .wrap{max-width:820px;margin:-50px auto 100px;padding:0 20px;}
         .card{background:rgba(8,5,15,0.65);backdrop-filter:blur(20px);border:1px solid rgba(180,30,30,0.2);border-radius:16px;padding:50px 45px;box-shadow:0 20px 60px rgba(0,0,0,0.9);}
         .sec{font-family:'Playfair Display',serif;color:#c84040;font-size:1.8rem;margin-top:50px;border-bottom:1px solid rgba(180,30,30,0.25);padding-bottom:10px;}
         .sub{font-family:'Playfair Display',serif;color:#e0c5c5;font-size:1.2rem;margin-top:28px;margin-bottom:6px;}
-        p{color:#c5c0d0;margin-bottom:15px;}
+        p{color:#c5c0d0;margin-bottom:15px;font-weight:600;}
         .quote{background:rgba(180,30,30,0.08);border-left:3px solid #c84040;border-radius:0 10px 10px 0;padding:16px 22px;margin:24px 0;color:#e8d5d5;font-style:italic;}
         .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0;}
         .tile{background:rgba(180,30,30,0.06);border:1px solid rgba(180,30,30,0.15);border-radius:10px;padding:14px 16px;}
         .tile strong{color:#e8d5d5;display:block;margin-bottom:4px;font-size:0.9rem;}
-        .tile span{color:#a89898;font-size:0.82rem;}
+        .tile span{color:#a89898;font-size:0.82rem;font-weight:600;}
         .member-card{background:rgba(180,30,30,0.05);border:1px solid rgba(180,30,30,0.18);border-radius:12px;padding:20px 22px;margin:16px 0;}
         .member-card h4{font-family:'Playfair Display',serif;color:#e8d5d5;font-size:1.15rem;margin:0 0 8px 0;}
         .member-card .power{display:inline-block;background:rgba(180,30,30,0.15);border:1px solid rgba(180,30,30,0.3);color:#c84040;padding:2px 10px;border-radius:20px;font-size:0.75rem;margin-bottom:10px;font-family:sans-serif;}
-        .member-card p{color:#b0a8b8;font-size:0.88rem;margin:0;}
+        .member-card p{color:#b0a8b8;font-size:0.88rem;margin:0;font-weight:600;}
         .back{display:inline-block;margin-bottom:26px;color:#8fb3ff;text-decoration:none;font-weight:bold;font-size:0.9rem;}
         .nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:50px;padding-top:34px;border-top:1px solid rgba(180,30,30,0.15);}
-        .nbtn{flex:1;min-width:140px;text-align:center;padding:11px 16px;border-radius:30px;text-decoration:none;font-family:'Playfair Display',serif;font-size:0.88rem;letter-spacing:1px;border:1px solid rgba(180,30,30,0.3);color:#c5b0b0;transition:all 0.3s;}
+        .nbtn{flex:1;min-width:140px;text-align:center;padding:11px 16px;border-radius:30px;text-decoration:none;font-family:'Playfair Display',serif;font-weight:700;font-size:0.88rem;letter-spacing:1px;border:1px solid rgba(180,30,30,0.3);color:#c5b0b0;transition:all 0.3s;}
         .nbtn:hover{background:rgba(180,30,30,0.1);color:#e8d5d5;}
-        @media(max-width:600px){.card{padding:28px 16px;}.sec{font-size:1.4rem;}.grid{grid-template-columns:1fr;}}
+        .member-card{display:flex;gap:16px;align-items:flex-start;}
+        .member-card img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid rgba(180,30,30,0.35);flex-shrink:0;}
+        .member-body{flex:1;}
+        .trivia{background:rgba(180,30,30,0.06);border:1px solid rgba(180,30,30,0.15);border-radius:10px;padding:16px 20px;margin-bottom:12px;}
+        .trivia strong{color:#c84040;display:block;margin-bottom:4px;font-size:0.92rem;}
+        @media(max-width:600px){.card{padding:28px 16px;}.sec{font-size:1.4rem;}.grid{grid-template-columns:1fr;}.member-card{flex-direction:column;align-items:center;text-align:center;}}
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="48x48" href="../static/favicon.png">
@@ -86,15 +91,23 @@
         <h2 class="sec">The Three Leaders</h2>
 
         <div class="member-card">
+            <img src="../static/images/michealsheen.jpg" alt="Michael Sheen as Aro of the Volturi" loading="lazy" width="64" height="64">
+            <div class="member-body">
             <h4>Aro</h4>
             <span class="power">Power: Tactile Telepathy — reads every thought ever had by anyone he touches</span>
             <p>The true leader of the Volturi, though he presents himself as an equal among three. Aro is ancient, charming, genuinely enthusiastic about gifted vampires, and utterly without mercy when the law is broken. His power — reading the complete mental history of anyone he touches — makes him the most comprehensively informed being on earth. He uses this warmly, almost affectionately. The warmth is real. The ruthlessness underneath it is equally real.</p>
+            <span style="font-size:0.72rem;color:#a89898;">Played by Michael Sheen</span>
+            </div>
         </div>
 
         <div class="member-card">
+            <img src="../static/images/jamie.jpg" alt="Jamie Campbell Bower as Caius of the Volturi" loading="lazy" width="64" height="64">
+            <div class="member-body">
             <h4>Caius</h4>
             <span class="power">Power: None — compensated for by exceptional cruelty and political cunning</span>
             <p>The most openly aggressive of the three, Caius has no supernatural gift — an unusual lack in the Volturi leadership — and has spent three thousand years compensating through political intelligence and a ferocity that other vampires find genuinely frightening. He is the one who prosecutes. He despises werewolves with a personal hatred that has historical roots he doesn't discuss.</p>
+            <span style="font-size:0.72rem;color:#a89898;">Played by Jamie Campbell Bower</span>
+            </div>
         </div>
 
         <div class="member-card">
@@ -105,8 +118,8 @@
 
         <h2 class="sec">The Volturi Guard</h2>
         <div class="grid">
-            <div class="tile"><strong>Jane</strong><span>Projects the illusion of excruciating pain — her gift is the Volturi's primary enforcement tool. She is perhaps sixteen, has been a vampire for centuries, and is entirely without compassion.</span></div>
-            <div class="tile"><strong>Alec</strong><span>Jane's twin. Can sever all senses — sight, sound, touch, taste, smell — rendering targets completely helpless. More dangerous than Jane because his gift affects multiple people simultaneously.</span></div>
+            <div class="tile"><img src="../static/images/dakota.jpg" alt="Dakota Fanning as Jane" loading="lazy" width="48" height="48" style="border-radius:50%;object-fit:cover;float:left;margin-right:10px;border:2px solid rgba(180,30,30,0.3);"><strong>Jane</strong><span>Projects the illusion of excruciating pain — her gift is the Volturi's primary enforcement tool. She is perhaps sixteen, has been a vampire for centuries, and is entirely without compassion.</span></div>
+            <div class="tile"><img src="../static/images/cameron.jpg" alt="Cameron Bright as Alec" loading="lazy" width="48" height="48" style="border-radius:50%;object-fit:cover;float:left;margin-right:10px;border:2px solid rgba(180,30,30,0.3);"><strong>Alec</strong><span>Jane's twin. Can sever all senses — sight, sound, touch, taste, smell — rendering targets completely helpless. More dangerous than Jane because his gift affects multiple people simultaneously.</span></div>
             <div class="tile"><strong>Demetri</strong><span>The world's greatest tracker — once he has the tenor of a mind, he can follow it anywhere on earth. The Volturi's ultimate pursuit weapon. No one has ever escaped him.</span></div>
             <div class="tile"><strong>Felix</strong><span>Physical enforcer — extraordinarily large and strong even by vampire standards. His role is direct combat and execution. He is the muscle behind the mind powers.</span></div>
             <div class="tile"><strong>Chelsea</strong><span>Can manipulate emotional bonds — weakening loyalty between people or strengthening attachment to the Volturi. The reason the guard stays loyal. The most insidious power in the coven.</span></div>
@@ -120,6 +133,12 @@
         <p>Renesmee — Bella and Edward's half-human, half-vampire daughter — is misidentified as an immortal child (a forbidden creation). The Volturi use this as a pretext to assemble their full guard and travel to Forks in force. The confrontation in the field is the saga's climax. Bella's shield, covering the entire Cullen alliance, neutralises the Volturi's gifts. The confrontation ends without combat — but the threat is never entirely resolved.</p>
 
         <div class="quote">"The Volturi don't give second chances." — Edward Cullen</div>
+
+        <h2 class="sec">Fun Facts &amp; Trivia</h2>
+        <div class="trivia"><strong>Contact lenses</strong>Michael Sheen wore filmy, near-opaque contact lenses to play Aro's milky, ancient vampire eyes - he has said in interviews they made it hard to see the other actors clearly while filming.</div>
+        <div class="trivia"><strong>Dakota Fanning's youngest villain role</strong>Dakota Fanning was around 16 when she filmed Jane's scenes in New Moon, playing a character canonically frozen at a similarly young age for centuries.</div>
+        <div class="trivia"><strong>Volterra is real</strong>The city of Volterra in Tuscany, Italy is a real historic town - though the Volturi's underground lair and clock-tower scenes were filmed on sets and in other Italian locations.</div>
+        <div class="trivia"><strong>Expanded guard</strong>Several Volturi guard members, like Chelsea and Renata, have larger roles in the books explaining the Volturi's psychological control over the vampire world than the films had time to show.</div>
 
         <div class="nav">
             <a href="/characters/bella" class="nbtn">Bella Swan</a>

@@ -15,30 +15,36 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://twilightvibes.com/characters/quileute">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body{margin:0;background-image:linear-gradient(rgba(10,14,10,0.8),rgba(10,14,10,0.97)),url('https://images.unsplash.com/photo-1499689496495-5b28fac045c6?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;}
+        body{margin:0;background-image:linear-gradient(rgba(10,14,10,0.8),rgba(10,14,10,0.97)),url('https://images.unsplash.com/photo-1499689496495-5b28fac045c6?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;font-weight:600;}
         .hdr{height:62vh;background:linear-gradient(rgba(10,14,10,0.3),rgba(10,14,10,1));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
         h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,7vw,4.5rem);margin:0;color:#fff;letter-spacing:2px;text-shadow:0 0 20px rgba(255,255,255,0.12);}
-        .tag{color:#e68a00;font-style:italic;font-size:1.15rem;margin-top:12px;max-width:580px;}
+        .tag{color:#e68a00;font-style:italic;font-size:1.15rem;margin-top:12px;max-width:580px;font-weight:600;}
         .wrap{max-width:820px;margin:-50px auto 100px;padding:0 20px;}
         .card{background:rgba(10,16,12,0.6);backdrop-filter:blur(20px);border:1px solid rgba(230,138,0,0.18);border-radius:16px;padding:50px 45px;box-shadow:0 20px 60px rgba(0,0,0,0.85);}
         .sec{font-family:'Playfair Display',serif;color:#e09a30;font-size:1.8rem;margin-top:50px;border-bottom:1px solid rgba(230,138,0,0.2);padding-bottom:10px;}
         .sub{font-family:'Playfair Display',serif;color:#c5d8e8;font-size:1.2rem;margin-top:28px;margin-bottom:6px;}
-        p{color:#c5c8c0;margin-bottom:15px;}
+        p{color:#c5c8c0;margin-bottom:15px;font-weight:600;}
         .highlight{background:rgba(230,138,0,0.07);border-left:3px solid #e68a00;border-radius:0 10px 10px 0;padding:16px 22px;margin:24px 0;color:#dce8f0;}
         .fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0;}
         .fact{background:rgba(230,138,0,0.05);border:1px solid rgba(230,138,0,0.14);border-radius:10px;padding:14px 16px;}
         .fact strong{color:#dce8f0;display:block;margin-bottom:4px;font-size:0.9rem;}
-        .fact span{color:#a8b0a0;font-size:0.82rem;}
+        .fact span{color:#a8b0a0;font-size:0.82rem;font-weight:600;}
         .respect-box{background:rgba(230,138,0,0.06);border:1px solid rgba(230,138,0,0.22);border-radius:12px;padding:22px 24px;margin:28px 0;}
         .respect-box h4{font-family:'Playfair Display',serif;color:#e09a30;margin:0 0 12px 0;font-size:1.1rem;}
-        .respect-box p{color:#b0b8a8;margin:0;font-size:0.9rem;}
+        .respect-box p{color:#b0b8a8;margin:0;font-size:0.9rem;font-weight:600;}
         .back{display:inline-block;margin-bottom:26px;color:#8fb3ff;text-decoration:none;font-weight:bold;font-size:0.9rem;}
         .nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:50px;padding-top:34px;border-top:1px solid rgba(230,138,0,0.15);}
-        .nbtn{flex:1;min-width:140px;text-align:center;padding:11px 16px;border-radius:30px;text-decoration:none;font-family:'Playfair Display',serif;font-size:0.88rem;letter-spacing:1px;border:1px solid rgba(230,138,0,0.28);color:#c5a870;transition:all 0.3s;}
+        .nbtn{flex:1;min-width:140px;text-align:center;padding:11px 16px;border-radius:30px;text-decoration:none;font-family:'Playfair Display',serif;font-weight:700;font-size:0.88rem;letter-spacing:1px;border:1px solid rgba(230,138,0,0.28);color:#c5a870;transition:all 0.3s;}
         .nbtn:hover{background:rgba(230,138,0,0.1);color:#dce8f0;}
-        @media(max-width:600px){.card{padding:28px 16px;}.sec{font-size:1.4rem;}.fact-grid{grid-template-columns:1fr;}}
+        .actor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:14px;margin:20px 0;}
+        .actor{text-align:center;}
+        .actor img{width:88px;height:88px;border-radius:50%;object-fit:cover;border:2px solid rgba(230,138,0,0.35);box-shadow:0 6px 20px rgba(0,0,0,0.5);}
+        .actor span{display:block;font-size:0.72rem;color:#a8b0a0;margin-top:6px;font-weight:600;}
+        .trivia{background:rgba(230,138,0,0.06);border:1px solid rgba(230,138,0,0.15);border-radius:10px;padding:16px 20px;margin-bottom:12px;}
+        .trivia strong{color:#e09a30;display:block;margin-bottom:4px;font-size:0.92rem;}
+        @media(max-width:600px){.card{padding:28px 16px;}.sec{font-size:1.4rem;}.fact-grid{grid-template-columns:1fr;}.actor-grid{grid-template-columns:repeat(3,1fr);}}
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="48x48" href="../static/favicon.png">
@@ -79,6 +85,17 @@
             <strong>Important:</strong> The Quileute people are real. La Push is real. The reservation is sovereign territory. When visiting, please respect their land, follow all posted rules, and support local Quileute businesses.
         </div>
 
+        <h2 class="sec">The Wolf Pack — On Screen</h2>
+        <p>The actors who portrayed the fictional Quileute wolf pack in the Twilight films:</p>
+        <div class="actor-grid">
+            <div class="actor"><img src="../static/images/taylor.jpg" alt="Taylor Lautner as Jacob Black" loading="lazy" width="88" height="88"><span>Taylor Lautner<br>Jacob Black</span></div>
+            <div class="actor"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chaske%20Spencer%20with%20Lets%20Move%20(cropped).JPG" alt="Chaske Spencer as Sam Uley" loading="lazy" width="88" height="88"><span>Chaske Spencer<br>Sam Uley</span></div>
+            <div class="actor"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paparazzo%20Presents%20Alex%20Meraz.jpg" alt="Alex Meraz as Paul" loading="lazy" width="88" height="88"><span>Alex Meraz<br>Paul</span></div>
+            <div class="actor"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paparazzo%20Presents%20Kiowa%20Gordon%20in%202009%20(cropped).jpg" alt="Kiowa Gordon as Embry Call" loading="lazy" width="88" height="88"><span>Kiowa Gordon<br>Embry Call</span></div>
+            <div class="actor"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tyson%20Wiki.JPG" alt="Tyson Houseman as Quil Ateara" loading="lazy" width="88" height="88"><span>Tyson Houseman<br>Quil Ateara</span></div>
+            <div class="actor"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Booboo%20Stewart%202012%20(cropped).jpg" alt="BooBoo Stewart as Seth Clearwater" loading="lazy" width="88" height="88"><span>BooBoo Stewart<br>Seth Clearwater</span></div>
+        </div>
+
         <h2 class="sec">Who Are the Quileute?</h2>
         <div class="fact-grid">
             <div class="fact"><strong>Location</strong><span>La Push, Washington — mouth of the Quillayute River on the Pacific coast of the Olympic Peninsula</span></div>
@@ -117,6 +134,12 @@
             <h4>How to Be a Respectful Visitor at La Push</h4>
             <p>La Push is sovereign Quileute Nation territory. Follow all posted rules. Do not collect shells, rocks or natural materials. Stay on designated paths. Support Quileute-owned businesses. The tribe has shared their land and their story — the appropriate response is respect and genuine interest in who they actually are.</p>
         </div>
+
+        <h2 class="sec">Fun Facts &amp; Trivia</h2>
+        <div class="trivia"><strong>Real casting effort</strong>Several actors cast as pack members, including Chaske Spencer and Alex Meraz, have Indigenous heritage themselves, though the production faced some criticism for not casting from the Quileute Nation specifically.</div>
+        <div class="trivia"><strong>Filming location</strong>La Push scenes were largely filmed elsewhere in Oregon and other parts of Washington, since the real La Push has limited infrastructure for a major film production.</div>
+        <div class="trivia"><strong>Author's research</strong>Stephenie Meyer has said she read about the real Quileute legends online while researching Pacific Northwest tribal folklore, before building her own fictional mythology loosely inspired by them.</div>
+        <div class="trivia"><strong>Tourism impact</strong>The Twilight Saga brought a significant increase in visitors to La Push and Forks, which the Quileute Nation has used to support cultural education and tribally-owned businesses.</div>
 
         <div class="nav">
             <a href="/characters/jacob" class="nbtn">← Jacob Black</a>
