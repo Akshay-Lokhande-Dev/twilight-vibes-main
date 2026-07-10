@@ -137,20 +137,19 @@
     });
     </script>
 
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    <style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
-
-        :root {
-            --midnight: #09090f;
+        :root { --midnight: #09090f;
             --deep-blue: #0b0e18;
             --frost: #dce8f2;
             --silver: #cdddea;
             --steel: #9fc0ff;
             --dim: #93a6b8;
-            --card-bg: rgba(10,15,25,0.72);
-            --border: rgba(143,179,255,0.2);
-        }
+            --card-bg: #e8e2d4;
+            --border: rgba(30,45,70,0.12); }
+        .blog-card, .blog-card * { --silver:#000000; --steel:#1e3a5f; --dim:#333333; --frost:#000000; }
+        .hero-image-wrap figcaption, .hero-image-wrap figcaption * { --steel:#a9c4e8; --dim:#c5d8e8; }
+        
 
         body {
             background-color: var(--midnight);
@@ -166,74 +165,59 @@
             line-height: 1.85;
             min-height: 100vh;
             overflow-x: hidden;
-        }
-
-        img { max-width: 100%; height: auto; display: block; }
-
+        }img { max-width: 100%; height: auto; display: block; }
         /* ── TYPOGRAPHY ── */
         h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,6vw,3.5rem); font-weight:800; color:#f0f4f8; letter-spacing:6px; text-transform:uppercase; text-shadow:2px 2px 4px rgba(0,0,0,0.8),0 0 40px rgba(91,143,201,0.3); line-height:1.2; }
-        h2 { font-family:'Playfair Display',serif; font-size:clamp(1.2rem,3vw,1.6rem); font-weight:700; color:#dce8f0; line-height:1.35; text-shadow:2px 2px 4px rgba(0,0,0,0.7); }
-        h3 { font-family:'Playfair Display',serif; font-size:clamp(1rem,2.5vw,1.2rem); font-weight:600; color:#c5d8e8; line-height:1.4; }
+        h2 { font-family:'Playfair Display',serif; font-size:clamp(1.2rem,3vw,1.6rem); font-weight:800; color:#000000; line-height:1.35; margin-top:45px; border-bottom:2px solid #cfc6b0; padding-bottom:10px; }
+        h3 { font-family:'Playfair Display',serif; font-size:clamp(1rem,2.5vw,1.2rem); font-weight:700; color:#000000; line-height:1.4; }
         p { font-family:'Lora',Georgia,serif; font-weight:600; font-size:1.02rem; line-height:1.85; color:var(--silver); margin:0 0 18px; }
-
         /* ── BLOG HEADER ── */
-        .blog-header {
-            height: 44vh;
+        .blog-header { height: 44vh;
             min-height: 280px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 20px;
-        }
-        .hero-p { font-style:italic; color:var(--steel); font-size:1.1rem; margin-top:12px; max-width:620px; }
-
-        /* ── CONTENT WRAPPER + BLOG CARD ── */
+            padding: 20px; }
+        
+        .hero-p { font-style:italic; color:var(--steel); font-size:1.1rem; margin-top:12px; max-width:620px; }/* ── CONTENT WRAPPER + BLOG CARD ── */
         .content-wrapper { width:100%; max-width:100%; margin:-40px 0 100px 0; padding:0; }
-        .blog-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+        .blog-card { background: var(--card-bg);
+            
+            
             border: none;
             border-top: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
             border-radius: 0;
             padding: 55px clamp(16px, 5vw, 80px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.8);
-        }
-        @media(max-width:600px){ .blog-card{padding:32px 16px;} .content-wrapper{margin-top:-20px;} }
-
-        /* ── BREADCRUMB ── */
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+        
+        @media(max-width:600px){.blog-card { padding:32px 16px; }
+        .content-wrapper { margin-top:-20px; }
+         }/* ── BREADCRUMB ── */
         .breadcrumb { font-size:0.8rem; color:var(--dim); margin-bottom:28px; }
         .breadcrumb a { color:var(--steel); text-decoration:none; }
-
         /* ── FILM PILLS ── */
         .film-row { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 28px; }
-        .film-pill { background:rgba(143,179,255,0.1); border:1px solid rgba(143,179,255,0.2); border-radius:20px; padding:5px 16px; font-size:0.94rem; color:var(--steel); }
-
+        .film-pill { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08); border:1px solid rgba(143,179,255,0.2); border-radius:20px; padding:5px 16px; font-size:0.94rem; color:var(--steel); }
         /* ── HERO IMAGE (Featured) ── */
-        .hero-image-wrap {
-            width: 100%;
+        .hero-image-wrap { width: 100%;
             max-width: 640px;
             margin: 0 auto 36px;
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid var(--border);
             box-shadow: 0 8px 32px rgba(0,0,0,0.6);
-            line-height: 0;
-        }
-        .hero-image {
-            display: block;
+            line-height: 0; }
+        .hero-image { display: block;
             width: 100%;
             height: auto;
             max-height: 460px;
             object-fit: cover;
             object-position: center 20%;
-            filter: brightness(1.06) contrast(1.14) saturate(1.2);
-        }
-        .hero-image-wrap figcaption {
-            background: rgba(9,9,15,0.85);
+            filter: brightness(1.06) contrast(1.14) saturate(1.2); }
+        .hero-image-wrap figcaption { background: rgba(9,9,15,0.85);
             color:var(--dim);
             font-family:'Lora',serif;
             font-size:0.85rem;
@@ -241,107 +225,87 @@
             line-height:1.5;
             padding:8px 16px 10px;
             text-align:center;
-            border-top:1px solid var(--border);
-        }
+            border-top:1px solid var(--border); }
         .hero-image-wrap figcaption a { color:var(--steel); text-decoration:none; }
-
         /* ── YOUTUBE EMBED ── */
         .video-section { margin: 36px 0 44px; }
         .video-label { font-family:'Playfair Display',serif; font-size:1rem; color:var(--steel); margin-bottom:14px; font-style:italic; }
-        .video-wrap {
-            position: relative;
+        .video-wrap { position: relative;
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 12px;
             border: 1px solid var(--border);
-            box-shadow: 0 8px 28px rgba(0,0,0,0.5);
-        }
-        .video-wrap iframe {
-            position: absolute;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.5); }
+        .video-wrap iframe { position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            border: 0;
-        }
-
+            border: 0; }
         /* ── THREE-COLUMN ACTOR GRID ── */
-        .actor-trio {
-            display: grid;
+        .actor-trio { display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin: 28px 0 36px;
-            clear: both;
-        }
-        @media(max-width:480px)  { .actor-trio { grid-template-columns: 1fr; gap:16px; } }
-        @media(min-width:481px) and (max-width:900px) { .actor-trio { grid-template-columns: repeat(2,1fr); } }
-
-        .actor-card {
-            background: rgba(143,179,255,0.05);
+            clear: both; }
+        
+        @media(max-width:480px)  {.actor-trio { grid-template-columns: 1fr; gap:16px; }
+         }
+        @media(min-width:481px) and (max-width:900px) {.actor-trio { grid-template-columns: repeat(2,1fr); }
+         }.actor-card { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);
             border: 1px solid var(--border);
             border-radius: 12px;
             overflow: hidden;
             transition: border-color 0.25s, transform 0.25s;
             display: flex;
-            flex-direction: column;
-        }
+            flex-direction: column; }
         .actor-card:hover { border-color: rgba(143,179,255,0.38); transform: translateY(-3px); }
-        .actor-card img {
-            width: 100%;
+        .actor-card img { width: 100%;
             height: 420px;
             object-fit: cover;
             object-position: top center;
             display: block;
             flex-shrink: 0;
             filter: brightness(1.0) saturate(0.95);
-            transition: filter 0.3s;
-        }
-        @media(max-width:480px) { .actor-card img { height: 400px; } }
-        .actor-card:hover img { filter: brightness(1.04) saturate(1.0); }
+            transition: filter 0.3s; }
+        
+        @media(max-width:480px) {.actor-card img { height: 400px; }
+         }.actor-card:hover img { filter: brightness(1.04) saturate(1.0); }
         .actor-card-body { padding: 20px 18px 22px; }
-        .actor-card-body .actor-name { font-family:'Playfair Display',serif; color:#eef5f8; font-size:1.35rem; font-weight:700; margin-bottom:3px; }
-        .actor-card-body .char-name  { color:var(--steel); font-size:1.02rem; font-weight:600; margin-bottom:12px; }
-        .actor-card-body .actor-desc { color:#e4edf5; font-size:1rem; font-weight:700; line-height:1.72; margin:0; }
-        .actor-card figcaption {
-            font-size:0.68rem; color:#556677; font-style:italic;
+        .actor-card-body .actor-name { font-family:'Playfair Display',serif; color: #000000; font-size:1.35rem; font-weight:700; margin-bottom:3px; }
+        .actor-card-body .char-name { color:var(--steel); font-size:1.02rem; font-weight:600; margin-bottom:12px; }
+        .actor-card-body .actor-desc { color: #000000; font-size:1rem; font-weight:700; line-height:1.72; margin:0; }
+        .actor-card figcaption { font-size:0.68rem; color:#556677; font-style:italic;
             padding:4px 10px 6px; border-top:1px solid rgba(143,179,255,0.08);
-            text-align:center;
-        }
+            text-align:center; }
         .actor-card figcaption a { color:#6a8aaa; text-decoration:none; }
-
         /* ── SECTION TITLES ── */
-        h2.section-title {
-            font-family:'Playfair Display',serif;
+        h2.section-title { font-family:'Playfair Display',serif;
             font-size:clamp(1.3rem,4vw,2rem);
-            color:#dce8f0;
+            color: #000000;
             margin:48px 0 16px;
             border-left:3px solid var(--steel);
             padding-left:16px;
-            clear: both;
-        }
-        h3.sub-title { font-family:'Playfair Display',serif; font-size:1.15rem; color:#c8d8e8; margin:32px 0 12px; clear:both; }
-
+            clear: both; }
+        h3.sub-title { font-family:'Playfair Display',serif; font-size:1.15rem; color: #000000; margin:32px 0 12px; clear:both; }
         /* ── CAST GRID ── */
-        .cast-grid {
-            display: grid;
+        .cast-grid { display: grid;
             grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
             gap: 16px;
             margin: 24px 0 36px;
-            clear: both;
-        }
-        @media(max-width:480px) { .cast-grid { grid-template-columns: 1fr; } }
-        @media(min-width:1200px) { .cast-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } }
-        .cast-card {
-            background: rgba(143,179,255,0.06);
+            clear: both; }
+        
+        @media(max-width:480px) {.cast-grid { grid-template-columns: 1fr; }
+         }
+        @media(min-width:1200px) {.cast-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+         }.cast-card { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);
             border: 1px solid var(--border);
             border-radius: 14px;
             overflow: hidden;
             transition: border-color 0.2s;
             display: flex;
-            flex-direction: column;
-        }
+            flex-direction: column; }
         .cast-card:hover { border-color:rgba(143,179,255,0.35); }
-        .cast-card img {
-            width: 100%;
+        .cast-card img { width: 100%;
             aspect-ratio: 3 / 4;
             height: auto;
             object-fit: cover;
@@ -350,87 +314,68 @@
             flex-shrink: 0;
             filter: brightness(0.98) saturate(0.92);
             transition: filter 0.3s;
-            border-radius: 0;
+            border-radius: 0; }
+        
+        @media(max-width:600px){.cast-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        
         }
-        @media(max-width:600px){
-            .cast-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-        }
-        @media(max-width:380px){
-            .cast-grid { grid-template-columns: 1fr; }
-        }
-        .cast-card:hover img { filter: brightness(1.04) saturate(1.0); }
+        @media(max-width:380px){.cast-grid { grid-template-columns: 1fr; }
+        
+        }.cast-card:hover img { filter: brightness(1.04) saturate(1.0); }
         .cast-card-text { padding: 18px 18px 20px; flex:1; }
-        .cast-card .actor  { font-family:'Playfair Display',serif; color:#eef5e8; font-size:1.15rem; font-weight:700; margin-bottom:3px; padding: 18px 18px 0; }
+        .cast-card .actor { font-family:'Playfair Display',serif; color: #000000; font-size:1.15rem; font-weight:700; margin-bottom:3px; padding: 18px 18px 0; }
         .cast-card .character { color:var(--steel); font-size:0.95rem; margin-bottom:10px; font-weight:600; padding: 0 18px; }
-        .cast-card .desc   { color:#d5e2ee; font-size:0.94rem; font-weight:600; line-height:1.7; padding: 0 18px 18px; }
-
+        .cast-card .desc { color: #000000; font-size:0.94rem; font-weight:600; line-height:1.7; padding: 0 18px 18px; }
         /* ── SECTION IMAGE (floating) ── */
-        .section-img-figure {
-            border-radius: 10px;
+        .section-img-figure { border-radius: 10px;
             overflow: hidden;
             border: 1px solid var(--border);
             box-shadow: 0 4px 14px rgba(0,0,0,0.5);
-            line-height: 0;
-        }
+            line-height: 0; }
         .section-img-figure--right { float:right; margin:4px 0 20px 22px; max-width:200px; }
-        .section-img-figure--left  { float:left;  margin:4px 22px 20px 0; max-width:200px; }
-        .section-img-figure img {
-            display:block; width:100%; height:180px;
+        .section-img-figure--left { float:left;  margin:4px 22px 20px 0; max-width:200px; }
+        .section-img-figure img { display:block; width:100%; height:180px;
             object-fit:cover; object-position:top center;
             filter: brightness(0.98) saturate(0.92);
-            transition:filter 0.3s;
-        }
+            transition:filter 0.3s; }
         .section-img-figure:hover img { filter:brightness(0.97) saturate(0.88); }
-        .section-img-figure figcaption {
-            background:rgba(9,9,15,0.9); color:#6a8090;
+        .section-img-figure figcaption { background:rgba(9,9,15,0.9); color:#6a8090;
             font-size:0.7rem; font-style:italic;
             padding:5px 8px 7px; text-align:center;
-            border-top:1px solid var(--border);
-        }
+            border-top:1px solid var(--border); }
         .section-img-figure figcaption a { color:var(--steel); text-decoration:none; }
-
         /* ── ACTOR PORTRAIT (floating) ── */
-        .actor-portrait {
-            border-radius: 10px;
+        .actor-portrait { border-radius: 10px;
             overflow: hidden;
             border: 1px solid var(--border);
             box-shadow: 0 4px 14px rgba(0,0,0,0.5);
-            line-height: 0;
-        }
+            line-height: 0; }
         .actor-portrait--right { float:right; margin:4px 0 20px 22px; max-width:200px; }
-        .actor-portrait--left  { float:left;  margin:4px 22px 20px 0; max-width:200px; }
-        .actor-portrait img {
-            display:block; width:100%; height:200px;
+        .actor-portrait--left { float:left;  margin:4px 22px 20px 0; max-width:200px; }
+        .actor-portrait img { display:block; width:100%; height:200px;
             object-fit:cover; object-position:top center;
             filter: brightness(0.98) saturate(0.92);
-            transition:filter 0.3s;
-        }
-        .actor-portrait figcaption {
-            background:rgba(9,9,15,0.9); color:#6a8090;
+            transition:filter 0.3s; }
+        .actor-portrait figcaption { background:rgba(9,9,15,0.9); color:#6a8090;
             font-size:0.7rem; font-style:italic;
             padding:5px 8px 7px; text-align:center;
             border-top:1px solid var(--border);
-            line-height:1.4;
-        }
+            line-height:1.4; }
+        
 
         /* ── MOBILE OVERRIDES ── */
-        @media(max-width:640px) {
-            .section-img-figure--right,
+        @media(max-width:640px) {.section-img-figure--right,
             .section-img-figure--left,
             .actor-portrait--right,
-            .actor-portrait--left {
-                float: none;
+            .actor-portrait--left { float: none;
                 max-width: 100%;
                 width: 100%;
-                margin: 0 0 18px 0;
-            }
-            .section-img-figure img,
+                margin: 0 0 18px 0; }
+        .section-img-figure img,
             .actor-portrait img { height: 220px; }
-        }
-
-        /* ── HIGHLIGHT BOX ── */
-        .highlight-box {
-            background:rgba(143,179,255,0.07);
+        
+        }/* ── HIGHLIGHT BOX ── */
+        .highlight-box { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);
             border-left:3px solid var(--steel);
             border-radius:0 12px 12px 0;
             padding:20px 24px;
@@ -438,25 +383,20 @@
             font-family:'Playfair Display',serif;
             font-style:italic;
             font-weight:600;
-            color:#c8d8f0;
+            color: #000000;
             font-size:1rem;
             line-height:1.7;
-            clear:both;
-        }
-
+            clear:both; }
         /* ── FAQ ── */
         .faq-item { border-top:1px solid rgba(143,179,255,0.1); padding:22px 0; }
-        .faq-q { font-family:'Playfair Display',serif; color:#dce8f0; font-weight:700; margin:0 0 8px; font-size:1rem; }
-        .faq-a { color:#c9d9e6; font-size:0.92rem; font-weight:600; margin:0; }
-
+        .faq-q { font-family:'Playfair Display',serif; color: #000000; font-weight:700; margin:0 0 8px; font-size:1rem; }
+        .faq-a { color: #000000; font-size:0.92rem; font-weight:600; margin:0; }
         /* ── IMAGE CREDIT GLOBAL ── */
         .img-credit { font-size:0.68rem; color:#445566; font-style:italic; text-align:center; padding:4px 0 0; }
         .img-credit a { color:#5a7a98; }
-
         /* ── CTA BUTTONS ── */
         .cta-section { text-align:center; margin-top:65px; padding-top:45px; border-top:1px solid rgba(143,179,255,0.12); }
-        .cta-btn {
-            display:inline-block; margin:8px;
+        .cta-btn { display:inline-block; margin:8px;
             padding:14px 32px;
             border-radius:30px;
             text-decoration:none;
@@ -464,43 +404,34 @@
             font-family:sans-serif;
             font-size:0.9rem;
             letter-spacing:1px;
-            transition:opacity 0.2s;
-        }
+            transition:opacity 0.2s; }
         .cta-btn:hover { opacity:0.82; }
-        .cta-btn--primary { background:var(--steel); color:#0b0d10; }
+        .cta-btn--primary { background:var(--steel); color:#ffffff; }
         .cta-btn--outline { background:transparent; color:var(--steel); border:1px solid var(--steel); }
-
         /* ── IMAGE PLACEHOLDER (when blocked/loading) ── */
-        .img-placeholder {
-            width: 100%;
+        .img-placeholder { width: 100%;
             min-height: 180px;
             display: flex;
             align-items: center;
             justify-content: center;
             background: linear-gradient(135deg, rgba(15,20,35,0.9), rgba(9,12,22,0.95));
             border-bottom: 1px solid var(--border);
-            padding: 20px;
-        }
-        .img-placeholder span {
-            color: #445566;
+            padding: 20px; }
+        .img-placeholder span { color: #445566;
             font-family: 'Lora', serif;
             font-style: italic;
             font-size: 0.82rem;
             text-align: center;
-            line-height: 1.5;
-        }
-
+            line-height: 1.5; }
         /* ── FOOTER ── */
         footer { text-align:center; padding:24px 20px; margin-top:50px; border-top:1px solid #222; font-size:13px; color:#556; }
         footer a { color:inherit; margin:0 8px; text-decoration:none; }
+        
 
         /* ── MOBILE ── */
         @media(max-width:768px){ body{font-size:1rem;line-height:1.8;} h1{letter-spacing:3px;} }
-        @media(max-width:480px){ body{font-size:0.97rem;} }
-
-        /* Wolf pack avatar placeholder */
-        .cast-avatar {
-            width: 100%;
+        @media(max-width:480px){ body{font-size:0.97rem;} }/* Wolf pack avatar placeholder */
+        .cast-avatar { width: 100%;
             height: 220px;
             background: linear-gradient(135deg, rgba(21,30,48,0.9) 0%, rgba(11,14,24,0.95) 100%);
             display: flex;
@@ -508,21 +439,19 @@
             justify-content: center;
             flex-direction: column;
             gap: 10px;
-            flex-shrink: 0;
-        }
-        .cast-avatar .av-icon {
-            font-size: 3rem;
+            flex-shrink: 0; }
+        .cast-avatar .av-icon { font-size: 3rem;
             opacity: 0.55;
-            filter: grayscale(0.4);
-        }
-        .cast-avatar .av-label {
-            font-family: 'Lora', serif;
+            filter: grayscale(0.4); }
+        .cast-avatar .av-label { font-family: 'Lora', serif;
             font-size: 0.72rem;
             color: rgba(143,179,255,0.5);
             letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        @media(max-width:600px){ .cast-avatar { height: 170px; } .cast-avatar .av-icon { font-size: 2rem; } }
+            text-transform: uppercase; }
+        
+        @media(max-width:600px){.cast-avatar { height: 170px; }
+        .cast-avatar .av-icon { font-size: 2rem; }
+         }
     </style>
 <!-- Google tag (gtag.js) -->
 
@@ -544,7 +473,7 @@
 <body>
 <div class="blog-header">
     <h1>The Twilight Cast</h1>
-        <p class="byline" style="font-size:0.94rem;color:#7a9ab8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
+        <p class="byline" style="font-size:0.94rem;color:#a9c4e8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
     <p class="hero-p">Every actor, every character, across all five films — and where they are now in 2026.</p>
 </div>
 
@@ -586,12 +515,12 @@
                 <div class="char-name">Bella Swan</div>
                 <p class="actor-desc">The emotional anchor of all five Twilight films. Stewart brought fierce interiority and quiet magnetism to a role that could have been passive — making Bella the beating, conflicted heart of the saga.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;">Married screenwriter <strong style='color:#c8d8e8;'>Dylan Meyer</strong> on April 20, 2025, in a 170-guest ceremony at Casita Del Campo restaurant in Los Angeles. Stewart called 2025 "the craziest year of my life." The couple have spoken openly about wanting children.</p>
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Chronology of Water</strong> (her directorial debut, Cannes 2025) — 91% on Rotten Tomatoes, 6.5-min standing ovation at Cannes. <strong style='color:#c8d8e8;'>The Challenger</strong> (Amazon, 2026) — plays NASA astronaut Sally Ride. <strong style='color:#c8d8e8;'>The Wrong Girls</strong> (filming 2025) — stoner comedy she wrote and produced. <strong style='color:#c8d8e8;'>Flesh of the Gods</strong> — vampire thriller with Elizabeth Olsen.</p>
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0;">Has publicly said she wants to <strong style='color:#c8d8e8;'>direct a feminist Twilight remake</strong> — darker, more complex, her way. The internet is not calm about this.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;">Married screenwriter <strong style='color:#c8d8e8;'>Dylan Meyer</strong> on April 20, 2025, in a 170-guest ceremony at Casita Del Campo restaurant in Los Angeles. Stewart called 2025 "the craziest year of my life." The couple have spoken openly about wanting children.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Chronology of Water</strong> (her directorial debut, Cannes 2025) — 91% on Rotten Tomatoes, 6.5-min standing ovation at Cannes. <strong style='color:#c8d8e8;'>The Challenger</strong> (Amazon, 2026) — plays NASA astronaut Sally Ride. <strong style='color:#c8d8e8;'>The Wrong Girls</strong> (filming 2025) — stoner comedy she wrote and produced. <strong style='color:#c8d8e8;'>Flesh of the Gods</strong> — vampire thriller with Elizabeth Olsen.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0;">Has publicly said she wants to <strong style='color:#c8d8e8;'>direct a feminist Twilight remake</strong> — darker, more complex, her way. The internet is not calm about this.</p>
                 </div>
             </div>
         </figure>
@@ -602,12 +531,12 @@
                 <div class="char-name">Edward Cullen</div>
                 <p class="actor-desc">The vampire who had to be simultaneously beautiful, terrifying, and lovestruck. Pattinson survived the franchise's overwhelming fame and methodically rebuilt himself into one of cinema's most daring and respected actors.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;">Engaged to British singer-actress <strong style='color:#c8d8e8;'>Suki Waterhouse</strong>. Together since 2018. Welcomed a <strong style='color:#c8d8e8;'>baby girl in early 2024</strong> — Rob has gushed about fatherhood: "It's the most fun thing. My kid, you can actually hang with her. She's great." Secret marriage rumours are swirling after a cryptic press-tour moment with co-star Zendaya in March 2026.</p>
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Drama</strong> (A24, April 2026) — romantic thriller with Zendaya, already generating Oscar buzz. <strong style='color:#c8d8e8;'>The Odyssey</strong> (Christopher Nolan, July 2026) — alongside Matt Damon, Anne Hathaway, Tom Holland. <strong style='color:#c8d8e8;'>The Batman Part II</strong> — begins filming April 2026, release October 2027. <strong style='color:#c8d8e8;'>Dune: Part Three</strong> — rumoured role as Scytale.</p>
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0;">During The Drama press tour Rob and Zendaya were asked about their biggest secret. Rob turned to her and said <strong style='color:#c8d8e8;'>"It's the same one that you have"</strong> — sparking massive speculation he and Suki secretly married. Neither has confirmed or denied it.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;">Engaged to British singer-actress <strong style='color:#c8d8e8;'>Suki Waterhouse</strong>. Together since 2018. Welcomed a <strong style='color:#c8d8e8;'>baby girl in early 2024</strong> — Rob has gushed about fatherhood: "It's the most fun thing. My kid, you can actually hang with her. She's great." Secret marriage rumours are swirling after a cryptic press-tour moment with co-star Zendaya in March 2026.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>The Drama</strong> (A24, April 2026) — romantic thriller with Zendaya, already generating Oscar buzz. <strong style='color:#c8d8e8;'>The Odyssey</strong> (Christopher Nolan, July 2026) — alongside Matt Damon, Anne Hathaway, Tom Holland. <strong style='color:#c8d8e8;'>The Batman Part II</strong> — begins filming April 2026, release October 2027. <strong style='color:#c8d8e8;'>Dune: Part Three</strong> — rumoured role as Scytale.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0;">During The Drama press tour Rob and Zendaya were asked about their biggest secret. Rob turned to her and said <strong style='color:#c8d8e8;'>"It's the same one that you have"</strong> — sparking massive speculation he and Suki secretly married. Neither has confirmed or denied it.</p>
                 </div>
             </div>
         </figure>
@@ -618,12 +547,12 @@
                 <div class="char-name">Jacob Black</div>
                 <p class="actor-desc">The warm-blooded, deeply human counterpoint to Edward's icy vampire control. Lautner's physical transformation between Twilight and New Moon — gaining ~30lbs of muscle to keep the role — became one of Hollywood's most legendary glow-ups.</p>
                 <div style="margin-top:14px;border-top:1px solid rgba(143,179,255,0.12);padding-top:12px;">
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;">Married <strong style='color:#c8d8e8;'>Taylor Dome</strong> — a registered nurse and mental health advocate — on November 11, 2022, at Epoch Estate Winery, California. In March 2026 they <strong style='color:#c8d8e8;'>announced their first pregnancy</strong>. Both are legally named Taylor Lautner after she took his surname — yes, package delivery is chaotic.</p>
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>Taylor Lautner: Werewolf Hunter</strong> (Amazon MGM, in development) — he plays a fictionalized version of himself: Hollywood actor by day, actual werewolf hunter by night. Created by Daisy Gardner, directed by Radio Silence. <strong style='color:#c8d8e8;'>The Squeeze Podcast</strong> — weekly mental health and wellness podcast co-hosted with wife Taylor Dome.</p>
-                    <p style="color:#8fc8a0;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
-                    <p style="color:#c9d9e6;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0;">Reunited with ex <strong style='color:#c8d8e8;'>Taylor Swift</strong> for her Eras Tour in 2023, appearing in her "I Can See You" music video. The Taylor² reunion broke the internet. He confirmed on Call Her Daddy that yes, Swift ended their 2009 relationship — and he's totally fine with it.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">❤️ Relationship Status</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;">Married <strong style='color:#c8d8e8;'>Taylor Dome</strong> — a registered nurse and mental health advocate — on November 11, 2022, at Epoch Estate Winery, California. In March 2026 they <strong style='color:#c8d8e8;'>announced their first pregnancy</strong>. Both are legally named Taylor Lautner after she took his surname — yes, package delivery is chaotic.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🎬 Current Projects 2026</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0 0 12px;"><strong style='color:#c8d8e8;'>Taylor Lautner: Werewolf Hunter</strong> (Amazon MGM, in development) — he plays a fictionalized version of himself: Hollywood actor by day, actual werewolf hunter by night. Created by Daisy Gardner, directed by Radio Silence. <strong style='color:#c8d8e8;'>The Squeeze Podcast</strong> — weekly mental health and wellness podcast co-hosted with wife Taylor Dome.</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 5px;">🔥 Latest Buzz</p>
+                    <p style="color: #000000; font-weight:700;font-size:0.94rem;font-weight:600;line-height:1.6;margin:0;">Reunited with ex <strong style='color:#c8d8e8;'>Taylor Swift</strong> for her Eras Tour in 2023, appearing in her "I Can See You" music video. The Taylor² reunion broke the internet. He confirmed on Call Her Daddy that yes, Swift ended their 2009 relationship — and he's totally fine with it.</p>
                 </div>
             </div>
         </figure></div><!-- /.actor-trio -->

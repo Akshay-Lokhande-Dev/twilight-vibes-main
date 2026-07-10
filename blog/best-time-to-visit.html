@@ -47,59 +47,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        *{box-sizing:border-box;}
-        body{margin:0;background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;}
-        .blog-header{height:62vh;background:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,1));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+    <style>* { box-sizing:border-box; }
+        
+        body{margin:0;background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;}.blog-header { height:62vh;background:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,1));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px; }
+        
         h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,7vw,4rem);margin:0;color:#fff;letter-spacing:2px;text-shadow:0 0 20px rgba(255,255,255,0.12);}
-        .hero-p{font-style:italic;color:#8fb3ff;font-size:1.1rem;margin-top:12px;max-width:600px;font-family:'Crimson Text',serif;}
-        .content-wrapper{max-width:840px;margin:-50px auto 80px;padding:0 20px;}
-        .blog-card{background:rgba(10,15,25,0.52);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(143,179,255,0.15);border-radius:16px;padding:52px 46px;box-shadow:0 20px 60px rgba(0,0,0,0.8);}
-        .section-title{font-family:'Playfair Display',serif;color:#8fb3ff;font-size:1.75rem;margin-top:52px;border-bottom:1px solid rgba(143,179,255,0.2);padding-bottom:10px;}
-        .sub-title{font-family:'Playfair Display',serif;color:#c5d8e8;font-size:1.2rem;margin-top:32px;margin-bottom:6px;}
-        p{color:#c5d8e8;margin-bottom:15px;}
-        .highlight-box{background:rgba(143,179,255,0.07);border-left:3px solid #8fb3ff;border-radius:0 10px 10px 0;padding:16px 22px;margin:24px 0;color:#dce8f0;font-style:italic;font-family:'Crimson Text',serif;font-size:1.05rem;line-height:1.7;}
-        .scene-tag{display:inline-block;background:rgba(143,179,255,0.1);border:1px solid rgba(143,179,255,0.3);color:#a8c0d6;padding:3px 12px;border-radius:20px;font-size:0.78rem;margin-bottom:10px;font-family:sans-serif;}
-        .map-btn{display:inline-block;background:rgba(143,179,255,0.1);border:1px solid #8fb3ff;color:#8fb3ff;padding:9px 20px;border-radius:30px;text-decoration:none;font-size:0.88rem;font-weight:600;margin:10px 4px 0;transition:all 0.3s;font-family:sans-serif;letter-spacing:0.8px;text-transform:uppercase;}
-        .map-btn:hover{background:#8fb3ff;color:#0b0d10;}
-        .back-link{display:inline-block;margin-bottom:26px;color:#8fb3ff;text-decoration:none;font-weight:bold;font-size:0.9rem;}
-        .tips-list{padding-left:22px;color:#b0b8c1;}
-        .tips-list li{margin-bottom:12px;}
-        .faq-item{margin-bottom:28px;}
-        .faq-q{color:#dce8f0;font-weight:700;font-size:1.02rem;margin-bottom:6px;}
-        .faq-a{color:#a8bdd0;margin:0;}
-        .day-card{background:rgba(143,179,255,0.05);border:1px solid rgba(143,179,255,0.18);border-radius:14px;padding:24px 26px;margin:20px 0;}
-        .day-label{font-family:'Playfair Display',serif;color:#8fb3ff;font-size:1.1rem;margin:0 0 6px;letter-spacing:1px;text-transform:uppercase;}
-        .day-title{font-family:'Playfair Display',serif;color:#dce8f0;font-size:1.4rem;margin:0 0 14px;}
-        .stop-row{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid rgba(143,179,255,0.07);align-items:flex-start;}
-        .stop-row:last-child{border:none;}
-        .stop-time{color:#8fb3ff;font-size:0.8rem;font-family:sans-serif;min-width:65px;padding-top:2px;font-weight:600;}
-        .stop-content strong{color:#dce8f0;display:block;font-size:0.9rem;margin-bottom:2px;}
-        .stop-content span{color:#8aaec8;font-size:0.82rem;}
-        .compare-table{width:100%;border-collapse:collapse;margin:20px 0;}
-        .compare-table th{background:rgba(143,179,255,0.12);color:#dce8f0;font-family:'Playfair Display',serif;font-size:0.95rem;padding:12px 16px;text-align:left;border-bottom:2px solid rgba(143,179,255,0.2);}
-        .compare-table td{padding:11px 16px;border-bottom:1px solid rgba(143,179,255,0.07);color:#b0bcc8;font-size:0.85rem;vertical-align:top;}
-        .compare-table tr:hover td{background:rgba(143,179,255,0.04);}
-        .compare-table .book{color:#8aaa78;}
-        .compare-table .film{color:#8fb3ff;}
-        .cost-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;}
-        .cost-card{background:rgba(143,179,255,0.05);border:1px solid rgba(143,179,255,0.14);border-radius:10px;padding:16px 18px;}
-        .cost-card .category{font-family:'Playfair Display',serif;color:#dce8f0;font-size:0.95rem;display:block;margin-bottom:4px;}
-        .cost-card .range{color:#8aaa78;font-size:0.88rem;font-weight:600;}
-        .cost-card .note{color:#7a9ab8;font-size:0.78rem;margin-top:4px;display:block;}
-        .season-card{background:rgba(143,179,255,0.05);border:1px solid rgba(143,179,255,0.14);border-radius:12px;padding:20px 22px;margin:14px 0;}
-        .season-card h4{font-family:'Playfair Display',serif;color:#dce8f0;margin:0 0 8px;font-size:1.05rem;}
-        .pack-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
-        .pack-item{background:rgba(143,179,255,0.05);border:1px solid rgba(143,179,255,0.13);border-radius:10px;padding:12px 14px;}
-        .pack-item strong{color:#dce8f0;display:block;font-size:0.88rem;margin-bottom:3px;}
-        .pack-item span{color:#7a9ab8;font-size:0.78rem;}
-        .nav-end{display:flex;gap:10px;flex-wrap:wrap;margin-top:50px;padding-top:36px;border-top:1px solid rgba(143,179,255,0.12);}
-        .nbtn{flex:1;min-width:140px;text-align:center;padding:11px 16px;border-radius:30px;text-decoration:none;font-family:'Playfair Display',serif;font-size:0.88rem;letter-spacing:1px;border:1px solid rgba(143,179,255,0.3);color:#a8c0d6;transition:all 0.3s;}
-        .nbtn:hover{background:rgba(143,179,255,0.1);color:#dce8f0;}
-        .contact-footer{text-align:center;margin:40px auto 30px;padding:24px 20px;max-width:600px;border-top:1px solid rgba(143,179,255,0.1);}
-        .contact-footer p{font-family:'Crimson Text',serif;color:#a8bca0;font-size:1rem;font-style:italic;margin:0;line-height:1.8;}
-        .contact-footer a{color:#8fb3ff;text-decoration:none;border-bottom:1px solid rgba(143,179,255,0.3);word-break:break-all;}
-        @media(max-width:600px){.blog-card{padding:28px 16px;}.section-title{font-size:1.4rem;}.cost-grid,.pack-grid{grid-template-columns:1fr;}.compare-table{font-size:0.78rem;}.compare-table th,.compare-table td{padding:8px 10px;}}
+        .hero-p{font-style:italic;color:#8fb3ff;font-size:1.1rem;margin-top:12px;max-width:600px;font-family:'Crimson Text',serif;}.content-wrapper { max-width:840px;margin:-50px auto 80px;padding:0 20px; }
+        .blog-card { background:#e8e2d4;border:1px solid rgba(143,179,255,0.15);border-radius:16px;padding:52px 46px;box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+        .section-title { font-family:'Playfair Display',serif;color: #000000;font-size:1.75rem;margin-top:52px;border-bottom:1px solid rgba(143,179,255,0.2);padding-bottom:10px; }
+        .sub-title { font-family:'Playfair Display',serif;color: #000000;font-size:1.2rem;margin-top:32px;margin-bottom:6px; }
+        p { color: #000000;margin-bottom:15px; }
+        .highlight-box { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border-left:3px solid #8fb3ff;border-radius:0 10px 10px 0;padding:16px 22px;margin:24px 0;color: #000000;font-style:italic;font-family:'Crimson Text',serif;font-size:1.05rem;line-height:1.7; }
+        .scene-tag { display:inline-block;background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border:1px solid rgba(143,179,255,0.3);color: #000000;padding:3px 12px;border-radius:20px;font-size:0.78rem;margin-bottom:10px;font-family:sans-serif; }
+        .map-btn { display:inline-block;background:#002a84;border:1px solid #002a84;color:#ffffff;padding:9px 20px;border-radius:30px;text-decoration:none;font-size:0.88rem;font-weight:600;margin:10px 4px 0;transition:all 0.3s;font-family:sans-serif;letter-spacing:0.8px;text-transform:uppercase; }
+        .map-btn:hover { background:#1f3d64;color:#ffffff; }
+        
+        .back-link{display:inline-block;margin-bottom:26px;color:#8fb3ff;text-decoration:none;font-weight:bold;font-size:0.9rem;}.tips-list { padding-left:22px;color: #000000; }
+        .tips-list li { margin-bottom:12px; }
+        .faq-item { margin-bottom:28px; }
+        .faq-q { color: #000000;font-weight:700;font-size:1.02rem;margin-bottom:6px; }
+        .faq-a { color: #000000;margin:0; }
+        .day-card { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border:1px solid rgba(143,179,255,0.18);border-radius:14px;padding:24px 26px;margin:20px 0; }
+        .day-label { font-family:'Playfair Display',serif;color: #000000;font-size:1.1rem;margin:0 0 6px;letter-spacing:1px;text-transform:uppercase; }
+        .day-title { font-family:'Playfair Display',serif;color: #000000;font-size:1.4rem;margin:0 0 14px; }
+        .stop-row { display:flex;gap:14px;padding:10px 0;border-bottom:1px solid rgba(143,179,255,0.07);align-items:flex-start; }
+        .stop-row:last-child { border:none; }
+        .stop-time { color: #000000;font-size:0.8rem;font-family:sans-serif;min-width:65px;padding-top:2px;font-weight:600; }
+        .stop-content strong { color: #000000;display:block;font-size:0.9rem;margin-bottom:2px; }
+        .stop-content span { color: #000000;font-size:0.82rem; }
+        .compare-table { width:100%;border-collapse:collapse;margin:20px 0; }
+        .compare-table th { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);color: #000000;font-family:'Playfair Display',serif;font-size:0.95rem;padding:12px 16px;text-align:left;border-bottom:2px solid rgba(143,179,255,0.2); }
+        .compare-table td { padding:11px 16px;border-bottom:1px solid rgba(143,179,255,0.07);color: #000000;font-size:0.85rem;vertical-align:top; }
+        .compare-table tr:hover td { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08); }
+        .compare-table .book { color: #000000; }
+        .compare-table .film { color: #000000; }
+        .cost-grid { display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0; }
+        .cost-card { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border:1px solid rgba(143,179,255,0.14);border-radius:10px;padding:16px 18px; }
+        .cost-card .category { font-family:'Playfair Display',serif;color: #000000;font-size:0.95rem;display:block;margin-bottom:4px; }
+        .cost-card .range { color: #000000;font-size:0.88rem;font-weight:600; }
+        .cost-card .note { color: #000000;font-size:0.78rem;margin-top:4px;display:block; }
+        .season-card { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border:1px solid rgba(143,179,255,0.14);border-radius:12px;padding:20px 22px;margin:14px 0; }
+        .season-card h4 { font-family:'Playfair Display',serif;color: #000000;margin:0 0 8px;font-size:1.05rem; }
+        .pack-grid { display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0; }
+        .pack-item { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border:1px solid rgba(143,179,255,0.13);border-radius:10px;padding:12px 14px; }
+        .pack-item strong { color: #000000;display:block;font-size:0.88rem;margin-bottom:3px; }
+        .pack-item span { color: #000000;font-size:0.78rem; }
+        .nav-end { display:flex;gap:10px;flex-wrap:wrap;margin-top:50px;padding-top:36px;border-top:1px solid rgba(143,179,255,0.12); }
+        .nbtn { flex:1;min-width:140px;text-align:center;padding:11px 16px;border-radius:30px;text-decoration:none;font-family:'Playfair Display',serif;font-size:0.88rem;letter-spacing:1px;border:1px solid #1e3a5f;color:#1e3a5f;transition:all 0.3s; }
+        .nbtn:hover { background:#1f3d64;color:#ffffff; }
+        .contact-footer { text-align:center;margin:40px auto 30px;padding:24px 20px;max-width:600px;border-top:1px solid rgba(143,179,255,0.1); }
+        .contact-footer p { font-family:'Crimson Text',serif;color: #000000;font-size:1rem;font-style:italic;margin:0;line-height:1.8; }
+        .contact-footer a { color:#8fb3ff;text-decoration:none;border-bottom:1px solid rgba(143,179,255,0.3);word-break:break-all; }
+        
+        @media(max-width:600px){.blog-card { padding:28px 16px; }
+        .section-title { font-size:1.4rem; }
+        .cost-grid,.pack-grid { grid-template-columns:1fr; }
+        .compare-table { font-size:0.78rem; }
+        .compare-table th,.compare-table td { padding:8px 10px; }
+        }
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="48x48" href="../static/favicon.png">
@@ -134,7 +139,7 @@
 <body>
 <div class="blog-header">
     <h1>The Best Time to Visit Forks for "Vampire Weather"</h1>
-        <p class="byline" style="font-size:0.82rem;color:#7a9ab8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
+        <p class="byline" style="font-size:0.82rem;color:#a9c4e8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
     <p class="hero-p">"When the fog is thickest, the rain is constant, and the light is exactly wrong — that is when Forks is exactly right."</p>
 </div>
 <div class="content-wrapper">
@@ -147,33 +152,33 @@
         <h2 class="section-title">Month-by-Month Guide</h2>
         <div class="season-card">
             <h4>🌫️ October — Peak Vampire Weather (Highly Recommended)</h4>
-            <p style="color:#c5d8e8;">October is the sweet spot. The summer crowds are gone, the rains have returned, morning fog fills the valleys, and the light has that specific grey-blue quality that defines the Twilight visual world. The forests are at their most saturated green. Accommodation is cheaper than summer. St. Helens also hosts its Halloweentown festival throughout October — combining Twilight and Halloween atmosphere in one moody Pacific Northwest town.</p>
+            <p style="color: #000000; font-weight:700;">October is the sweet spot. The summer crowds are gone, the rains have returned, morning fog fills the valleys, and the light has that specific grey-blue quality that defines the Twilight visual world. The forests are at their most saturated green. Accommodation is cheaper than summer. St. Helens also hosts its Halloweentown festival throughout October — combining Twilight and Halloween atmosphere in one moody Pacific Northwest town.</p>
         </div>
         <div class="season-card">
             <h4>🍂 September — Festival Season</h4>
-            <p style="color:#c5d8e8;">The <strong>Forever Twilight in Forks</strong> festival runs in September — guided tours, cast appearances, themed events, and atmospheric evening walks through the town. If you can only visit once and want the full community experience, September is the answer. Weather is transitional — some summer clarity, some autumn moodiness. Accommodation books out months in advance; plan early.</p>
+            <p style="color: #000000; font-weight:700;">The <strong>Forever Twilight in Forks</strong> festival runs in September — guided tours, cast appearances, themed events, and atmospheric evening walks through the town. If you can only visit once and want the full community experience, September is the answer. Weather is transitional — some summer clarity, some autumn moodiness. Accommodation books out months in advance; plan early.</p>
         </div>
         <div class="season-card">
             <h4>🌧️ November–February — Maximum Atmosphere</h4>
-            <p style="color:#c5d8e8;">These are the months of genuine Pacific Northwest winter — persistent rain, low cloud, brief days, and the specific solitude of a small town in the off-season. The most atmospheric photos come from this period. Hurricane Ridge may be closed for snow. Some accommodation options close. The experience is raw, real, and entirely consistent with the world Stephenie Meyer described. If atmosphere is your priority, come in winter.</p>
+            <p style="color: #000000; font-weight:700;">These are the months of genuine Pacific Northwest winter — persistent rain, low cloud, brief days, and the specific solitude of a small town in the off-season. The most atmospheric photos come from this period. Hurricane Ridge may be closed for snow. Some accommodation options close. The experience is raw, real, and entirely consistent with the world Stephenie Meyer described. If atmosphere is your priority, come in winter.</p>
         </div>
         <div class="season-card">
             <h4>☀️ June–August — Clear But Crowded</h4>
-            <p style="color:#c5d8e8;">Pacific Northwest summers are genuinely beautiful — warm, clear, with long golden days. Hurricane Ridge is spectacular. La Push beaches are swimmable (cold). But the moody Twilight atmosphere largely disappears. Prices peak in July–August. Booking is essential 3+ months ahead. If this is your only available window, go — the landscape is still extraordinary. Just don't expect the grey magic.</p>
+            <p style="color: #000000; font-weight:700;">Pacific Northwest summers are genuinely beautiful — warm, clear, with long golden days. Hurricane Ridge is spectacular. La Push beaches are swimmable (cold). But the moody Twilight atmosphere largely disappears. Prices peak in July–August. Booking is essential 3+ months ahead. If this is your only available window, go — the landscape is still extraordinary. Just don't expect the grey magic.</p>
         </div>
         <div class="season-card">
             <h4>🌸 March–May — The Shoulder Season</h4>
-            <p style="color:#c5d8e8;">Spring on the Olympic Peninsula brings the highest waterfall flows, abundant wildflowers at altitude, and the return of long days. Rain is still frequent (Forks averages rain in some form almost every day March through May). Prices are moderate, crowds are light, and the combination of occasional misty days with spring green forest is genuinely beautiful. A good option if September and October don't work.</p>
+            <p style="color: #000000; font-weight:700;">Spring on the Olympic Peninsula brings the highest waterfall flows, abundant wildflowers at altitude, and the return of long days. Rain is still frequent (Forks averages rain in some form almost every day March through May). Prices are moderate, crowds are light, and the combination of occasional misty days with spring green forest is genuinely beautiful. A good option if September and October don't work.</p>
         </div>
 
         <h2 class="section-title">The Twilight Aesthetic Photography Calendar</h2>
         <p>If you are visiting for photographs — for content, for memories, for the specific visual language of Twilight Core — here is the photographer's calendar:</p>
         <ul class="tips-list">
-            <li><strong style="color:#dce8f0;">Best fog:</strong> October–November, early morning (6–9 AM). The valleys fill with fog as cold air from the mountains meets warm Pacific moisture. Drive the La Push Road at dawn in November.</li>
-            <li><strong style="color:#dce8f0;">Best rain shots:</strong> Any month October through April. The rain is fine and constant — it fills the air rather than falling in visible drops, which creates the specific photographic quality of Twilight landscapes.</li>
-            <li><strong style="color:#dce8f0;">Best forest light:</strong> October–November when deciduous trees add colour, or March when new growth is brilliant green against old-growth dark trunks.</li>
-            <li><strong style="color:#dce8f0;">Best beach atmosphere:</strong> October–March for full Twilight grey-sea mood. Summer beaches are beautiful but too bright and blue for the aesthetic.</li>
-            <li><strong style="color:#dce8f0;">Best mountain views:</strong> June–September only. Hurricane Ridge is frequently cloud-covered October through May.</li>
+            <li><strong style="color: #000000; font-weight:700;">Best fog:</strong> October–November, early morning (6–9 AM). The valleys fill with fog as cold air from the mountains meets warm Pacific moisture. Drive the La Push Road at dawn in November.</li>
+            <li><strong style="color: #000000; font-weight:700;">Best rain shots:</strong> Any month October through April. The rain is fine and constant — it fills the air rather than falling in visible drops, which creates the specific photographic quality of Twilight landscapes.</li>
+            <li><strong style="color: #000000; font-weight:700;">Best forest light:</strong> October–November when deciduous trees add colour, or March when new growth is brilliant green against old-growth dark trunks.</li>
+            <li><strong style="color: #000000; font-weight:700;">Best beach atmosphere:</strong> October–March for full Twilight grey-sea mood. Summer beaches are beautiful but too bright and blue for the aesthetic.</li>
+            <li><strong style="color: #000000; font-weight:700;">Best mountain views:</strong> June–September only. Hurricane Ridge is frequently cloud-covered October through May.</li>
         </ul>
 
         <h2 class="section-title">Weather Data — Forks, Washington</h2>
@@ -214,11 +219,11 @@
 <!-- ══ KO-FI CORNER WIDGET ══ -->
 <div id="kofi-corner" style="position:fixed;bottom:18px;right:18px;z-index:99999;display:flex;flex-direction:column;align-items:flex-end;gap:8px;font-family:'Playfair Display',serif;">
   <div id="kofi-popup-card" style="background:linear-gradient(145deg,rgba(10,14,6,0.97),rgba(16,24,10,0.99));border:1px solid rgba(107,140,90,0.35);border-radius:16px;padding:18px 20px;max-width:240px;box-shadow:0 8px 32px rgba(0,0,0,0.75);animation:kofiFadeIn 0.4s ease;position:relative;">
-    <p style="margin:0 0 4px;color:#d8e0cc;font-size:0.95rem;font-weight:700;letter-spacing:0.3px;">Welcome to the Forest 🌲</p>
-    <p style="margin:0 0 14px;color:#a8bca0;font-size:0.78rem;line-height:1.55;font-family:sans-serif;">If you love the vibe, you can buy me a coffee to keep the servers running!</p>
-    <a href="https://ko-fi.com/twilightvibes" target="_blank" style="display:block;text-align:center;background:linear-gradient(135deg,#1a2e0f,#2d4a1e);color:#d8e0cc;text-decoration:none;padding:9px 16px;border-radius:20px;font-size:0.82rem;letter-spacing:0.5px;border:1px solid rgba(107,140,90,0.4);transition:all 0.2s;">☕ Buy me a coffee</a>
+    <p style="margin:0 0 4px;color: #000000; font-weight:700;font-size:0.95rem;font-weight:700;letter-spacing:0.3px;">Welcome to the Forest 🌲</p>
+    <p style="margin:0 0 14px;color: #000000; font-weight:700;font-size:0.78rem;line-height:1.55;font-family:sans-serif;">If you love the vibe, you can buy me a coffee to keep the servers running!</p>
+    <a href="https://ko-fi.com/twilightvibes" target="_blank" style="display:block;text-align:center;background:linear-gradient(135deg,#1a2e0f,#2d4a1e);color: #000000; font-weight:700;text-decoration:none;padding:9px 16px;border-radius:20px;font-size:0.82rem;letter-spacing:0.5px;border:1px solid rgba(107,140,90,0.4);transition:all 0.2s;">☕ Buy me a coffee</a>
   </div>
-  <a href="https://ko-fi.com/twilightvibes" target="_blank" id="kofi-fab" style="background:linear-gradient(135deg,#1a2e0f,#2d4a1e);color:#d8e0cc;text-decoration:none;padding:10px 18px;border-radius:24px;border:1px solid rgba(107,140,90,0.4);font-size:0.82rem;letter-spacing:0.5px;box-shadow:0 4px 18px rgba(42,75,28,0.5);display:flex;align-items:center;gap:7px;transition:all 0.25s;backdrop-filter:blur(8px);"
+  <a href="https://ko-fi.com/twilightvibes" target="_blank" id="kofi-fab" style="background:linear-gradient(135deg,#1a2e0f,#2d4a1e);color: #000000; font-weight:700;text-decoration:none;padding:10px 18px;border-radius:24px;border:1px solid rgba(107,140,90,0.4);font-size:0.82rem;letter-spacing:0.5px;box-shadow:0 4px 18px rgba(42,75,28,0.5);display:flex;align-items:center;gap:7px;transition:all 0.25s;backdrop-filter:blur(8px);"
      onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
     ☕ <span>Support on Ko-fi</span>
   </a>

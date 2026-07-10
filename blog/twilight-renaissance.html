@@ -19,30 +19,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="48x48" href="../static/favicon.png">
     <style>
-        body{margin:0;background-image:linear-gradient(rgba(11,13,16,0.78),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;}
-        .hdr{height:60vh;background:linear-gradient(rgba(11,13,16,0.25),rgba(11,13,16,1));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+        body{margin:0;background-image:linear-gradient(rgba(11,13,16,0.78),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;}.hdr { height:60vh;background:linear-gradient(rgba(11,13,16,0.25),rgba(11,13,16,1));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px; }
+        
+        
         h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3.2rem);margin:0;color:#fff;letter-spacing:2px;max-width:840px;}
-        .tag{color:#8fb3ff;font-style:italic;font-size:1.05rem;margin-top:12px;max-width:580px;}
-        .wrap{max-width:860px;margin:-50px auto 100px;padding:0 20px;}
-        .card{background:rgba(10,15,25,0.55);backdrop-filter:blur(20px);border:1px solid rgba(143,179,255,0.15);border-radius:16px;padding:50px 45px;box-shadow:0 20px 60px rgba(0,0,0,0.8);}
-        .sec{font-family:'Playfair Display',serif;color:#8fb3ff;font-size:1.7rem;margin-top:50px;border-bottom:1px solid rgba(143,179,255,0.2);padding-bottom:10px;}
-        p{color:#c5d8e8;margin-bottom:15px;}
-        .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin:24px 0;}
-        .stat{background:rgba(143,179,255,0.07);border:1px solid rgba(143,179,255,0.2);border-radius:12px;padding:18px 20px;text-align:center;}
-        .stat-num{font-family:'Playfair Display',serif;font-size:1.9rem;color:#8fb3ff;display:block;}
-        .stat-lbl{font-size:0.8rem;color:#7a9ab8;margin-top:4px;}
-        .pull-quote{border-left:3px solid #8fb3ff;padding:16px 24px;margin:26px 0;background:rgba(143,179,255,0.05);border-radius:0 10px 10px 0;}
-        .pull-quote p{color:#dce8f0;font-style:italic;font-size:1.05rem;margin:0;}
-        .pull-quote cite{color:#7a9ab8;font-size:0.82rem;margin-top:6px;display:block;}
-        .reason-card{background:rgba(143,179,255,0.05);border:1px solid rgba(143,179,255,0.12);border-radius:12px;padding:22px 26px;margin:16px 0;}
-        .reason-num{font-family:'Playfair Display',serif;color:#8fb3ff;font-size:1.1rem;font-weight:bold;margin-bottom:6px;}
-        .back{display:inline-block;margin-bottom:26px;color:#8fb3ff;text-decoration:none;font-weight:bold;font-size:0.9rem;}
-        .link-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:20px 0;}
-        .lcard{background:rgba(143,179,255,0.05);border:1px solid rgba(143,179,255,0.15);border-radius:12px;padding:14px 18px;text-decoration:none;transition:all 0.25s;display:block;}
-        .lcard:hover{background:rgba(143,179,255,0.1);transform:translateY(-3px);}
-        .lcard strong{font-family:'Playfair Display',serif;color:#dce8f0;display:block;margin-bottom:4px;}
-        .lcard span{color:#7a9ab8;font-size:0.8rem;}
-        @media(max-width:600px){.card{padding:28px 16px;}.sec{font-size:1.4rem;}}
+        .tag{color:#8fb3ff;font-style:italic;font-size:1.05rem;margin-top:12px;max-width:580px;}.wrap { max-width:860px;margin:-50px auto 100px;padding:0 20px; }
+        .card { background:#e8e2d4;border:1px solid rgba(143,179,255,0.15);border-radius:16px;padding:50px 45px;box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+        .sec { font-family:'Playfair Display',serif;color: #000000;font-size:1.7rem;margin-top:50px;border-bottom:1px solid rgba(143,179,255,0.2);padding-bottom:10px; }
+        p { color: #000000;margin-bottom:15px; }
+        .stat-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin:24px 0; }
+        .stat { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border:1px solid rgba(143,179,255,0.2);border-radius:12px;padding:18px 20px;text-align:center; }
+        .stat-num { font-family:'Playfair Display',serif;font-size:1.9rem;color: #000000;display:block; }
+        .stat-lbl { font-size:0.8rem;color: #000000;margin-top:4px; }
+        .pull-quote { border-left:3px solid #8fb3ff;padding:16px 24px;margin:26px 0;background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border-radius:0 10px 10px 0; }
+        .pull-quote p { color: #000000;font-style:italic;font-size:1.05rem;margin:0; }
+        .pull-quote cite { color: #000000;font-size:0.82rem;margin-top:6px;display:block; }
+        .reason-card { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);border:1px solid rgba(143,179,255,0.12);border-radius:12px;padding:22px 26px;margin:16px 0; }
+        .reason-num { font-family:'Playfair Display',serif;color: #000000;font-size:1.1rem;font-weight:bold;margin-bottom:6px; }
+        
+        
+        .back{display:inline-block;margin-bottom:26px;color:#8fb3ff;text-decoration:none;font-weight:bold;font-size:0.9rem;}.link-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:20px 0; }
+        .lcard { background:#1f3d64;border:1px solid rgba(143,179,255,0.15);border-radius:12px;padding:14px 18px;text-decoration:none;transition:all 0.25s;display:block; }
+        .lcard:hover { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08);transform:translateY(-3px); }
+        .lcard strong { font-family:'Playfair Display',serif;color: #000000;display:block;margin-bottom:4px; }
+        .lcard span { color: #000000;font-size:0.8rem; }
+        
+        
+        @media(max-width:600px){.card { padding:28px 16px; }
+        .sec { font-size:1.4rem; }
+        
+        }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
     <script type="application/ld+json">
@@ -139,7 +145,7 @@
 <body>
 <div class="hdr">
     <h1>The Twilight Renaissance: Why Gen Z Can't Stop Rewatching</h1>
-        <p class="byline" style="font-size:0.82rem;color:#7a9ab8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
+        <p class="byline" style="font-size:0.82rem;color: #000000; font-weight:700;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
     <p class="tag">"It went from punchline to cultural cornerstone. Here's the full story."</p>
 </div>
 <div class="wrap">
@@ -233,8 +239,8 @@
         </div>
 
         <div style="text-align:center;margin-top:50px;padding-top:36px;border-top:1px solid rgba(143,179,255,0.12);">
-            <p style="color:#8fb3ff;font-style:italic;">"It was never cringe. It was just waiting for the world to catch up."</p>
-            <a href="/" style="background:linear-gradient(135deg,#1a3a5c,#2d5a8e);color:#dce8f0;padding:13px 30px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;font-family:sans-serif;letter-spacing:1px;border:1px solid rgba(143,179,255,0.4);">← Back to Portal</a>
+            <p style="color: #000000; font-weight:700;font-style:italic;">"It was never cringe. It was just waiting for the world to catch up."</p>
+            <a href="/" style="background:linear-gradient(135deg,#1a3a5c,#2d5a8e);color: #000000; font-weight:700;padding:13px 30px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;font-family:sans-serif;letter-spacing:1px;border:1px solid rgba(143,179,255,0.4);">← Back to Portal</a>
         </div>
     </div>
 </div>
