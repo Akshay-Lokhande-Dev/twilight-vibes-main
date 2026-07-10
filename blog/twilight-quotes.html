@@ -34,24 +34,25 @@
     }
     </script>
     <style>
-        body { margin:0; background:linear-gradient(rgba(8,10,14,0.88),rgba(8,10,14,0.98)),url('https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?q=80&w=1920') center/cover fixed; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.8; overflow-x:hidden; }
-        .blog-header { height:60vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; }
+        body { margin:0; background:linear-gradient(rgba(8,10,14,0.88),rgba(8,10,14,0.98)),url('https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?q=80&w=1920') center/cover fixed; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.8; overflow-x:hidden; }.blog-header { height:60vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; }
+        
         h1 { font-family:'Playfair Display',serif; font-size:clamp(2rem,7vw,4rem); margin:0; color:#fff; letter-spacing:3px; text-transform:uppercase; text-shadow:0 0 30px rgba(168,184,255,0.2); }
-        .hero-p { font-style:italic; color:#a8b8e0; font-size:1.1rem; margin-top:14px; max-width:580px; }
-        .content-wrapper { max-width:820px; margin:-50px auto 100px auto; padding:0 20px; }
-        .blog-card { background:rgba(10,12,20,0.55); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(168,184,255,0.14); border-radius:16px; padding:55px 45px; box-shadow:0 20px 60px rgba(0,0,0,0.85); }
-        @media(max-width:600px){ .blog-card{padding:32px 20px;} }
-        h2.section-title { font-family:'Playfair Display',serif; font-size:clamp(1.3rem,4vw,1.85rem); color:#dce4f8; margin:52px 0 18px; border-left:3px solid #a8b8e0; padding-left:16px; }
-        p { margin:0 0 18px; color:#b0bcd0; font-size:0.97rem; }
-        .quote-block { background:rgba(168,184,255,0.06); border:1px solid rgba(168,184,255,0.14); border-radius:14px; padding:24px 28px; margin:18px 0; position:relative; }
-        .quote-block blockquote { font-family:'Playfair Display',serif; font-style:italic; color:#dce4f8; font-size:1.08rem; line-height:1.75; margin:0 0 12px; }
-        .quote-block .attribution { color:#8090b0; font-size:0.82rem; font-family:'Montserrat',sans-serif; }
-        .quote-block .attribution span { color:#a8b8e0; font-weight:600; }
+        .hero-p { font-style:italic; color:#a8b8e0; font-size:1.1rem; margin-top:14px; max-width:580px; }.content-wrapper { max-width:820px; margin:-50px auto 100px auto; padding:0 20px; }
+        .blog-card { background:#e8e2d4;   border:1px solid rgba(168,184,255,0.14); border-radius:16px; padding:55px 45px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+        
+        @media(max-width:600px){.blog-card { padding:32px 20px; }
+         }h2.section-title { font-family:'Playfair Display',serif; font-size:clamp(1.3rem,4vw,1.85rem); color: #000000; margin:52px 0 18px; border-left:3px solid #a8b8e0; padding-left:16px; }
+        p { margin:0 0 18px; color: #000000; font-size:0.97rem; }
+        .quote-block { background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08); border:1px solid rgba(168,184,255,0.14); border-radius:14px; padding:24px 28px; margin:18px 0; position:relative; }
+        .quote-block blockquote { font-family:'Playfair Display',serif; font-style:italic; color: #000000; font-size:1.08rem; line-height:1.75; margin:0 0 12px; }
+        .quote-block .attribution { color: #000000; font-size:0.82rem; font-family:'Montserrat',sans-serif; }
+        .quote-block .attribution span { color: #000000; font-weight:600; }
         .breadcrumb { font-size:0.8rem; color:#6a7a8a; margin-bottom:30px; }
-        .breadcrumb a { color:#a8b8e0; text-decoration:none; }
-        .map-btn { display:inline-block; margin:8px 6px 8px 0; padding:10px 22px; background:rgba(168,184,255,0.1); color:#a8b8e0; border:1px solid rgba(168,184,255,0.3); border-radius:30px; text-decoration:none; font-size:0.85rem; transition:all 0.2s; }
-        .map-btn:hover { background:rgba(168,184,255,0.2); }
-        .mood-tag { display:inline-block; background:rgba(168,184,255,0.08); color:#8090b0; border:1px solid rgba(168,184,255,0.15); border-radius:12px; padding:3px 12px; font-size:0.75rem; margin-bottom:8px; }
+        .breadcrumb a { color:#253869; text-decoration:none; }
+        .map-btn { display:inline-block; margin:8px 6px 8px 0; padding:10px 22px; background:#1f3d64; color:#ffffff; border:1px solid rgba(168,184,255,0.3); border-radius:30px; text-decoration:none; font-size:0.85rem; transition:all 0.2s; }
+        .map-btn:hover { background:#1f3d64; }
+        .mood-tag { display:inline-block; background:#ffffff; box-shadow:0 3px 10px rgba(30,45,70,0.08); color: #000000; border:1px solid rgba(168,184,255,0.15); border-radius:12px; padding:3px 12px; font-size:0.75rem; margin-bottom:8px; }
+        
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="48x48" href="../static/favicon.png">
@@ -127,7 +128,7 @@
 <body>
 <div class="blog-header">
     <h1>Twilight Quotes</h1>
-        <p class="byline" style="font-size:0.82rem;color:#7a9ab8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
+        <p class="byline" style="font-size:0.82rem;color:#a9c4e8;margin:-10px 0 22px;font-style:italic;">By the TwilightVibes Team &middot; Updated July 2026</p>
     <p class="hero-p">The lines that stayed with us — from all five films and the books.</p>
 </div>
 
@@ -260,42 +261,42 @@
     <p>Ask any fan to name a single Twilight quote off the top of their head and this is almost always the one. The lion-and-lamb exchange between Edward and Bella works because it does double duty — it is Edward's confession of danger and Bella's refusal to be afraid of it, compressed into one piece of dialogue. Fifteen years on, it is still the line printed on the most merchandise, still the line parodied the most online, and still the fastest way to identify someone as a Twilight fan in a single sentence.</p>
 
     <div style="text-align:center; margin-top:60px; padding-top:40px; border-top:1px solid rgba(168,184,255,0.1);">
-        <p style="color:#a8b8e0; font-weight:bold; font-size:1.05rem; margin-bottom:20px;">Explore the characters behind the quotes.</p>
-        <a href="/characters/edward" style="background:#a8b8e0; color:#0b0d10; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; font-family:sans-serif; letter-spacing:1px; margin:8px;">🧛 Edward Cullen</a>
-        <a href="/characters/bella" style="background:transparent; color:#a8b8e0; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #a8b8e0; font-family:sans-serif; letter-spacing:1px; margin:8px;">🌙 Bella Swan →</a>
-        <a href="/blog/team-edward-vs-jacob" style="background:transparent; color:#a8b8e0; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #a8b8e0; font-family:sans-serif; letter-spacing:1px; margin:8px;">⚖️ Team Edward vs Jacob →</a>
+        <p style="color: #000000; font-weight:700; font-weight:bold; font-size:1.05rem; margin-bottom:20px;">Explore the characters behind the quotes.</p>
+        <a href="/characters/edward" style="background:#223461; color:#ffffff; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; font-family:sans-serif; letter-spacing:1px; margin:8px;">🧛 Edward Cullen</a>
+        <a href="/characters/bella" style="background:transparent; color: #000000; font-weight:700; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #a8b8e0; font-family:sans-serif; letter-spacing:1px; margin:8px;">🌙 Bella Swan →</a>
+        <a href="/blog/team-edward-vs-jacob" style="background:transparent; color: #000000; font-weight:700; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #a8b8e0; font-family:sans-serif; letter-spacing:1px; margin:8px;">⚖️ Team Edward vs Jacob →</a>
     </div>
 
     <div style="margin-top:50px; padding:0 20px 40px;">
-      <h2 style="font-family:'Playfair Display',serif; color:#a8b8e0; font-size:1.7rem; border-bottom:1px solid rgba(168,184,255,0.2); padding-bottom:10px; margin-bottom:20px;">Quotes by Theme — The Meaning Behind the Lines</h2>
-      <p style="color:#c5d8e8; line-height:1.8;">The saga's best lines carry weight beyond their surface. Here are the key themes that run through the most quoted dialogue and narration.</p>
+      <h2 style="font-family:'Playfair Display',serif; color: #000000; font-weight:700; font-size:1.7rem; border-bottom:1px solid rgba(168,184,255,0.2); padding-bottom:10px; margin-bottom:20px;">Quotes by Theme — The Meaning Behind the Lines</h2>
+      <p style="color: #000000; font-weight:700; line-height:1.8;">The saga's best lines carry weight beyond their surface. Here are the key themes that run through the most quoted dialogue and narration.</p>
 
-      <h3 style="font-family:'Playfair Display',serif; color:#a8b8e0; font-size:1.15rem; margin-top:28px;">On Grief — New Moon's Rawest Lines</h3>
-      <p style="color:#c5d8e8; line-height:1.8;">New Moon is Meyer's most psychologically honest book, and its grief writing resonates with readers long after the story ends. These lines have become touchstones for anyone who has experienced loss.</p>
+      <h3 style="font-family:'Playfair Display',serif; color: #000000; font-weight:700; font-size:1.15rem; margin-top:28px;">On Grief — New Moon's Rawest Lines</h3>
+      <p style="color: #000000; font-weight:700; line-height:1.8;">New Moon is Meyer's most psychologically honest book, and its grief writing resonates with readers long after the story ends. These lines have become touchstones for anyone who has experienced loss.</p>
       <div class="quote-block"><blockquote>"Like the pulse of blood behind a bruise."</blockquote><div class="attribution">— <span>Bella Swan</span>, New Moon. This single image — pain measured out second by second — is the line most fans cite when describing New Moon's opening chapters, which read less like a romance novel and more like a study of withdrawal.</div></div>
       <div class="quote-block"><blockquote>"I was like a lost moon."</blockquote><div class="attribution">— <span>Bella Swan</span>, New Moon. The full passage extends this into an astronomical metaphor for losing the person who had become the centre of her own gravity — a comparison that critics often point to as Meyer's strongest piece of prose in the series.</div></div>
 
-      <h3 style="font-family:'Playfair Display',serif; color:#a8b8e0; font-size:1.15rem; margin-top:28px;">On Identity and Transformation</h3>
-      <p style="color:#c5d8e8; line-height:1.8;">Bella's arc is less about romance than about becoming. These quotes capture the series' real subject — the feeling of being someone who was always meant for something different.</p>
+      <h3 style="font-family:'Playfair Display',serif; color: #000000; font-weight:700; font-size:1.15rem; margin-top:28px;">On Identity and Transformation</h3>
+      <p style="color: #000000; font-weight:700; line-height:1.8;">Bella's arc is less about romance than about becoming. These quotes capture the series' real subject — the feeling of being someone who was always meant for something different.</p>
       <div class="quote-block"><blockquote>I know what I want. I want you — forever.</blockquote><div class="attribution">— <span>Bella Swan</span>, Eclipse. Her certainty here is everything. This is not impulsive. She has been moving toward this moment since page one.</div></div>
       <div class="quote-block"><blockquote>"I had been broken and put together wrong."</blockquote><div class="attribution">— <span>Edward Cullen</span>, Midnight Sun. One of the most striking lines from the 2020 companion novel.</div></div>
       <div class="quote-block"><blockquote>"Let's start with forever."</blockquote><div class="attribution">— <span>Edward Cullen</span>, Breaking Dawn. Widely considered one of the most romantic lines in the saga. The first sentence makes the second one land.</div></div>
 
-      <h3 style="font-family:'Playfair Display',serif; color:#a8b8e0; font-size:1.15rem; margin-top:28px;">Jacob Black — The Honest Lines</h3>
-      <p style="color:#c5d8e8; line-height:1.8;">Jacob speaks more directly than Edward. His best lines are heartbreaking precisely because he is not wrong about what he offers — Bella is simply choosing something else.</p>
-      <p style="color:#c5d8e8; line-height:1.8;">His Eclipse-era promise that life with him "would have been effortless," quoted above, is the line that turns the Edward/Jacob debate from a simple love triangle into a real argument about what kind of life Bella is choosing. He never claims to be the more exciting option. He claims to be the easier one, which is precisely why so many readers find his case the harder one to dismiss.</p>
+      <h3 style="font-family:'Playfair Display',serif; color: #000000; font-weight:700; font-size:1.15rem; margin-top:28px;">Jacob Black — The Honest Lines</h3>
+      <p style="color: #000000; font-weight:700; line-height:1.8;">Jacob speaks more directly than Edward. His best lines are heartbreaking precisely because he is not wrong about what he offers — Bella is simply choosing something else.</p>
+      <p style="color: #000000; font-weight:700; line-height:1.8;">His Eclipse-era promise that life with him "would have been effortless," quoted above, is the line that turns the Edward/Jacob debate from a simple love triangle into a real argument about what kind of life Bella is choosing. He never claims to be the more exciting option. He claims to be the easier one, which is precisely why so many readers find his case the harder one to dismiss.</p>
       <div class="quote-block"><blockquote>"Doesn't he ever get tired of being... perfect?"</blockquote><div class="attribution">— <span>Jacob Black</span>, Twilight. The line that launched a thousand Team Jacob arguments.</div></div>
 
-      <h3 style="font-family:'Playfair Display',serif; color:#a8b8e0; font-size:1.15rem; margin-top:28px;">The Volturi — Lines That Carry Menace</h3>
-      <p style="color:#c5d8e8; line-height:1.8;">Aro and the Volturi speak in a particular register — ancient, courtly, and terrifying. These lines remind you that beneath the romance, the world of the saga has a genuinely dark power at its centre.</p>
+      <h3 style="font-family:'Playfair Display',serif; color: #000000; font-weight:700; font-size:1.15rem; margin-top:28px;">The Volturi — Lines That Carry Menace</h3>
+      <p style="color: #000000; font-weight:700; line-height:1.8;">Aro and the Volturi speak in a particular register — ancient, courtly, and terrifying. These lines remind you that beneath the romance, the world of the saga has a genuinely dark power at its centre.</p>
       <div class="quote-block"><blockquote>We came to see if the legends were true. They are.</blockquote><div class="attribution">— <span>Aro</span>, New Moon. Simple. Final. The Volturi's interest in the Cullens begins here.</div></div>
       <div class="quote-block"><blockquote>Enjoy these moments. They will not come again.</blockquote><div class="attribution">— <span>Marcus</span>, Breaking Dawn. The most world-weary line in the saga. From a vampire who has lived 3,000 years.</div></div>
 
-      <h2 style="font-family:'Playfair Display',serif; color:#a8b8e0; font-size:1.7rem; border-bottom:1px solid rgba(168,184,255,0.2); padding-bottom:10px; margin-top:50px; margin-bottom:20px;">Frequently Asked Questions</h2>
-      <p style="color:#c5d8e8; line-height:1.8;"><strong>What is the most famous Twilight quote?</strong> "And so the lion fell in love with the lamb" from the first novel and film is arguably the single most recognized line. It has been quoted, parodied, and referenced more than any other line in the saga and appears on merchandise and fan art worldwide.</p>
-      <p style="color:#c5d8e8; line-height:1.8;"><strong>Does Midnight Sun have notable quotes?</strong> Yes — Midnight Sun contains some of Meyer's best writing in the entire saga. Edward's voice is more literary and more anguished than Bella's narration in the original four novels, and the book reveals how much closer the events of Twilight came to ending badly than Bella ever knew.</p>
-      <p style="color:#c5d8e8; line-height:1.8;"><strong>Which Twilight book is the best written?</strong> Critical opinion most consistently points to New Moon for emotional depth and Eclipse for narrative balance. Midnight Sun is frequently cited as Meyer's most mature writing. Twilight itself has the freshest energy but the most uneven prose of the four original novels.</p>
-      <p style="color:#c5d8e8; line-height:1.8;"><strong>Are the movie quotes the same as the book quotes?</strong> The films adapted most major dialogue faithfully, but some of the most literary passages — particularly New Moon's grief narration — were cut or condensed. Readers who discovered the saga through the films will find significantly more quotable material in the books.</p>
+      <h2 style="font-family:'Playfair Display',serif; color: #000000; font-weight:700; font-size:1.7rem; border-bottom:1px solid rgba(168,184,255,0.2); padding-bottom:10px; margin-top:50px; margin-bottom:20px;">Frequently Asked Questions</h2>
+      <p style="color: #000000; font-weight:700; line-height:1.8;"><strong>What is the most famous Twilight quote?</strong> "And so the lion fell in love with the lamb" from the first novel and film is arguably the single most recognized line. It has been quoted, parodied, and referenced more than any other line in the saga and appears on merchandise and fan art worldwide.</p>
+      <p style="color: #000000; font-weight:700; line-height:1.8;"><strong>Does Midnight Sun have notable quotes?</strong> Yes — Midnight Sun contains some of Meyer's best writing in the entire saga. Edward's voice is more literary and more anguished than Bella's narration in the original four novels, and the book reveals how much closer the events of Twilight came to ending badly than Bella ever knew.</p>
+      <p style="color: #000000; font-weight:700; line-height:1.8;"><strong>Which Twilight book is the best written?</strong> Critical opinion most consistently points to New Moon for emotional depth and Eclipse for narrative balance. Midnight Sun is frequently cited as Meyer's most mature writing. Twilight itself has the freshest energy but the most uneven prose of the four original novels.</p>
+      <p style="color: #000000; font-weight:700; line-height:1.8;"><strong>Are the movie quotes the same as the book quotes?</strong> The films adapted most major dialogue faithfully, but some of the most literary passages — particularly New Moon's grief narration — were cut or condensed. Readers who discovered the saga through the films will find significantly more quotable material in the books.</p>
     </div>
 </article>
 </div>
