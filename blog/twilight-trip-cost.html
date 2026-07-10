@@ -49,7 +49,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>* { box-sizing:border-box; }
         
-        body{margin:0;background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1920');background-size:cover;background-position:center;background-attachment:fixed;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;}.blog-header { height:62vh;background:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,1));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px; }
+        body{margin:0;background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1920');background-size:cover;background-position:center;background-attachment:scroll;color:#d1d7e0;font-family:'Montserrat',sans-serif;line-height:1.8;overflow-x:hidden;}.blog-header { height:62vh;background:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,1));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px; }
         
         h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,7vw,4rem);margin:0;color:#fff;letter-spacing:2px;text-shadow:0 0 20px rgba(255,255,255,0.12);}
         .hero-p{font-style:italic;color:#8fb3ff;font-size:1.1rem;margin-top:12px;max-width:600px;font-family:'Crimson Text',serif;}.content-wrapper { max-width:840px;margin:-50px auto 80px;padding:0 20px; }
@@ -96,7 +96,7 @@
         .nbtn { flex:1;min-width:140px;text-align:center;padding:11px 16px;border-radius:30px;text-decoration:none;font-family:'Playfair Display',serif;font-size:0.88rem;letter-spacing:1px;border:1px solid #1e3a5f;color:#1e3a5f;transition:all 0.3s; }
         .nbtn:hover { background:#1f3d64;color:#ffffff; }
         .contact-footer { text-align:center;margin:40px auto 30px;padding:24px 20px;max-width:600px;border-top:1px solid rgba(143,179,255,0.1); }
-        .contact-footer p { font-family:'Crimson Text',serif;color: #000000;font-size:1rem;font-style:italic;margin:0;line-height:1.8; }
+        .contact-footer p { font-family:'Crimson Text',serif;color:#a9c4e8;font-size:1rem;font-style:italic;margin:0;line-height:1.8; }
         .contact-footer a { color:#8fb3ff;text-decoration:none;border-bottom:1px solid rgba(143,179,255,0.3);word-break:break-all; }
         
         @media(max-width:600px){.blog-card { padding:28px 16px; }
@@ -228,11 +228,11 @@
 <!-- ══ KO-FI CORNER WIDGET ══ -->
 <div id="kofi-corner" style="position:fixed;bottom:18px;right:18px;z-index:99999;display:flex;flex-direction:column;align-items:flex-end;gap:8px;font-family:'Playfair Display',serif;">
   <div id="kofi-popup-card" style="background:linear-gradient(145deg,rgba(10,14,6,0.97),rgba(16,24,10,0.99));border:1px solid rgba(107,140,90,0.35);border-radius:16px;padding:18px 20px;max-width:240px;box-shadow:0 8px 32px rgba(0,0,0,0.75);animation:kofiFadeIn 0.4s ease;position:relative;">
-    <p style="margin:0 0 4px;color: #000000; font-weight:700;font-size:0.95rem;font-weight:700;letter-spacing:0.3px;">Welcome to the Forest 🌲</p>
-    <p style="margin:0 0 14px;color: #000000; font-weight:700;font-size:0.78rem;line-height:1.55;font-family:sans-serif;">If you love the vibe, you can buy me a coffee to keep the servers running!</p>
-    <a href="https://ko-fi.com/twilightvibes" target="_blank" style="display:block;text-align:center;background:linear-gradient(135deg,#1a2e0f,#2d4a1e);color: #000000; font-weight:700;text-decoration:none;padding:9px 16px;border-radius:20px;font-size:0.82rem;letter-spacing:0.5px;border:1px solid rgba(107,140,90,0.4);transition:all 0.2s;">☕ Buy me a coffee</a>
+    <p style="margin:0 0 4px;color:#e8f0e0;font-weight:700;font-size:0.95rem;font-weight:700;letter-spacing:0.3px;">Welcome to the Forest 🌲</p>
+    <p style="margin:0 0 14px;color:#e8f0e0;font-weight:700;font-size:0.78rem;line-height:1.55;font-family:sans-serif;">If you love the vibe, you can buy me a coffee to keep the servers running!</p>
+    <a href="https://ko-fi.com/twilightvibes" target="_blank" style="display:block;text-align:center;background:linear-gradient(135deg,#1a2e0f,#2d4a1e);color:#e8f0e0;font-weight:700;text-decoration:none;padding:9px 16px;border-radius:20px;font-size:0.82rem;letter-spacing:0.5px;border:1px solid rgba(107,140,90,0.4);transition:all 0.2s;">☕ Buy me a coffee</a>
   </div>
-  <a href="https://ko-fi.com/twilightvibes" target="_blank" id="kofi-fab" style="background:linear-gradient(135deg,#1a2e0f,#2d4a1e);color: #000000; font-weight:700;text-decoration:none;padding:10px 18px;border-radius:24px;border:1px solid rgba(107,140,90,0.4);font-size:0.82rem;letter-spacing:0.5px;box-shadow:0 4px 18px rgba(42,75,28,0.5);display:flex;align-items:center;gap:7px;transition:all 0.25s;backdrop-filter:blur(8px);"
+  <a href="https://ko-fi.com/twilightvibes" target="_blank" id="kofi-fab" style="background:linear-gradient(135deg,#1a2e0f,#2d4a1e);color:#e8f0e0;font-weight:700;text-decoration:none;padding:10px 18px;border-radius:24px;border:1px solid rgba(107,140,90,0.4);font-size:0.82rem;letter-spacing:0.5px;box-shadow:0 4px 18px rgba(42,75,28,0.5);display:flex;align-items:center;gap:7px;transition:all 0.25s;backdrop-filter:blur(8px);"
      onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
     ☕ <span>Support on Ko-fi</span>
   </a>
