@@ -1,4 +1,0 @@
-# Cloudflare Pages serves .html files automatically
-# www → non-www is handled by worker.js
-/blog/twilight-cast-where-are-they-now /blog/twilight-cast 301
-/blog/twilight-cast-where-are-they-now.html /blog/twilight-cast 301
