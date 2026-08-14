@@ -1,0 +1,34 @@
+{
+  "file": "blog/twilight-new-movie-2026.html",
+  "description": "Correct the new Twilight movie page so it clearly distinguishes the confirmed Midnight Sun TV project from unconfirmed movie speculation.",
+  "replacements": [
+    {
+      "old": "<title>New Twilight Movie 2026: Everything We Know | TwilightVibes</title>",
+      "new": "<title>New Twilight Movie 2026: Is There a New Film? | TwilightVibes</title>"
+    },
+    {
+      "old": "<meta name=\"description\" content=\"Is there a new Twilight movie in 2026? Everything confirmed — reboot news, cast rumors, Stephenie Meyer involvement, release date speculation, and what fans want to see.\">",
+      "new": "<meta name=\"description\" content=\"Is there a new Twilight movie in 2026? Here is what is actually confirmed, what is only speculation, and how the Midnight Sun Netflix series fits into the franchise.\">"
+    },
+    {
+      "old": "<meta property=\"og:title\" content=\"New Twilight Movie 2026: Everything We Know So Far\">",
+      "new": "<meta property=\"og:title\" content=\"New Twilight Movie 2026: What Is Actually Confirmed?\">"
+    },
+    {
+      "old": "<meta property=\"og:description\" content=\"Reboot news, cast rumors, Stephenie Meyer involvement and what fans actually want from a new Twilight film.\">",
+      "new": "<meta property=\"og:description\" content=\"No new Twilight movie has been officially announced. See what Lionsgate has confirmed and why Midnight Sun is the major upcoming Twilight TV project.\">"
+    },
+    {
+      "old": "<meta name=\"twitter:title\" content=\"New Twilight Movie 2026: Everything We Know\">",
+      "new": "<meta name=\"twitter:title\" content=\"New Twilight Movie 2026: What Is Actually Confirmed?\">"
+    },
+    {
+      "old": "<meta name=\"twitter:description\" content=\"Reboot, remake, or sequel? Everything confirmed about the new Twilight project.\">",
+      "new": "<meta name=\"twitter:description\" content=\"No new Twilight movie is confirmed. Here is the latest on the franchise, including the Midnight Sun Netflix series.\">"
+    },
+    {
+      "old": "<h1>New Twilight Movie 2026: Everything We Know</h1>",
+      "new": "<h1>New Twilight Movie 2026: Is There a New Film?</h1>"
+    }
+  ]
+}
