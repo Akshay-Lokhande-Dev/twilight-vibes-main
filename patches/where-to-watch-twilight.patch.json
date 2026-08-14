@@ -1,0 +1,38 @@
+{
+  "file": "blog/where-to-watch-twilight.html",
+  "description": "Improve search title, social metadata, and above-the-fold wording without changing existing streaming claims or page structure.",
+  "replacements": [
+    {
+      "old": "<title>Watch Twilight FREE in 2026: Every Country & Platform | TwilightVibes</title>",
+      "new": "<title>Where to Watch Twilight in 2026: Streaming, Free & Rent Options | TwilightVibes</title>"
+    },
+    {
+      "old": "<meta name=\"description\" content=\"Watch all 5 Twilight movies free on Tubi in 2026 — plus HBO Max, and options for UK, Canada, Australia, Europe, India. Every free, streaming, rent, and buy option for every country.\">",
+      "new": "<meta name=\"description\" content=\"Where to watch all 5 Twilight movies in 2026: streaming, free-with-ads, subscription, rent and buy options for the USA, UK, Canada, Australia, Europe and India.\">"
+    },
+    {
+      "old": "<meta property=\"og:title\" content=\"Watch Twilight FREE in 2026: Every Country & Platform\">",
+      "new": "<meta property=\"og:title\" content=\"Where to Watch Twilight in 2026: Streaming, Free & Rent Options\">"
+    },
+    {
+      "old": "<meta property=\"og:description\" content=\"All 5 Twilight films are streaming free on Tubi. Here's where to watch in the USA, UK, Canada, Australia, and Europe — plus HBO Max and rent/buy options.\">",
+      "new": "<meta property=\"og:description\" content=\"Find current ways to watch all 5 Twilight films, including streaming, free-with-ads, subscription, rent and buy options by country.\">"
+    },
+    {
+      "old": "<meta name=\"twitter:title\" content=\"Watch Twilight FREE in 2026 — Every Country Guide\">",
+      "new": "<meta name=\"twitter:title\" content=\"Where to Watch Twilight in 2026 — Every Country Guide\">"
+    },
+    {
+      "old": "<meta name=\"twitter:description\" content=\"Free on Tubi in the USA, plus HBO Max and streaming options for UK, Canada, Australia, Europe — all Twilight films in 2026.\">",
+      "new": "<meta name=\"twitter:description\" content=\"Streaming, free-with-ads, subscription, rent and buy options for all Twilight films, with country-by-country guidance.\">"
+    },
+    {
+      "old": "<h1>Watch Twilight FREE in 2026:<br>Every Country & Platform</h1>",
+      "new": "<h1>Where to Watch Twilight in 2026:<br>Every Country & Platform</h1>"
+    },
+    {
+      "old": "<p class=\"subtitle\">All 5 Twilight films are streaming free on Tubi in the USA. Here's the complete guide to streaming everywhere — free, subscription, and rent/buy — in the USA, UK, Canada, Australia, Europe and beyond.</p>",
+      "new": "<p class=\"subtitle\">A country-by-country guide to watching all 5 Twilight films in 2026 — including streaming, free-with-ads, subscription, rent and buy options.</p>"
+    }
+  ]
+}
