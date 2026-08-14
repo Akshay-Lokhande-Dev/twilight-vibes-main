@@ -1,0 +1,38 @@
+{
+  "file": "blog/twilight-filming-locations.html",
+  "description": "Improve filming-locations page UX: remove photographic body background, shorten intro, add quick navigation, and remove duplicate Ecola block without changing title or SEO metadata.",
+  "replacements": [
+    {
+      "old": "body { margin:0; background-color:#0f1116; background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=1920'); background-size:cover; background-position:center; background-attachment:scroll; color:#d1d7e0;",
+      "new": "body { margin:0; background-color:#0f1116; background-image:linear-gradient(180deg,#0f1116 0%,#151922 100%); background-size:auto; background-position:center; background-attachment:scroll; color:#d1d7e0;"
+    },
+    {
+      "old": "<p class=\"intro-p\">The Twilight Saga was filmed...",
+      "new": "<p class=\"intro-p\">The Twilight Saga was filmed across the Pacific Northwest, with additional locations in Italy and Brazil. This guide separates the real filming locations from the places that inspired the story, and shows which scenes were filmed where.</p>\n        <nav aria-label=\"Quick navigation\" style=\"background:#f5f1e7;border:1px solid #d8d0c0;border-radius:12px;padding:18px 20px;margin:22px 0 30px;\"><strong style=\"display:block;color:#000;margin-bottom:10px;font-family:'Playfair Display',serif;font-size:1.15rem;\">Quick navigation</strong><div style=\"display:flex;flex-wrap:wrap;gap:8px;\"><a href=\"#washington\" class=\"read-btn\">Washington</a><a href=\"#oregon\" class=\"read-btn\">Oregon</a><a href=\"#bc\" class=\"read-btn\">British Columbia</a><a href=\"#italy\" class=\"read-btn\">Italy</a><a href=\"#brazil\" class=\"read-btn\">Brazil</a></div></nav>\n        <p class=\"intro-p\" style=\"font-size:0.98rem;\">Use the location cards below to jump straight to a place, scene, map, or travel guide.\n        </p>"
+    },
+    {
+      "old": "<h2 class=\"region-title\">🇺🇸 Washington</h2>",
+      "new": "<h2 class=\"region-title\" id=\"washington\">🇺🇸 Washington</h2>"
+    },
+    {
+      "old": "<h2 class=\"region-title\">🌲 Oregon</h2>",
+      "new": "<h2 class=\"region-title\" id=\"oregon\">🌲 Oregon</h2>"
+    },
+    {
+      "old": "<h2 class=\"region-title\">🎬 New Moon, Eclipse & Breaking Dawn</h2>",
+      "new": "<h2 class=\"region-title\" id=\"bc\">🎬 New Moon, Eclipse & Breaking Dawn</h2>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Montepulciano, Italy — Volterra (New Moon)</h3>",
+      "new": "<h3 class=\"location-name\" id=\"italy\">Montepulciano, Italy — Volterra (New Moon)</h3>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Paraty & Ilha Grande, Brazil — Isle Esme (Breaking Dawn)</h3>",
+      "new": "<h3 class=\"location-name\" id=\"brazil\">Paraty & Ilha Grande, Brazil — Isle Esme (Breaking Dawn)</h3>"
+    },
+    {
+      "old": "        <div class=\"location-block\">\n            <h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — Coastal Scenes</h3>\n            <span class=\"film-tag\">Twilight (2008)</span>\n            <p>Ecola State Park on the Oregon coast is an important part of the first film's Pacific Northwest production footprint. Indian Beach provided coastal material associated with the story's La Push setting. The park is a real public destination, but it should not be confused with First Beach in La Push, Washington.</p>\n            <a href=\"https://www.google.com/maps/search/Ecola+State+Park+Cannon+Beach+Oregon\" target=\"_blank\" rel=\"noopener\" class=\"map-btn\">📍 Ecola State Park</a>\n        </div>\n\n        <div class=\"location-block\">\n            <h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — Coastal Scenes</h3>",
+      "new": "        <div class=\"location-block\">\n            <h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — Coastal Scenes</h3>"
+    }
+  ]
+}
