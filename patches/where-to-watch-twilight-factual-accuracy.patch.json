@@ -1,0 +1,34 @@
+{
+  "file": "blog/where-to-watch-twilight.html",
+  "description": "Correct outdated streaming claims and make availability guidance more trustworthy",
+  "replacements": [
+    {
+      "old": "<p class=\"subtitle\">All 5 Twilight films are streaming free on Tubi in the USA. Here's the complete guide to streaming everywhere — free, subscription, and rent/buy — in the USA, UK, Canada, Australia, Europe and beyond.</p>",
+      "new": "<p class=\"subtitle\">Where to watch the Twilight Saga in 2026, with streaming, free-with-ads, subscription, and rent/buy options. Availability varies by country and can change, so check the platform before you watch.</p>"
+    },
+    {
+      "old": "<td style=\"padding:8px 6px;color:#2a2a3e;\">HBO Max — films 2–5 included. <strong>Film 1 rent only ($3.99)</strong></td>",
+      "new": "<td style=\"padding:8px 6px;color:#2a2a3e;\">Hulu / YouTube TV — current US streaming options for several films; The Roku Channel offers free-with-ads viewing for listed titles.</td>"
+    },
+    {
+      "old": "<td style=\"padding:8px 6px;color:#2a2a3e;\">Now TV / Sky Cinema — rent on Amazon UK</td>",
+      "new": "<td style=\"padding:8px 6px;color:#2a2a3e;\">Amazon Prime Video and ITVX have listed Twilight availability in the UK; rent/buy options also vary by title.</td>"
+    },
+    {
+      "old": "<p style=\"font-size:0.82rem;color:#888;margin-top:12px;margin-bottom:0;\">Scroll down for country-by-country detail, pricing, and rent/buy options.</p>",
+      "new": "<p style=\"font-size:0.82rem;color:#888;margin-top:12px;margin-bottom:0;\">Streaming rights change frequently. Listings below are a guide, not a guarantee; check the platform in your country before watching.</p>"
+    },
+    {
+      "old": "<div class=\"callout\">\n            <strong>2026 update:</strong> All 5 Twilight Saga films are streaming <strong>completely free (with ads) on Tubi</strong> in the USA — no subscription needed. They're also included with an HBO Max (Max) subscription. If you'd rather rent/buy the first film individually, it's available on Amazon, Apple TV, or Google Play for $3.99–$5.99.\n        </div>",
+      "new": "<div class=\"callout\">\n            <strong>2026 update:</strong> US streaming availability currently varies by film. Recent listings show several Twilight Saga titles on Hulu and YouTube TV, with free-with-ads options on The Roku Channel (and Pluto TV for Eclipse). Rental and purchase options are also available through major digital stores. Streaming libraries change, so verify the title on the service before watching.\n        </div>"
+    },
+    {
+      "old": "<p><strong>🎬 All 5 films — Free with ads:</strong></p>\n            <a href=\"https://tubitv.com/movies/662394/twilight\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: Twilight ✓ Free</a>\n            <a href=\"https://tubitv.com/movies/661139/the-twilight-saga-new-moon\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: New Moon ✓ Free</a>\n            <a href=\"https://tubitv.com/movies/661142/the-twilight-saga-eclipse\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: Eclipse ✓ Free</a>\n            <a href=\"https://tubitv.com/movies/661144/the-twilight-saga-breaking-dawn-part-1\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: Breaking Dawn 1 ✓ Free</a>\n            <a href=\"https://tubitv.com/movies/661140/the-twilight-saga-breaking-dawn-part-2\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: Breaking Dawn 2 ✓ Free</a>\n            <span class=\"platform-badge badge-rent\">The Roku Channel ✓ Free</span>",
+      "new": "<p><strong>🎬 Current US streaming options:</strong></p>\n            <span class=\"platform-badge badge-rent\">Hulu — subscription</span>\n            <span class=\"platform-badge badge-rent\">YouTube TV — subscription</span>\n            <span class=\"platform-badge badge-rent\">The Roku Channel — free with ads on listed titles</span>\n            <span class=\"platform-badge badge-rent\">Pluto TV — free with ads on listed titles</span>"
+    },
+    {
+      "old": "<p style=\"font-size:0.9rem;color:#555;\">Tubi and The Roku Channel are ad-supported and require no subscription or sign-up to watch. Max subscription starts at $9.99/month if you'd rather watch ad-free.</p>",
+      "new": "<p style=\"font-size:0.9rem;color:#555;\">Free-with-ads availability depends on the individual film and can change without notice. Subscription and rental pricing also varies by service and region.</p>"
+    }
+  ]
+}
