@@ -3,63 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Twilight Fate Revealed | TwilightVibes</title>
-    <meta name="description" content="Your Twilight coven has been revealed. Discover your fate in the world of Forks, Washington and the Twilight Saga. Are you Cullen, Volturi or Wolf Pack?">
+    <title>Your Quiz Result | TwilightVibes</title>
+    <meta name="description" content="See your personalized Twilight or K-Drama quiz result.">
     <meta name="robots" content="noindex">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
     <style>
         *{box-sizing:border-box;}
-        body{margin:0;background:#030508;color:#fff;font-family:'Playfair Display',serif;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:40px 20px;text-align:center;}
-        .result-card{background:rgba(15,22,38,0.88);border:1px solid rgba(143,179,255,0.22);border-radius:20px;padding:60px 50px;max-width:540px;width:100%;backdrop-filter:blur(16px);box-shadow:0 20px 60px rgba(0,0,0,0.7);}
-        h1{font-size:clamp(1.3rem,4vw,1.8rem);color:#8fb3ff;letter-spacing:3px;margin-bottom:24px;text-transform:uppercase;}
-        .coven{font-size:clamp(2.2rem,8vw,3.8rem);color:#fff;margin:20px 0;text-shadow:0 0 30px rgba(143,179,255,0.45);}
-        .desc{color:#a8c0d6;font-size:1.05rem;line-height:1.75;margin:20px 0 40px;font-style:italic;}
-        .btn{display:inline-block;padding:14px 30px;border-radius:30px;text-decoration:none;font-size:0.95rem;margin:8px;transition:all 0.3s;letter-spacing:1px;}
+        body{margin:0;background:#030508;color:#fff;font-family:'Playfair Display',serif;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:40px 20px;text-align:center;}
+        .result-card{background:rgba(15,22,38,0.88);border:1px solid rgba(143,179,255,0.22);border-radius:20px;padding:60px 50px;max-width:560px;width:100%;backdrop-filter:blur(16px);box-shadow:0 20px 60px rgba(0,0,0,0.7);}
+        h1{font-size:clamp(1.1rem,4vw,1.5rem);color:#8fb3ff;letter-spacing:3px;margin-bottom:24px;text-transform:uppercase;}
+        .result-name{font-size:clamp(1.9rem,7vw,3.2rem);color:#fff;margin:20px 0;text-shadow:0 0 30px rgba(143,179,255,0.45);line-height:1.15;}
+        .desc{color:#a8c0d6;font-size:1.02rem;line-height:1.8;margin:20px 0 34px;font-style:italic;text-align:left;}
+        .btn{display:inline-block;padding:13px 26px;border-radius:30px;text-decoration:none;font-size:0.9rem;margin:6px;transition:all 0.3s;letter-spacing:1px;font-family:'Montserrat',sans-serif;cursor:pointer;border:none;}
         .btn-primary{background:linear-gradient(135deg,#1a3a5c,#2d5a8e);color:#dce8f0;border:1px solid rgba(143,179,255,0.4);}
         .btn-outline{background:transparent;color:#8fb3ff;border:1px solid #8fb3ff;}
         .btn:hover{transform:translateY(-2px);}
+        .cta-line{color:#8fb3ff;font-size:0.9rem;margin-top:26px;font-style:italic;}
+        .cta-line a{color:#8fb3ff;}
+        .ad-slot{display:flex;justify-content:center;margin:26px 0;min-height:20px;}
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="48x48" href="static/favicon.png">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"Your Twilight Coven Quiz Result","url":"https://twilightvibes.com/quiz-result","publisher":{"@type":"Organization","name":"TwilightVibes","url":"https://twilightvibes.com"}}
+{"@context":"https://schema.org","@type":"WebPage","name":"Your Quiz Result","url":"https://twilightvibes.com/quiz-result","publisher":{"@type":"Organization","name":"TwilightVibes","url":"https://twilightvibes.com"}}
 </script>
-<!-- Google tag (gtag.js) -->
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ8PP42X6W"></script>
-
 <script>
-
   window.dataLayer = window.dataLayer || [];
-
   function gtag(){dataLayer.push(arguments);}
-
   gtag('js', new Date());
-
-
-
   gtag('config', 'G-VQ8PP42X6W');
-
 </script> </head>
 <body>
 <div class="result-card">
-    <h1>🩸 Your Fate Is Revealed</h1>
-    <div class="coven" id="result-display">...</div>
+    <h1 id="result-title">🩸 Your Fate Is Revealed</h1>
+
+    <div class="ad-slot">
+        <script> atOptions = { 'key' : '3e1117af6e43e59c839540fb51314e7f', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} }; </script> <script src="https://www.highperformanceformat.com/3e1117af6e43e59c839540fb51314e7f/invoke.js"></script>
+    </div>
+
+    <div class="result-name" id="result-display">...</div>
     <p class="desc" id="result-desc"></p>
-    <a href="/quiz" class="btn btn-outline">↩ Retake the Quiz</a>
-    <a href="/" class="btn btn-primary">← Return to Portal</a>
+
+    <div class="ad-slot">
+        <script> atOptions = { 'key' : 'b2d0d4cb3c630777ec603b3d45051775', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} }; </script> <script src="https://www.highperformanceformat.com/b2d0d4cb3c630777ec603b3d45051775/invoke.js"></script>
+    </div>
+
+    <div>
+        <button class="btn btn-primary" id="share-btn">📤 Share Your Result</button>
+        <a href="/quiz" class="btn btn-outline">💫 Take Another Quiz</a>
+    </div>
+    <div>
+        <a href="/" class="btn btn-outline">← Return to Portal</a>
+    </div>
+    <p class="cta-line" id="cta-line"></p>
 </div>
 <script>
-var desc={
+// ── Result data for every quiz type ──
+var RESULTS = {
+    'kdrama-boyfriend': {
+        'goblin': {
+            name: 'Kim Shin — The Goblin',
+            desc: 'You got THE GOBLIN. 939 years of waiting, and he\'d do it all again for you. Your soulmate is patient, quietly devastated by love, and would burn down an entire timeline to keep you safe. If Edward Cullen had a K-Drama cousin, it\'s him — immortal, tortured, and completely, hopelessly yours.'
+        },
+        'captain-ri': {
+            name: 'Captain Ri Jeong-hyeok',
+            desc: 'You got CAPTAIN RI. He will literally land in your village if that\'s what it takes. Steady, quietly romantic, and the kind of devoted that shows up in small daily gestures rather than grand declarations — until the grand declaration happens anyway, and it wrecks you completely.'
+        },
+        'vincenzo': {
+            name: 'Vincenzo Cassano',
+            desc: 'You got VINCENZO. Mafia consigliere, impeccably dressed, will absolutely ruin anyone who hurts you — legally, financially, or otherwise. He pretends not to have a heart. He has the biggest one in the room. Dangerous, controlled, and completely loyal once you\'re his.'
+        }
+    },
+    'queen-of-tears': {
+        'hyunwoo': {
+            name: 'Baek Hyun-woo',
+            desc: 'You got HYUN-WOO. Quiet, endlessly patient, the kind of person who keeps showing up long after showing up stopped being convenient. He doesn\'t announce his love — he proves it, over and over, in a hundred small unglamorous ways. Underrated as a personality type. Immaculate as a partner.'
+        },
+        'haein': {
+            name: 'Hong Hae-in',
+            desc: 'You got HAE-IN. Fierce, proud, and terrified of being seen as weak — which is exactly why it means everything when you finally let someone in. You love hard, even when you pretend you don\'t. Anyone who earns your loyalty has earned something rare.'
+        }
+    },
+    'edward-vs-oppa': {
+        'edward': {
+            name: 'Team Edward',
+            desc: 'Mystery, intensity, and a love that rearranges his entire existence around you. You want devotion with a little danger in it — the kind of love that feels inevitable, cosmic, slightly terrifying in the best way.'
+        },
+        'oppa': {
+            name: 'Team Oppa',
+            desc: 'Soft-spoken, patient, remembers exactly how you take your coffee. You want a love that shows up quietly and consistently — steady warmth over dramatic gestures, though he\'ll still give you the monologue when it counts.'
+        },
+        'both': {
+            name: 'Team Both, No Regrets',
+            desc: 'You refuse to choose, and honestly? Valid. You want the intensity AND the softness — the vampire\'s devotion with the oppa\'s emotional availability. High standards. No apologies.'
+        }
+    }
+};
+
+var CLASSIC_DESC = {
     'Cullen 🧛':'You exist between worlds — powerful yet restrained, ancient yet young at heart. You have chosen the harder path, and it has made you extraordinary. The forest knows your name.',
     'Volturi 🩸':'You are order. You are consequence. Millennia of watching the world taught you that power without structure is chaos — and chaos serves no one. They fear you. They should.',
     'Wolf Pack 🐺':'You are instinct, loyalty, and fire. The forest is your home and your people are your everything. You would die for them without hesitation — and they know it.'
 };
-window.addEventListener('DOMContentLoaded',function(){
-    var r=localStorage.getItem('twilight_quiz_result')||'Cullen 🧛';
-    document.getElementById('result-display').textContent=r;
-    document.getElementById('result-desc').textContent=desc[r]||desc['Cullen 🧛'];
+
+window.addEventListener('DOMContentLoaded', function(){
+    var params = new URLSearchParams(window.location.search);
+    var type = params.get('type');
+    var result = params.get('result');
+
+    var titleEl = document.getElementById('result-title');
+    var nameEl = document.getElementById('result-display');
+    var descEl = document.getElementById('result-desc');
+    var ctaEl = document.getElementById('cta-line');
+
+    if (type && RESULTS[type] && result && RESULTS[type][result]) {
+        var data = RESULTS[type][result];
+        titleEl.textContent = '💫 Your Result Is In';
+        nameEl.textContent = data.name;
+        descEl.textContent = data.desc;
+        ctaEl.innerHTML = 'Curious where the original obsession started? <a href="/blog/forks">Read why Twilight girls love K-Drama →</a>';
+    } else {
+        // fallback: classic coven quiz via localStorage
+        var r = localStorage.getItem('twilight_quiz_result') || 'Cullen 🧛';
+        titleEl.textContent = '🩸 Your Fate Is Revealed';
+        nameEl.textContent = r;
+        descEl.textContent = CLASSIC_DESC[r] || CLASSIC_DESC['Cullen 🧛'];
+        ctaEl.innerHTML = 'Want more? <a href="/blog/forks">Explore the real Forks, Washington →</a>';
+    }
+
+    document.getElementById('share-btn').addEventListener('click', function(){
+        var shareData = {
+            title: 'My TwilightVibes Quiz Result',
+            text: 'I got "' + nameEl.textContent + '" — take the quiz yourself:',
+            url: window.location.href
+        };
+        if (navigator.share) {
+            navigator.share(shareData).catch(function(){});
+        } else {
+            navigator.clipboard.writeText(shareData.text + ' ' + shareData.url).then(function(){
+                var btn = document.getElementById('share-btn');
+                var original = btn.textContent;
+                btn.textContent = '✅ Link Copied!';
+                setTimeout(function(){ btn.textContent = original; }, 2000);
+            });
+        }
+    });
 });
 </script>
 <footer style="text-align: center; padding: 20px; margin-top: 50px; border-top: 1px solid #333; font-size: 14px;">
