@@ -1,0 +1,54 @@
+{
+  "file": "blog/twilight-cast.html",
+  "description": "Replace verified cast-card placeholders with individually sourced Wikimedia Commons images.",
+  "replacements": [
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Billy Burke as Charlie Swan in Twilight\"><span>BB</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Billy%20Burke.jpg\" alt=\"Billy Burke as Charlie Swan in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Anna Kendrick as Jessica Stanley in Twilight\"><span>AK</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Anna%20Kendrick%20%2828485134925%29.jpg\" alt=\"Anna Kendrick as Jessica Stanley in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Michael Welch — Mike Newton in Twilight\"><span>MW</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Welch%20%2820386431519%29.jpg\" alt=\"Michael Welch as Mike Newton in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Christian Serratos — Angela Weber in Twilight\"><span>CS</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Serratos%20%28cropped%29.jpg\" alt=\"Christian Serratos as Angela Weber in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Justin Chon — Eric Yorkie in Twilight\"><span>JC</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Justin%20Chon.jpg\" alt=\"Justin Chon as Eric Yorkie in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Michael Sheen — Aro of the Volturi in Twilight\"><span>MS</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sheen%20%284840394562%29.jpg\" alt=\"Michael Sheen as Aro of the Volturi in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Dakota Fanning — Jane of the Volturi in Twilight\"><span>DF</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Dakota%20Fanning%202012.jpg\" alt=\"Dakota Fanning as Jane of the Volturi in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Jamie Campbell Bower — Volturi Twilight and Vecna Stranger Things\"><span>JB</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Jamie%20Campbell%20Bower.jpg\" alt=\"Jamie Campbell Bower as a Volturi guard in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Cameron Bright — Alec of the Volturi in Twilight\"><span>CB</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Cameron%20Bright.jpg\" alt=\"Cameron Bright as Alec of the Volturi in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Cam Gigandet — James the Tracker in Twilight\"><span>CG</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Cam%20Gigandet%202008.jpg\" alt=\"Cam Gigandet as James the Tracker in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Rachelle Lefevre — Victoria in Twilight\"><span>RL</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Rachelle%20Lefevre.jpg\" alt=\"Rachelle Lefevre as Victoria in Twilight\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    },
+    {
+      "old": "<div class=\"cast-placeholder\" role=\"img\" aria-label=\"Xavier Samuel — Riley Biers in Twilight Eclipse\"><span>XS</span></div>",
+      "new": "<img loading=\"lazy\" src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Xavier%20Samuel.jpg\" alt=\"Xavier Samuel as Riley Biers in Twilight Eclipse\" width=\"300\" height=\"300\" loading=\"lazy\">"
+    }
+  ]
+}
