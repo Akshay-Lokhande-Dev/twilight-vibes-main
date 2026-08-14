@@ -1,0 +1,30 @@
+{
+  "file": "blog/twilight-filming-locations.html",
+  "description": "Improve filming-locations search intent, fix invalid Article metadata, and remove overclaiming about completeness.",
+  "replacements": [
+    {
+      "old": "<title>All Twilight Filming Locations Guide | TwilightVibes</title>",
+      "new": "<title>Twilight Filming Locations: Where All 5 Movies Were Filmed | TwilightVibes</title>"
+    },
+    {
+      "old": "<meta property=\"og:title\" content=\"All Twilight Filming Locations | Complete Guide to Every Real Location 2026\">",
+      "new": "<meta property=\"og:title\" content=\"Twilight Filming Locations: Where All 5 Movies Were Filmed | TwilightVibes\">"
+    },
+    {
+      "old": "\"dateModified\": \"2026-07-01-28\",",
+      "new": "\"dateModified\": \"2026-08-14\","
+    },
+    {
+      "old": "\"description\": \"Complete guide to every real Twilight filming location across all 5 films. Forks WA, St. Helens OR, Portland OR, Vancouver BC, La Push WA — every scene, every address, every location explained with ma\",",
+      "new": "\"description\": \"Guide to major publicly documented Twilight filming locations across all 5 films, including Oregon, Washington, British Columbia, Italy, and Brazil, with scene references and travel tips.\","
+    },
+    {
+      "old": "<p class=\"intro-p\">This is the complete, comprehensive guide to every real-world location used across all five films, organised by region, with scene references, addresses, and travel tips for visiting each one.</p>",
+      "new": "<p class=\"intro-p\">This guide focuses on major publicly documented filming locations across all five films, organised by region, with scene references, map links, and practical travel tips. Where a place is a story setting rather than a filming site, it is labelled clearly so you can tell the difference before planning a visit.</p>"
+    },
+    {
+      "old": "<div class=\"highlight-box\">\n            Quick fact: Forks, Washington — where the story is set — was almost entirely NOT filmed in Forks. Director Catherine Hardwicke chose Oregon and Washington State locations based on visual fit, not story geography.\n        </div>",
+      "new": "<div class=\"highlight-box\">\n            <strong>Quick fact:</strong> Forks, Washington is the story's setting, but much of the first film was shot elsewhere. Oregon Film's production records list Twilight filming across Portland, Oxbow Park, St. Helens, Carver, Ecola State Park, Silver Falls State Park, Estacada, Vernonia, Damascus, the Columbia River Gorge, and Oregon City. urlOregon Film production recordshttps://oregonfilm.org/wp-content/uploads/2026/02/Filmography-CURRENT.pdf\n        </div>"
+    }
+  ]
+}
