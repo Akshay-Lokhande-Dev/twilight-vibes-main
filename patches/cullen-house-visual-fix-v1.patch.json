@@ -1,0 +1,14 @@
+{
+  "file": "blog/cullen-house.html",
+  "description": "Remove the full-page background image while preserving the hero image, and restore readable dark text in the quick-answer box.",
+  "replacements": [
+    {
+      "old": "body { margin:0; background-color:#0f1116; background-image:linear-gradient(rgba(11,13,16,0.3),rgba(11,13,16,0.7)),url('/static/cullen_house.jpg'); background-size:cover; background-position:center; background-attachment:scroll; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.8; overflow-x:hidden; }",
+      "new": "body { margin:0; background-color:#0f1116; background-image:none; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.8; overflow-x:hidden; }"
+    },
+    {
+      "old": ".search-answer{background:linear-gradient(135deg,#f7f4ea,#eef4fa);border:1px solid #ddd8c9;border-radius:14px;padding:20px 22px;margin:25px 0 34px}.search-answer strong{color:#172b40}",
+      "new": ".search-answer{background:linear-gradient(135deg,#f7f4ea,#eef4fa);border:1px solid #ddd8c9;border-radius:14px;padding:20px 22px;margin:25px 0 34px;color:#000000}.search-answer strong{color:#172b40}"
+    }
+  ]
+}
