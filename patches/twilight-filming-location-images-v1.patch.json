@@ -1,0 +1,50 @@
+{
+  "file": "blog/twilight-filming-locations.html",
+  "description": "Add small, responsive, verified Wikimedia Commons location photos without changing existing text, title, metadata, or page layout.",
+  "replacements": [
+    {
+      "old": "<h3 class=\"location-name\">Forks, Washington — The Story's Home</h3>",
+      "new": "<h3 class=\"location-name\">Forks, Washington — The Story's Home</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Forks_timber_museum.JPG?width=900\" alt=\"Forks Visitor Information Center and Timber Museum in Forks, Washington\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Forks Visitor Information Center / Timber Museum · Photo: Konrad Roeder, Wikimedia Commons · CC BY 3.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Kalama High School, Kalama WA — Forks High School</h3>",
+      "new": "<h3 class=\"location-name\">Kalama High School, Kalama WA — Forks High School</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Kalama_High_School.jpg?width=900\" alt=\"Kalama High School in Kalama, Washington\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Kalama High School · Photo: KalamaSchools, Wikimedia Commons · CC BY-SA 4.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Port Angeles, Washington</h3>",
+      "new": "<h3 class=\"location-name\">Port Angeles, Washington</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/2009-0606-Forks-Twilight.jpg?width=900\" alt=\"Twilight themed storefront in Forks, Washington\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Twilight-related visitor scene in the Forks area · Photo: Bobak Ha'Eri, Wikimedia Commons · CC BY 3.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">St. Helens, Oregon — The Film's Port Angeles & Swan House</h3>",
+      "new": "<h3 class=\"location-name\">St. Helens, Oregon — The Film's Port Angeles & Swan House</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_street_-_St._Helens,_Oregon.JPG?width=900\" alt=\"Downtown street in St. Helens, Oregon\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">St. Helens downtown · Wikimedia Commons · CC-licensed image</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Hoke Road House, Portland Oregon — The Cullen House</h3>",
+      "new": "<h3 class=\"location-name\">Hoke Road House, Portland Oregon — The Cullen House</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Portland,_Oregon-1.jpg?width=900\" alt=\"Portland, Oregon city view\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Portland, Oregon · representative city view, not the private Hoke Road residence · Photo: Visitor7, Wikimedia Commons · CC BY-SA 3.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Silver Falls State Park, Oregon — Forest Scenes</h3>",
+      "new": "<h3 class=\"location-name\">Silver Falls State Park, Oregon — Forest Scenes</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Silver_Falls_State_Park,_Oregon_(32389069216).jpg?width=900\" alt=\"Silver Falls State Park in Oregon\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Silver Falls State Park · Photo: Bonnie Moreland, Wikimedia Commons · CC0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Vernonia, Oregon — Baseball Field</h3>",
+      "new": "<h3 class=\"location-name\">Vernonia, Oregon — Baseball Field</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Vernonia,_Oregon.jpg?width=900\" alt=\"Vernonia, Oregon\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Vernonia, Oregon · Photo: Geirfuglasker, Wikimedia Commons · CC BY-SA 4.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — La Push Stand-In</h3>",
+      "new": "<h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — La Push Stand-In</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Indian_beach_-_Ecola_State_Park1.jpg?width=900\" alt=\"Indian Beach at Ecola State Park on the Oregon Coast\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Indian Beach, Ecola State Park · Photo: Casey Helton, Wikimedia Commons · CC BY-SA 4.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Vancouver & British Columbia — Films 2 through 5</h3>",
+      "new": "<h3 class=\"location-name\">Vancouver & British Columbia — Films 2 through 5</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/BC_Place,_Vancouver,_British_Columbia,_Canada.jpg?width=900\" alt=\"Vancouver, British Columbia, Canada\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Vancouver, British Columbia · representative city view · Photo: Quintin Soloviev, Wikimedia Commons · CC BY 4.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Montepulciano, Italy — Volterra (New Moon)</h3>",
+      "new": "<h3 class=\"location-name\">Montepulciano, Italy — Volterra (New Moon)</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Montepulciano-street.jpg?width=900\" alt=\"Street in Montepulciano, Tuscany, Italy\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Montepulciano, Tuscany · representative street view · Photo: Mac9, Wikimedia Commons · CC BY 2.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Paraty & Ilha Grande, Brazil — Isle Esme (Breaking Dawn)</h3>",
+      "new": "<h3 class=\"location-name\">Paraty & Ilha Grande, Brazil — Isle Esme (Breaking Dawn)</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Paraty-Brazil-20050919.jpg?width=900\" alt=\"Street view in Paraty, Brazil\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Paraty, Brazil · representative street view · Photo: Janderk1968, Wikimedia Commons · CC BY-SA 3.0</figcaption></figure>"
+    }
+  ]
+}
