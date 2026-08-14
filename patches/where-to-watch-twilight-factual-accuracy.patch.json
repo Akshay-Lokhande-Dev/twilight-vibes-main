@@ -1,11 +1,7 @@
 {
   "file": "blog/where-to-watch-twilight.html",
-  "description": "Correct outdated streaming claims and make availability guidance more trustworthy",
+  "description": "Correct the remaining outdated streaming claims using exact current HTML matches",
   "replacements": [
-    {
-      "old": "<p class=\"subtitle\">All 5 Twilight films are streaming free on Tubi in the USA. Here's the complete guide to streaming everywhere — free, subscription, and rent/buy — in the USA, UK, Canada, Australia, Europe and beyond.</p>",
-      "new": "<p class=\"subtitle\">Where to watch the Twilight Saga in 2026, with streaming, free-with-ads, subscription, and rent/buy options. Availability varies by country and can change, so check the platform before you watch.</p>"
-    },
     {
       "old": "<td style=\"padding:8px 6px;color:#2a2a3e;\">HBO Max — films 2–5 included. <strong>Film 1 rent only ($3.99)</strong></td>",
       "new": "<td style=\"padding:8px 6px;color:#2a2a3e;\">Hulu / YouTube TV — current US streaming options for several films; The Roku Channel offers free-with-ads viewing for listed titles.</td>"
