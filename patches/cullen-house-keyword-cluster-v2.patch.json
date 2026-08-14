@@ -1,0 +1,74 @@
+{
+  "file": "blog/cullen-house.html",
+  "description": "Refine Cullen House SEO around the supplied keyword cluster: twilight house, cullen house twilight, cullen house location, cullen house address, edward cullen house, cullen house portland, cullen house real location, cullen house inside, cullen house tour, can you visit cullen house, cullen house price, and hoke house twilight. Preserve the existing design and factual content.",
+  "replacements": [
+    {
+      "old": "    <title>Cullen House Twilight: Real Location, Address & Filming House | TwilightVibes</title>",
+      "new": "    <title>Twilight House: Cullen House Real Location, Portland & Filming House | TwilightVibes</title>"
+    },
+    {
+      "old": "    <meta name=\"description\" content=\"Cullen House Twilight real location explained: where the Cullen house was filmed, Portland location, address context, inside details, tour options, and all five films.\">",
+      "new": "    <meta name=\"description\" content=\"Twilight house and Cullen House real location explained: Portland filming location, address context, Edward Cullen house details, inside, tour and visit guide.\">"
+    },
+    {
+      "old": "    <meta name=\"keywords\" content=\"where is the Cullen house, Cullen house real location, Twilight Cullen house, Edward Cullen house real life, Cullen house Twilight filming, Cullen house Portland Oregon, Miller Tree Inn Forks, Twilight house location, Hoke Road Cullen house\">",
+      "new": "    <meta name=\"keywords\" content=\"twilight house, cullen house twilight, cullen house location, cullen house address, edward cullen house, cullen house portland, cullen house real location, cullen house inside, cullen house tour, can you visit cullen house, cullen house price, hoke house twilight, Twilight Cullen house, Cullen house Portland Oregon, Miller Tree Inn Forks\">"
+    },
+    {
+      "old": "    <meta property=\"og:title\" content=\"Cullen House Real Location: Where Is It? | TwilightVibes\">",
+      "new": "    <meta property=\"og:title\" content=\"Twilight House: Cullen House Real Location & Portland Filming House | TwilightVibes\">"
+    },
+    {
+      "old": "    <meta property=\"og:description\" content=\"Where is the real Cullen House from Twilight? Complete guide to every real-life location used as the Cullen residence across all five films.\">",
+      "new": "    <meta property=\"og:description\" content=\"Find the Twilight house real location, Portland filming area, address context, Edward Cullen house details, inside information and visit guide.\">"
+    },
+    {
+      "old": "    <h1>CULLEN HOUSE TWILIGHT</h1>",
+      "new": "    <h1>TWILIGHT HOUSE: CULLEN HOUSE</h1>"
+    },
+    {
+      "old": "        <div class=\"search-answer\"><strong>Quick answer:</strong> The most recognisable Cullen House from the first <em>Twilight</em> film is the modernist private residence used in Portland, Oregon. It is not an official public attraction, so the page focuses on the filming area, architecture, scenes and respectful ways to experience the location rather than encouraging visitors to approach the property.</div>",
+      "new": "        <div class=\"search-answer\"><strong>Quick answer:</strong> The <strong>Twilight house</strong> most fans mean is the Cullen House used in the first film. The real filming location is a modernist private residence in Portland, Oregon. This guide covers the <strong>Cullen House real location</strong>, Portland context, address information, the Edward Cullen house design, inside details, tour/visit questions and the difference between the fictional Forks home and the real filming house.</div>"
+    },
+    {
+      "old": "            <div class=\"intent-card\"><strong>📍 Cullen House Location</strong><span>Where the first film's Cullen residence was filmed and how it relates to Forks.</span><a href=\"#original\">See the location →</a></div>",
+      "new": "            <div class=\"intent-card\"><strong>📍 Cullen House Location</strong><span>Where the first film's Cullen residence was filmed and how it relates to Forks.</span><a href=\"#original\">See the location →</a></div>"
+    },
+    {
+      "old": "            <div class=\"intent-card\"><strong>🏠 Cullen House Address</strong><span>What can safely be shared about the private property without encouraging trespass.</span><a href=\"#visit\">Address & access →</a></div>",
+      "new": "            <div class=\"intent-card\"><strong>🏠 Cullen House Portland & Address</strong><span>Portland location and address context, with privacy-respecting information for a private residence.</span><a href=\"#visit\">Address & access →</a></div>"
+    },
+    {
+      "old": "            <div class=\"intent-card\"><strong>🎬 Scenes Filmed Here</strong><span>Bella's visit, the Cullen family scenes, piano moments and other filming details.</span><a href=\"#scenes\">See scenes →</a></div>",
+      "new": "            <div class=\"intent-card\"><strong>🎬 Edward Cullen House Scenes</strong><span>See what the Cullen residence was used for in Twilight and how the house appears on screen.</span><a href=\"#scenes\">See scenes →</a></div>"
+    },
+    {
+      "old": "            <div class=\"intent-card\"><strong>🪟 Inside the Cullen House</strong><span>How the film production used the real architecture and sets for interior sequences.</span><a href=\"#inside\">Inside details →</a></div>",
+      "new": "            <div class=\"intent-card\"><strong>🪟 Cullen House Inside</strong><span>How the real architecture and production sets were used for the Cullen interior sequences.</span><a href=\"#inside\">Inside details →</a></div>"
+    },
+    {
+      "old": "            <div class=\"intent-card\"><strong>🚗 Can You Visit?</strong><span>It is a private residence. Learn the respectful alternatives for Twilight fans.</span><a href=\"#visit\">Visitor guide →</a></div>",
+      "new": "            <div class=\"intent-card\"><strong>🚗 Cullen House Tour & Visit</strong><span>Can you visit the Cullen House? Learn the current privacy limits and safer Twilight alternatives.</span><a href=\"#visit\">Visitor guide →</a></div>"
+    },
+    {
+      "old": "            <div class=\"intent-card\"><strong>🎥 All Cullen Houses</strong><span>See how the residence changed across Twilight, New Moon, Eclipse and Breaking Dawn.</span><a href=\"#all-films\">Compare films →</a></div>",
+      "new": "            <div class=\"intent-card\"><strong>💰 Cullen House Price & Value</strong><span>The property is private, so fan-estimated prices should not be treated as an official current value.</span><a href=\"#price\">Price context →</a></div>"
+    },
+    {
+      "old": "        <h3 class=\"sub-title\" id=\"original\">1. The Original — Hoke Road House, Portland Oregon</h3>",
+      "new": "        <h3 class=\"sub-title\" id=\"original\">1. Hoke House Twilight Location — Cullen House, Portland Oregon</h3>"
+    },
+    {
+      "old": "        <h2 class=\"section-title\" id=\"visit\">Can You Visit the Cullen House?</h2>",
+      "new": "        <h2 class=\"section-title\" id=\"visit\">Cullen House Tour, Address & Can You Visit?</h2>"
+    },
+    {
+      "old": "        <h2 class=\"section-title\" id=\"architecture\">The Cullen House Design — Architecture Deep Dive</h2>",
+      "new": "        <h2 class=\"section-title\" id=\"architecture\">Cullen House Inside — Architecture & Design Deep Dive</h2>"
+    },
+    {
+      "old": "        <h2 class=\"section-title\">Frequently Asked Questions</h2>",
+      "new": "        <h2 class=\"section-title\" id=\"price\">Cullen House Price, Value & What We Actually Know</h2>\n        <p>The real Cullen House is a private property, so there is no official public ‘Cullen House price’ published by the film production. Online fan estimates can become outdated or confuse the filming property with other Twilight-related homes. For that reason, this guide does not present an unverified current sale value as fact.</p>\n\n        <h2 class=\"section-title\">Frequently Asked Questions</h2>"
+    }
+  ]
+}
