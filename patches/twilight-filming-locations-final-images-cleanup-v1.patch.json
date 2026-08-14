@@ -1,18 +1,14 @@
 {
   "file": "blog/twilight-filming-locations.html",
-  "description": "Final cleanup for filming locations page: remove duplicate Ecola State Park block and add verified free-license images to the remaining missing St. Helens and Ecola location cards. Preserve title, metadata, layout and all other content.",
+  "description": "Final visual cleanup: remove the duplicate Ecola State Park card and add verified free-license images to Ecola State Park and St. Helens. Preserve title, metadata, layout, and all other content.",
   "replacements": [
     {
       "old": "        <div class=\"location-block\">\n            <h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — Coastal Scenes</h3>\n            <span class=\"film-tag\">Twilight (2008)</span>\n            <p>Ecola State Park on the Oregon coast is an important part of the first film's Pacific Northwest production footprint. Indian Beach provided coastal material associated with the story's La Push setting. The park is a real public destination, but it should not be confused with First Beach in La Push, Washington.</p>\n            <a href=\"https://www.google.com/maps/search/Ecola+State+Park+Cannon+Beach+Oregon\" target=\"_blank\" rel=\"noopener\" class=\"map-btn\">📍 Ecola State Park</a>\n        </div>\n\n        <div class=\"location-block\">\n            <h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — Coastal Scenes</h3>",
       "new": "        <div class=\"location-block\">\n            <h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — Coastal Scenes</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Indian_beach_-_Ecola_State_Park1.jpg?width=900\" alt=\"Indian Beach at Ecola State Park on the Oregon coast\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Indian Beach, Ecola State Park · Photo: Wikimedia Commons · CC BY-SA 4.0</figcaption></figure>\n            <span class=\"film-tag\">Twilight (2008)</span>\n            <p>Ecola State Park on the Oregon coast is an important part of the first film's Pacific Northwest production footprint. Indian Beach provided coastal material associated with the story's La Push setting. The park is a real public destination, but it should not be confused with First Beach in La Push, Washington.</p>\n            <a href=\"https://www.google.com/maps/search/Ecola+State+Park+Cannon+Beach+Oregon\" target=\"_blank\" rel=\"noopener\" class=\"map-btn\">📍 Ecola State Park</a>\n        </div>"
     },
     {
-      "old": "<h3 class=\"location-name\">St. Helens, Oregon",
-      "new": "<h3 class=\"location-name\">St. Helens, Oregon"
-    },
-    {
-      "old": "<h3 class=\"location-name\">St. Helens, Oregon —",
-      "new": "<h3 class=\"location-name\">St. Helens, Oregon —"
+      "old": "<h3 class=\"location-name\">St. Helens, Oregon — Port Angeles</h3>",
+      "new": "<h3 class=\"location-name\">St. Helens, Oregon — Port Angeles</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_street_-_St._Helens%2C_Oregon.JPG?width=900\" alt=\"Downtown street in St. Helens, Oregon\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Downtown St. Helens, Oregon · Photo: Wikimedia Commons · CC BY-SA 4.0</figcaption></figure>"
     }
   ]
 }
