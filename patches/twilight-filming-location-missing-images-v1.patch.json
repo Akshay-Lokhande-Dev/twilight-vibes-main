@@ -1,0 +1,18 @@
+{
+  "file": "blog/twilight-filming-locations.html",
+  "description": "Add verified free-license photos for remaining major filming-location cards where a real usable image is available. Do not add a misleading image for the private Hoke Road/Cullen House residence.",
+  "replacements": [
+    {
+      "old": "<h3 class=\"location-name\">St. Helens, Oregon — The Film's Port Angeles & Swan House</h3>",
+      "new": "<h3 class=\"location-name\">St. Helens, Oregon — The Film's Port Angeles & Swan House</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Downtown_street_-_St._Helens,_Oregon.JPG?width=900\" alt=\"Downtown St. Helens, Oregon, a filming area used for Twilight\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Downtown St. Helens · Photo: M.O. Stevens, Wikimedia Commons · CC BY-SA</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — Coastal Scenes</h3>",
+      "new": "<h3 class=\"location-name\">Ecola State Park, Cannon Beach, Oregon — Coastal Scenes</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Indian_beach_-_Ecola_State_Park1.jpg?width=900\" alt=\"Indian Beach at Ecola State Park on the Oregon Coast\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Indian Beach, Ecola State Park · Photo: Casey Helton, Wikimedia Commons · CC BY-SA 4.0</figcaption></figure>"
+    },
+    {
+      "old": "<h3 class=\"location-name\">Carver, Oregon — Meadow Scene</h3>",
+      "new": "<h3 class=\"location-name\">Carver, Oregon — Meadow Scene</h3>\n            <figure style=\"margin:14px 0 18px;\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Carver_bridge_and_park_-_Carver_Oregon.jpg?width=900\" alt=\"Carver Bridge and park in Carver, Oregon, near a Twilight filming area\" loading=\"lazy\" decoding=\"async\" style=\"display:block;width:100%;max-width:760px;height:190px;object-fit:cover;object-position:center;border-radius:12px;\"><figcaption style=\"margin-top:7px;font-size:.72rem;color:#667085;line-height:1.4;\">Carver, Oregon · Photo: Tedder, Wikimedia Commons · CC BY 3.0</figcaption></figure>"
+    }
+  ]
+}
