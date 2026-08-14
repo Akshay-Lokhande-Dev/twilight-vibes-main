@@ -1,0 +1,10 @@
+{
+  "file": "blog/twilight-cast.html",
+  "description": "Fix cast-card image cropping with a uniquely anchored CSS insertion. The previous patch failed because its first replacement targeted </style>, which appears twice in the HTML.",
+  "replacements": [
+    {
+      "old": "        /* ── YOUTUBE EMBED ── */",
+      "new": "        /* Cast image fixes: keep actor faces visible without affecting the hero image. */\n        .actor-trio img, .actor-card img, .cast-card img, .actor-grid img, .cullen-card img, .supporting-card img, .wolf-card img, .volturi-card img {\n            width:100%;\n            height:260px;\n            object-fit:cover;\n            object-position:center top;\n        }\n        @media(max-width:700px){\n            .actor-trio img, .actor-card img, .cast-card img, .actor-grid img, .cullen-card img, .supporting-card img, .wolf-card img, .volturi-card img { height:240px; }\n        }\n        .img-placeholder { min-height:220px; display:flex; align-items:center; justify-content:center; text-align:center; padding:20px; background:#d8d0bf; color:#1e3a5f; font-family:'Playfair Display',serif; font-size:0.95rem; }\n        /* ── YOUTUBE EMBED ── */"
+    }
+  ]
+}
