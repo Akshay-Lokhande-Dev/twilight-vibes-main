@@ -1,0 +1,10 @@
+{
+  "file": "blog/portland-twilight.html",
+  "description": "Add a natural Portland Time utility link to the existing Portland Twilight guide without changing its primary Twilight search intent.",
+  "replacements": [
+    {
+      "old": "        <a href=\"/blog/twilight-road-trip\" style=\"background:transparent; color: #000000; font-weight:700; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:8px;\">🗺️ Full Road Trip Itinerary</a>",
+      "new": "        <a href=\"/blog/twilight-road-trip\" style=\"background:transparent; color: #000000; font-weight:700; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:8px;\">🗺️ Full Road Trip Itinerary</a>\n        <a href=\"/blog/portland-time\" style=\"background:transparent; color: #000000; font-weight:700; padding:14px 35px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; border:1px solid #8fb3ff; font-family:sans-serif; letter-spacing:1px; margin:8px;\">🕐 Portland Time &amp; Time Zone</a>"
+    }
+  ]
+}
