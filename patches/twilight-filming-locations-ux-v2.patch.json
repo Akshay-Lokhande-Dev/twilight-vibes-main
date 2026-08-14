@@ -1,0 +1,34 @@
+{
+  "file": "blog/twilight-filming-locations.html",
+  "description": "Clean UX pass for the Twilight filming locations page. Removes the large photographic body background, shortens the intro, adds quick navigation, and adds stable section anchors. Does not change title or SEO metadata.",
+  "replacements": [
+    {
+      "old": "body { margin:0; background-color:#0f1116; background-image:linear-gradient(rgba(11,13,16,0.75),rgba(11,13,16,0.97)),url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=1920'); background-size:cover; background-position:center; background-attachment:scroll; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.85; overflow-x:hidden; font-weight:500; font-size:17px; }",
+      "new": "body { margin:0; background-color:#0f1116; background-image:linear-gradient(180deg,#0f1116 0%,#151922 100%); background-size:auto; background-position:center; background-attachment:scroll; color:#d1d7e0; font-family:'Montserrat',sans-serif; line-height:1.85; overflow-x:hidden; font-weight:500; font-size:17px; }"
+    },
+    {
+      "old": "        <p class=\"intro-p\">The Twilight Saga was filmed across <strong style=\"color:#000000; font-weight:800;\">Washington State, Oregon, and British Columbia</strong> over five films from 2008 to 2012. Despite being set in Forks, Washington, the majority of filming actually took place in Oregon — primarily in Portland, St. Helens, and the Columbia River Gorge — and later in the Vancouver, BC area for the sequels.</p>\n        <p class=\"intro-p\">This is the complete, comprehensive guide to every real-world location used across all five films, organised by region, with scene references, addresses, and travel tips for visiting each one.</p>",
+      "new": "        <p class=\"intro-p\">The Twilight Saga was filmed across <strong style=\"color:#000000; font-weight:800;\">Washington State, Oregon, and British Columbia</strong>, with additional locations in Italy and Brazil. Although the story is set in Forks, much of the actual filming took place elsewhere in the Pacific Northwest and in the Vancouver area.</p>\n        <p class=\"intro-p\">Use the guide below to jump straight to a region or location. Each section separates real filming sites from story settings and includes scene details and visitor information.</p>\n\n        <nav aria-label=\"Quick navigation\" style=\"background:#f5f1e7;border:1px solid #d8d0c0;border-radius:12px;padding:18px 20px;margin:22px 0 30px;\">\n            <strong style=\"display:block;color:#000;margin-bottom:8px;font-family:'Playfair Display',serif;font-size:1.15rem;\">Quick navigation</strong>\n            <div style=\"display:flex;flex-wrap:wrap;gap:6px;\">\n                <a href=\"#washington\" class=\"read-btn\">Washington</a>\n                <a href=\"#oregon\" class=\"read-btn\">Oregon</a>\n                <a href=\"#bc\" class=\"read-btn\">British Columbia</a>\n                <a href=\"#italy\" class=\"read-btn\">Italy</a>\n                <a href=\"#brazil\" class=\"read-btn\">Brazil</a>\n            </div>\n        </nav>"
+    },
+    {
+      "old": "        <h2 class=\"region-title\">🌲 Washington State</h2>",
+      "new": "        <h2 class=\"region-title\" id=\"washington\">🌲 Washington State</h2>"
+    },
+    {
+      "old": "        <h2 class=\"region-title\">🌲 Oregon</h2>",
+      "new": "        <h2 class=\"region-title\" id=\"oregon\">🌲 Oregon</h2>"
+    },
+    {
+      "old": "        <h2 class=\"region-title\">🎬 New Moon, Eclipse & Breaking Dawn</h2>",
+      "new": "        <h2 class=\"region-title\" id=\"bc\">🎬 New Moon, Eclipse & Breaking Dawn</h2>"
+    },
+    {
+      "old": "            <h3 class=\"location-name\">Montepulciano, Italy — Volterra (New Moon)</h3>",
+      "new": "            <h3 class=\"location-name\" id=\"italy\">Montepulciano, Italy — Volterra (New Moon)</h3>"
+    },
+    {
+      "old": "            <h3 class=\"location-name\">Paraty & Ilha Grande, Brazil — Isle Esme (Breaking Dawn)</h3>",
+      "new": "            <h3 class=\"location-name\" id=\"brazil\">Paraty & Ilha Grande, Brazil — Isle Esme (Breaking Dawn)</h3>"
+    }
+  ]
+}
