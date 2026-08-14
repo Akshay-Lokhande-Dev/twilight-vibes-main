@@ -1,0 +1,46 @@
+{
+  "file": "blog/twilight-cast.html",
+  "description": "Improve the Twilight cast page by reducing speculative celebrity gossip, tightening search-focused metadata, and keeping the 2026 update centered on verifiable career information.",
+  "replacements": [
+    {
+      "old": "<title>The Twilight Saga Cast: Full Cast List & Where They Are Now (2026) | TwilightVibes</title>",
+      "new": "<title>The Twilight Saga Cast: Full Cast List & Where They Are Now | TwilightVibes</title>"
+    },
+    {
+      "old": "<meta name=\"description\" content=\"The complete cast of The Twilight Saga — Kristen Stewart, Robert Pattinson, Taylor Lautner, Ashley Greene, Peter Facinelli, Anna Kendrick, the Volturi, and every actor across all 5 films. Current projects, relationship news, and where they are now in 2026.\">",
+      "new": "<meta name=\"description\" content=\"Complete Twilight Saga cast list covering Bella, Edward, Jacob, the Cullens, wolf pack, Volturi and key supporting actors, plus career updates and where they are now.\">"
+    },
+    {
+      "old": "<meta property=\"og:title\" content=\"Twilight Cast: Every Actor & Character | Where Are They Now 2026\">",
+      "new": "<meta property=\"og:title\" content=\"Twilight Cast: Every Actor & Character | Where Are They Now\">"
+    },
+    {
+      "old": "<meta property=\"og:description\" content=\"Complete guide to every Twilight Saga cast member — all 5 films, character breakdowns, and where they are now in 2026.\">",
+      "new": "<meta property=\"og:description\" content=\"Complete guide to the Twilight Saga cast across all five films, with character roles and career updates.\">"
+    },
+    {
+      "old": "<meta name=\"twitter:title\" content=\"Twilight Cast: Every Actor & Character | Where Are They Now 2026\">",
+      "new": "<meta name=\"twitter:title\" content=\"Twilight Cast: Every Actor & Character | Where Are They Now\">"
+    },
+    {
+      "old": "<meta name=\"twitter:description\" content=\"Complete guide to every Twilight Saga cast member across all 5 films, with character breakdowns and career updates.\">",
+      "new": "<meta name=\"twitter:description\" content=\"Complete guide to the Twilight Saga cast across all five films, with character roles and career updates.\">"
+    },
+    {
+      "old": "Has publicly said she wants to direct a feminist Twilight remake — darker, more complex, her way. The internet is not calm about this.",
+      "new": "Her recent work has expanded beyond acting into directing, including The Chronology of Water."
+    },
+    {
+      "old": "🔥 Latest Buzz\n\nDuring The Drama press tour Rob and Zendaya were asked about their biggest secret. Rob turned to her and said \"It's the same one that you have\" — sparking massive speculation he and Suki secretly married. Neither has confirmed or denied it.",
+      "new": "🔥 Career Update\n\nPattinson's 2026 slate includes The Drama, Christopher Nolan's The Odyssey, and The Batman Part II."
+    },
+    {
+      "old": "Reportedy dating British comedian Alex Edelman since late 2024.",
+      "new": "Her recent work includes film and television projects alongside her long-running acting career."
+    },
+    {
+      "old": "Did Robert Pattinson marry Suki Waterhouse?\n\nStill not officially confirmed as of July 2026 — but the rumors intensified when Pattinson was asked on the March 2026 red carpet for The Drama what the biggest secret he's ever kept was, and replied to Zendaya, \"It's the same one that you have\" — widely read as him hinting at a secret marriage to Waterhouse, not anything romantic between Zendaya (who has her own separate marriage rumors involving Tom Holland).\nZendaya's stylist Law Roach has publicly claimed at both the SAG Awards and the Oscars that \"the wedding has already happened.\" Pattinson and Waterhouse have been engaged since around 2023 and share a daughter, born 2024.",
+      "new": "Did Robert Pattinson marry Suki Waterhouse?\n\nPublic reporting has described Pattinson and Waterhouse as engaged and parents to a daughter. Their private relationship should not be treated as confirmed beyond what they or reputable reporting have publicly established."
+    }
+  ]
+}
