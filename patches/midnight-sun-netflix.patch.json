@@ -1,0 +1,62 @@
+{
+  "file": "blog/midnight-sun-netflix.html",
+  "description": "Correct unsupported development claims and align the Midnight Sun page with the latest verified 2026 project update",
+  "replacements": [
+    {
+      "old": "<title>Midnight Sun Netflix 2026: Cast & Release | TwilightVibes</title>",
+      "new": "<title>Midnight Sun Netflix: Release Date, Cast & Latest Updates (2026) | TwilightVibes</title>"
+    },
+    {
+      "old": "<meta name=\"description\" content=\"Midnight Sun Netflix animated series — release date, cast, plot, Edward's POV explained, and what fans can expect from the Twilight animated show coming to Netflix in 2026.\">",
+      "new": "<meta name=\"description\" content=\"Midnight Sun on Netflix: latest release-date news, casting update, Edward Cullen's POV, story details, and what is officially known about the animated Twilight series in 2026.\">"
+    },
+    {
+      "old": "<meta property=\"og:description\" content=\"The Twilight animated series Midnight Sun is coming to Netflix. Here's everything confirmed — release date, Edward's POV, cast rumors, and what makes this different from the original films.\">",
+      "new": "<meta property=\"og:description\" content=\"The Twilight animated series Midnight Sun is in development at Netflix. See the latest verified production and casting update, release-date status, Edward's POV, and story details.\">"
+    },
+    {
+      "old": "<meta name=\"twitter:description\" content=\"Release date, cast rumors, Edward's POV, and what to expect from the Twilight animated series on Netflix.\">",
+      "new": "<meta name=\"twitter:description\" content=\"Latest Midnight Sun Netflix release-date news, casting update, Edward's POV, and what is known about the animated Twilight series.\">"
+    },
+    {
+      "old": "<p>The Twilight universe is returning — not as a reboot of the original films, but as something far more intriguing: an <strong>animated series on Netflix</strong> based on Stephenie Meyer's 2020 companion novel <em>Midnight Sun</em>. Netflix gave the project a straight-to-series order, meaning there's no pilot phase — they're committed.</p>",
+      "new": "<p>The Twilight universe is returning — not as a reboot of the original films, but as an <strong>animated series on Netflix</strong> based on Stephenie Meyer's 2020 companion novel <em>Midnight Sun</em>. Netflix announced the project as an animated series in development in September 2024; there is still no official release date.</p>"
+    },
+    {
+      "old": "<ul class=\"timeline\">\n            <li><div class=\"dot\"></div><span class=\"year\">Aug 2020</span><div class=\"text\">Stephenie Meyer publishes <em>Midnight Sun</em> — the novel immediately hits #1 worldwide and sells millions of copies, proving insatiable demand for more Twilight content.</div></li>\n            <li><div class=\"dot\"></div><span class=\"year\">Apr 2023</span><div class=\"text\">Lionsgate Television announces the project is in early development. Fans erupt globally — the hashtag #MidnightSunNetflix trends on Twitter/X within hours.</div></li>\n            <li><div class=\"dot\"></div><span class=\"year\">Mar 2024</span><div class=\"text\">Lionsgate vice chairman Michael Burns confirms the adaptation will be an <strong>animated series</strong>, not a live-action reboot. This creative choice surprises many but excites animation fans.</div></li>\n            <li><div class=\"dot\"></div><span class=\"year\">Late 2024</span><div class=\"text\">Netflix acquires the project and grants a <strong>straight-to-series order</strong>. Sinead Daly (Tell Me Lies, The Walking Dead: World Beyond) is announced as writer and executive producer.</div></li>\n            <li><div class=\"dot\"></div><span class=\"year\">Jan 2026</span><div class=\"text\">Netflix confirms the show is actively in production development. No release date announced. Stephenie Meyer confirmed as executive producer alongside Meghan Hibbett of Fickle Fish Films.</div></li>\n            <li><div class=\"dot\"></div><span class=\"year\">Jul 2026</span><div class=\"text\"><strong>Casting officially underway.</strong> A production casting sheet confirms voice casting is happening for Jacob Black and Billy Black, with production dates tentatively running <strong>August 2026 through May 2027</strong>, based out of Los Angeles. This is the first concrete production timeline the show has had.</div></li>\n        </ul>",
+      "new": "<ul class=\"timeline\">\n            <li><div class=\"dot\"></div><span class=\"year\">Aug 2020</span><div class=\"text\">Stephenie Meyer publishes <em>Midnight Sun</em>, her Edward-Cullen perspective retelling of the first <em>Twilight</em> story.</div></li>\n            <li><div class=\"dot\"></div><span class=\"year\">Sep 2024</span><div class=\"text\">Netflix officially announces an animated adaptation of <em>Midnight Sun</em>, with Stephenie Meyer serving as an executive producer and Sinead Daly writing and executive producing.</div></li>\n            <li><div class=\"dot\"></div><span class=\"year\">Apr 2025</span><div class=\"text\">Netflix includes <em>The Twilight Saga: Midnight Sun</em> among its upcoming book-to-screen adaptations, describing it as an animated series based on Meyer's novel.</div></li>\n            <li><div class=\"dot\"></div><span class=\"year\">Jul 2026</span><div class=\"text\"><strong>New casting update.</strong> A production casting report says voice casting is underway for Jacob Black and Billy Black, with tentative production dates of <strong>August 2026 through May 2027</strong> in Los Angeles. Netflix has not announced a public release date.</div></li>\n        </ul>"
+    },
+    {
+      "old": "<p><strong>Update, July 2026:</strong> Netflix has confirmed voice casting is underway for two roles — <strong>Jacob Black and Billy Black</strong> — with production dates tentatively set from August 2026 through May 2027. This is the first real, concrete casting news the project has had since it was announced. No names have leaked yet for either role.</p>",
+      "new": "<p><strong>Update, July 2026:</strong> A production casting report says voice casting is underway for two roles — <strong>Jacob Black and Billy Black</strong> — with tentative production dates from August 2026 through May 2027 in Los Angeles. No actor names have been publicly announced for either role. Netflix has not announced an official release date.</p>"
+    },
+    {
+      "old": "<p>Notably, Edward and Bella have <strong>not</strong> been mentioned in this casting round — which either means those roles are being cast separately (and more quietly, likely due to their profile), or that early episodes lean more heavily on the Quileute storyline than fans expected. We'll update this page the moment more casting news breaks.</p>",
+      "new": "<p>Notably, Edward and Bella have <strong>not</strong> been mentioned in the reported casting round. That does not establish who will voice them or how the series will structure its early episodes, so we are treating those roles as unannounced rather than speculating about casting plans.</p>"
+    },
+    {
+      "old": "<p>Pattinson is currently attached to multiple major projects including Christopher Nolan's <em>The Odyssey</em> and <em>The Batman: Part II</em>. His schedule makes a full voice-acting commitment to a multi-episode animated series challenging, though not impossible. He has not publicly commented on whether he'd return to the Twilight universe.</p>",
+      "new": "<p>There is currently no official announcement that Robert Pattinson will voice Edward Cullen in the animated series. Unless Netflix or the producers announce otherwise, the voice cast for Edward remains unconfirmed.</p>"
+    },
+    {
+      "old": "<p>Stewart, speaking at the Palm Springs Film Festival in early 2026, expressed openness to returning to the Twilight universe in some capacity. She has previously spoken warmly about the saga's impact on her career. Her involvement as Bella — even in a supporting capacity given the Edward-focused POV — seems more plausible than Pattinson's.</p>",
+      "new": "<p>There is currently no official announcement that Kristen Stewart will voice Bella Swan in the animated series. Bella's voice casting remains unannounced, so claims about a return should be treated as speculation until Netflix or the producers confirm it.</p>"
+    },
+    {
+      "old": "<p><strong>Update, July 2026:</strong> With production dates now tentatively confirmed for August 2026 through May 2027, and animation typically requiring another 12–18 months of post-production after voice/production work wraps, a <strong>late 2027 premiere is possible but 2028 is now looking more likely</strong>. Netflix has still not announced an official release date.</p>",
+      "new": "<p><strong>Update, July 2026:</strong> Netflix has still not announced an official release date. A July 2026 production casting report lists tentative production dates from August 2026 through May 2027, but that schedule does not establish a Netflix premiere date. A late-2027 or 2028 release is a reasonable industry estimate, not a confirmed window.</p>"
+    },
+    {
+      "old": "<p>Netflix has been tight-lipped, which typically means the project is still in its early creative phase. The good news: Netflix gave it a straight-to-series order rather than developing a pilot first, which signals genuine confidence in the project — and the confirmed casting timeline is the clearest sign yet that this is moving forward for real.</p>",
+      "new": "<p>The clearest public sign of movement is the 2026 casting update. The project remains officially described as in development, and Netflix has not yet published a release date or a full voice cast.</p>"
+    },
+    {
+      "old": "<p class=\"faq-a\">Netflix has not confirmed an official release date for the Midnight Sun animated series as of 2026. The show received a straight-to-series order and is currently in active production, with no announced premiere window yet.</p>",
+      "new": "<p class=\"faq-a\">Netflix has not confirmed an official release date for the Midnight Sun animated series as of 2026. The project is in development, and a July 2026 production casting report lists tentative production dates from August 2026 through May 2027.</p>"
+    },
+    {
+      "old": "<p class=\"faq-a\">Netflix holds the streaming rights with a straight-to-series order. Sinead Daly serves as writer and executive producer. Stephenie Meyer and Meghan Hibbett of Fickle Fish Films, plus Wyck Godfrey and Marty Bowen of Temple Hill Entertainment, are executive producers.</p>",
+      "new": "<p class=\"faq-a\">Netflix is developing the animated adaptation with Sinead Daly as writer and executive producer. Stephenie Meyer is an executive producer alongside Meghan Hibbett, Wyck Godfrey, Marty Bowen and Erik Feig, with additional producers attached through the announced production companies.</p>"
+    }
+  ]
+}
