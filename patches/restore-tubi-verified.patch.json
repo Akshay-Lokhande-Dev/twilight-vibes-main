@@ -1,0 +1,18 @@
+{
+  "file": "blog/where-to-watch-twilight.html",
+  "description": "Restore Tubi as a verified current free-with-ads option (confirmed live on Tubi's own listings and JustWatch as of Aug 2026) alongside Hulu/YouTube TV, which was incorrectly removed in an earlier patch",
+  "replacements": [
+    {
+      "old": "<div class=\"callout\">\n            <strong>2026 update:</strong> US streaming availability currently varies by film. Recent listings show several Twilight Saga titles on Hulu and YouTube TV, with free-with-ads options on The Roku Channel (and Pluto TV for Eclipse). Rental and purchase options are also available through major digital stores. Streaming libraries change, so verify the title on the service before watching.\n        </div>",
+      "new": "<div class=\"callout\">\n            <strong>2026 update:</strong> All 5 Twilight Saga films are currently streaming free with ads on Tubi in the USA \u2014 no subscription needed. Twilight is also available on Hulu with a subscription. Rental and purchase options are available through major digital stores. Streaming libraries change, so verify the title on the service before watching.\n        </div>"
+    },
+    {
+      "old": "<p><strong>\ud83c\udfac Current US streaming options:</strong></p>\n            <span class=\"platform-badge badge-rent\">Hulu \u2014 subscription</span>\n            <span class=\"platform-badge badge-rent\">YouTube TV \u2014 subscription</span>\n            <span class=\"platform-badge badge-rent\">The Roku Channel \u2014 free with ads on listed titles</span>\n            <span class=\"platform-badge badge-rent\">Pluto TV \u2014 free with ads on listed titles</span>",
+      "new": "<p><strong>\ud83c\udfac All 5 films \u2014 Free with ads:</strong></p>\n            <a href=\"https://tubitv.com/movies/662394/twilight\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: Twilight \u2713 Free</a>\n            <a href=\"https://tubitv.com/movies/661139/the-twilight-saga-new-moon\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: New Moon \u2713 Free</a>\n            <a href=\"https://tubitv.com/movies/661142/the-twilight-saga-eclipse\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: Eclipse \u2713 Free</a>\n            <a href=\"https://tubitv.com/movies/661144/the-twilight-saga-breaking-dawn-part-1\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: Breaking Dawn 1 \u2713 Free</a>\n            <a href=\"https://tubitv.com/movies/661140/the-twilight-saga-breaking-dawn-part-2\" target=\"_blank\" class=\"platform-badge badge-rent\" style=\"text-decoration:none;\">Tubi: Breaking Dawn 2 \u2713 Free</a>\n            <br><br>\n            <p><strong>\ud83c\udfac Also available with subscription:</strong></p>\n            <span class=\"platform-badge badge-rent\">Hulu \u2014 Twilight (2008)</span>"
+    },
+    {
+      "old": "<p style=\"font-size:0.9rem;color:#555;\">Free-with-ads availability depends on the individual film and can change without notice. Subscription and rental pricing also varies by service and region.</p>",
+      "new": "<p style=\"font-size:0.9rem;color:#555;\">Tubi is ad-supported and requires no subscription or sign-up to watch. Free-with-ads availability can change without notice \u2014 verify on Tubi before watching. Hulu subscription starts at $9.99/month.</p>"
+    }
+  ]
+}
