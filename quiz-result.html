@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Quiz Result | TwilightVibes</title>
-    <meta name="description" content="See your personalized Twilight or K-Drama quiz result.">
+    <meta name="description" content="See your personalized Twilight quiz result.">
     <meta name="robots" content="noindex">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
     <style>
@@ -62,42 +62,30 @@
 <script>
 // ── Result data for every quiz type ──
 var RESULTS = {
-    'kdrama-boyfriend': {
-        'goblin': {
-            name: 'Kim Shin — The Goblin',
-            desc: 'You got THE GOBLIN. 939 years of waiting, and he\'d do it all again for you. Your soulmate is patient, quietly devastated by love, and would burn down an entire timeline to keep you safe. If Edward Cullen had a K-Drama cousin, it\'s him — immortal, tortured, and completely, hopelessly yours.'
+    'character-match': {
+        'bella': {
+            name: 'Bella Swan',
+            desc: 'You got BELLA. Quietly observant, fiercely loyal, and willing to give up everything for the people \u2014 and the life \u2014 you\'ve chosen. You don\'t need to be the loudest person in the room to be the most decided one in it. Once you commit, there\'s no talking you out of it.'
         },
-        'captain-ri': {
-            name: 'Captain Ri Jeong-hyeok',
-            desc: 'You got CAPTAIN RI. He will literally land in your village if that\'s what it takes. Steady, quietly romantic, and the kind of devoted that shows up in small daily gestures rather than grand declarations — until the grand declaration happens anyway, and it wrecks you completely.'
-        },
-        'vincenzo': {
-            name: 'Vincenzo Cassano',
-            desc: 'You got VINCENZO. Mafia consigliere, impeccably dressed, will absolutely ruin anyone who hurts you — legally, financially, or otherwise. He pretends not to have a heart. He has the biggest one in the room. Dangerous, controlled, and completely loyal once you\'re his.'
-        }
-    },
-    'queen-of-tears': {
-        'hyunwoo': {
-            name: 'Baek Hyun-woo',
-            desc: 'You got HYUN-WOO. Quiet, endlessly patient, the kind of person who keeps showing up long after showing up stopped being convenient. He doesn\'t announce his love — he proves it, over and over, in a hundred small unglamorous ways. Underrated as a personality type. Immaculate as a partner.'
-        },
-        'haein': {
-            name: 'Hong Hae-in',
-            desc: 'You got HAE-IN. Fierce, proud, and terrified of being seen as weak — which is exactly why it means everything when you finally let someone in. You love hard, even when you pretend you don\'t. Anyone who earns your loyalty has earned something rare.'
-        }
-    },
-    'edward-vs-oppa': {
         'edward': {
-            name: 'Team Edward',
-            desc: 'Mystery, intensity, and a love that rearranges his entire existence around you. You want devotion with a little danger in it — the kind of love that feels inevitable, cosmic, slightly terrifying in the best way.'
+            name: 'Edward Cullen',
+            desc: 'You got EDWARD. Intense, protective, and a little haunted by the idea that you might be dangerous to the people you love most. You hold yourself to an impossible standard \u2014 controlled on the outside, quietly at war with yourself underneath. Once you let someone in, you rearrange your whole existence around them.'
         },
-        'oppa': {
-            name: 'Team Oppa',
-            desc: 'Soft-spoken, patient, remembers exactly how you take your coffee. You want a love that shows up quietly and consistently — steady warmth over dramatic gestures, though he\'ll still give you the monologue when it counts.'
+        'jacob': {
+            name: 'Jacob Black',
+            desc: 'You got JACOB. Warm, loyal, and impossible to ignore \u2014 you show up, every time, without being asked twice. You feel everything at full volume, and you\'d rather fight for what you want than quietly accept losing it. Your heart runs a little hot, but it\'s never in question.'
         },
-        'both': {
-            name: 'Team Both, No Regrets',
-            desc: 'You refuse to choose, and honestly? Valid. You want the intensity AND the softness — the vampire\'s devotion with the oppa\'s emotional availability. High standards. No apologies.'
+        'alice': {
+            name: 'Alice Cullen',
+            desc: 'You got ALICE. Sharp, quick, and always three steps ahead of everyone else in the room. You see what\'s coming before anyone else does, and you plan for it \u2014 precisely, elegantly, without wasted motion. Underneath the confidence is someone who cares more than she lets on.'
+        },
+        'rosalie': {
+            name: 'Rosalie Hale',
+            desc: 'You got ROSALIE. Confident, sharp-tongued, and completely unwilling to pretend to be softer than you are. You say what everyone else is thinking, you don\'t apologize for your standards, and you\'re still mourning a life you can\'t fully get back \u2014 even if you\'d never admit it out loud.'
+        },
+        'carlisle': {
+            name: 'Carlisle Cullen',
+            desc: 'You got CARLISLE. Wise, patient, and the person everyone quietly relies on to hold things together. You lead with compassion rather than force, and you\'ve built a family out of people who needed one \u2014 not because you had to, but because it\'s simply who you are.'
         }
     }
 };
@@ -123,7 +111,7 @@ window.addEventListener('DOMContentLoaded', function(){
         titleEl.textContent = '💫 Your Result Is In';
         nameEl.textContent = data.name;
         descEl.textContent = data.desc;
-        ctaEl.innerHTML = 'Curious where the original obsession started? <a href="/blog/forks">Read why Twilight girls love K-Drama →</a>';
+        ctaEl.innerHTML = 'Want more? <a href="/blog/twilight-cast">Meet the actors who brought them to life →</a>';
     } else {
         // fallback: classic coven quiz via localStorage
         var r = localStorage.getItem('twilight_quiz_result') || 'Cullen 🧛';
