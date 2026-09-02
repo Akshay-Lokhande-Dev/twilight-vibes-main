@@ -85,7 +85,8 @@ body{font-family:'Lora',Georgia,serif;background:#f8f7f4;color:#1a1a2e;line-heig
 .cast-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:24px 0;}
 .cast-card{background:#fff;border:1px solid #e0dbd4;border-radius:10px;padding:16px 18px;}
 .cast-card .role{font-family:'Playfair Display',serif;color:#0d1525;font-size:1rem;margin-bottom:2px;}
-.cast-card .actor{color:#5a8ab0;font-size:0.88rem;font-family:sans-serif;}
+.cast-card .actor{color:#5a8ab0;font-size:0.88rem;font-family:sans-serif;font-weight:700;}
+.cast-card .known-for{color:#999;font-size:0.78rem;font-style:italic;font-family:sans-serif;margin-top:1px;}
 .cast-card p{margin:8px 0 0;font-size:0.92rem;color:#555;}
 .info-box{background:#fff;border:1px solid #e0dbd4;border-radius:14px;padding:24px 26px;margin:28px 0;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
 .info-box .label{font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:#5a8ab0;font-family:sans-serif;margin-bottom:4px;}
@@ -100,6 +101,9 @@ body{font-family:'Lora',Georgia,serif;background:#f8f7f4;color:#1a1a2e;line-heig
 .side-ad.left{left:24px;}
 .side-ad.right{right:24px;}
 @media(max-width:1300px){.side-ad{display:none;}}
+.hero-photo{margin:24px 0;border-radius:0;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.1);}
+.hero-photo img{width:100%;display:block;}
+.hero-photo .credit-bar{background:#1a1a1a;color:#ddd;font-size:0.78rem;font-family:sans-serif;padding:8px 14px;border-bottom:3px solid #b04040;}
 .byline{font-size:0.82rem;color:#7a9ab8;margin:-10px 0 22px;font-style:italic;}
 .site-footer{background:#0d1525;color:#5a7a95;text-align:center;padding:32px 20px;font-size:0.85rem;font-family:sans-serif;margin-top:0;}
 .site-footer a{color:#7a9ab8;text-decoration:none;}
@@ -159,6 +163,11 @@ body{font-family:'Lora',Georgia,serif;background:#f8f7f4;color:#1a1a2e;line-heig
       <iframe src="https://www.youtube.com/embed/4bSKM9WWT08" title="Pride and Prejudice Official Teaser - Netflix" allowfullscreen loading="lazy"></iframe>
     </div>
 
+    <div class="hero-photo">
+      <img src="https://images.unsplash.com/photo-1721669677100-dd1a2c0bebd5?w=1200" alt="Misty English countryside, evoking the Regency-era setting of Pride and Prejudice" loading="lazy">
+      <div class="credit-bar">Photo: Annie Spratt / Unsplash</div>
+    </div>
+
     <div class="toc">
       <strong>In this preview</strong>
       <ol>
@@ -188,17 +197,17 @@ body{font-family:'Lora',Georgia,serif;background:#f8f7f4;color:#1a1a2e;line-heig
 
     <h2 id="cast">Full Cast</h2>
     <div class="cast-grid">
-      <div class="cast-card"><div class="role">Elizabeth Bennet</div><div class="actor">Emma Corrin</div><p>The sharp, independent-minded second Bennet daughter.</p></div>
-      <div class="cast-card"><div class="role">Mr. Darcy</div><div class="actor">Jack Lowden</div><p>Wealthy, proud, and about to be very wrong about a lot of things.</p></div>
-      <div class="cast-card"><div class="role">Mrs. Bennet</div><div class="actor">Olivia Colman</div><p>Determined to marry off all five daughters, loudly, at all times.</p></div>
-      <div class="cast-card"><div class="role">Mr. Bennet</div><div class="actor">Rufus Sewell</div><p>Dry, detached, and mostly hiding in his study.</p></div>
-      <div class="cast-card"><div class="role">Jane Bennet</div><div class="actor">Freya Mavor</div><p>The eldest sister — sweet, patient, and Mr. Bingley's love interest.</p></div>
-      <div class="cast-card"><div class="role">Mr. Bingley</div><div class="actor">Daryl McCormack</div><p>Darcy's wealthy, easygoing best friend.</p></div>
-      <div class="cast-card"><div class="role">Mr. Wickham</div><div class="actor">Louis Partridge</div><p>Charming on the surface — for very good reason not to trust him.</p></div>
-      <div class="cast-card"><div class="role">Mr. Collins</div><div class="actor">Jamie Demetriou</div><p>The Bennets' cousin, and one of literature's most awkward proposals.</p></div>
-      <div class="cast-card"><div class="role">Lady Catherine de Bourgh</div><div class="actor">Fiona Shaw</div><p>Darcy's formidable, controlling aunt.</p></div>
-      <div class="cast-card"><div class="role">Lydia Bennet</div><div class="actor">Rhea Norwood</div><p>The youngest, wildest Bennet sister.</p></div>
-      <div class="cast-card"><div class="role">Caroline Bingley</div><div class="actor">Siena Kelly</div><p>Mr. Bingley's sister, and Elizabeth's least favorite person.</p></div>
+      <div class="cast-card"><div class="role">Elizabeth Bennet</div><div class="actor">Emma Corrin</div><div class="known-for">The Crown, Deadpool &amp; Wolverine</div><p>The sharp, independent-minded second Bennet daughter.</p></div>
+      <div class="cast-card"><div class="role">Mr. Darcy</div><div class="actor">Jack Lowden</div><div class="known-for">Slow Horses</div><p>Wealthy, proud, and about to be very wrong about a lot of things.</p></div>
+      <div class="cast-card"><div class="role">Mrs. Bennet</div><div class="actor">Olivia Colman</div><div class="known-for">The Favourite (Academy Award winner)</div><p>Determined to marry off all five daughters, loudly, at all times.</p></div>
+      <div class="cast-card"><div class="role">Mr. Bennet</div><div class="actor">Rufus Sewell</div><div class="known-for">The Diplomat</div><p>Dry, detached, and mostly hiding in his study.</p></div>
+      <div class="cast-card"><div class="role">Jane Bennet</div><div class="actor">Freya Mavor</div><div class="known-for">Industry</div><p>The eldest sister — sweet, patient, and Mr. Bingley's love interest.</p></div>
+      <div class="cast-card"><div class="role">Mr. Bingley</div><div class="actor">Daryl McCormack</div><div class="known-for">Good Luck to You, Leo Grande</div><p>Darcy's wealthy, easygoing best friend.</p></div>
+      <div class="cast-card"><div class="role">Mr. Wickham</div><div class="actor">Louis Partridge</div><div class="known-for">Enola Holmes</div><p>Charming on the surface — for very good reason not to trust him.</p></div>
+      <div class="cast-card"><div class="role">Mr. Collins</div><div class="actor">Jamie Demetriou</div><div class="known-for">Stath Lets Flats</div><p>The Bennets' cousin, and one of literature's most awkward proposals.</p></div>
+      <div class="cast-card"><div class="role">Lady Catherine de Bourgh</div><div class="actor">Fiona Shaw</div><div class="known-for">Killing Eve</div><p>Darcy's formidable, controlling aunt.</p></div>
+      <div class="cast-card"><div class="role">Lydia Bennet</div><div class="actor">Rhea Norwood</div><div class="known-for">Heartstopper</div><p>The youngest, wildest Bennet sister.</p></div>
+      <div class="cast-card"><div class="role">Caroline Bingley</div><div class="actor">Siena Kelly</div><div class="known-for">Black Mirror</div><p>Mr. Bingley's sister, and Elizabeth's least favorite person.</p></div>
       <div class="cast-card"><div class="role">Charlotte Lucas</div><div class="actor">Jasmine Blackborow</div><p>Elizabeth's practical best friend.</p></div>
     </div>
     <p>Mary and Kitty Bennet round out the sisters, played by Hopey Parish and Hollie Avery.</p>
