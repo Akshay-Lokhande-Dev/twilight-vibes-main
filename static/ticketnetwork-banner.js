@@ -1,25 +1,34 @@
 // TicketNetwork affiliate banners — shared component.
 // Injected on every page that includes this script.
 // Inserts both banners, stacked, directly after the "← Return to Portal"
-// link, before the main content card.
+// link (character/blog pages) or after the breadcrumb bar (reviews pages),
+// before the main content.
 // NOTE: The affiliate <a><img> markup below (href, src, width, height,
 // alt, border) is the exact code provided by the affiliate program and
 // must not be altered. Only the surrounding wrapper/CSS may be adjusted
 // for responsive display.
 (function () {
   function insertBanner() {
+    // Avoid double-insertion if this script somehow runs twice.
+    if (document.querySelector('.tn-banner-wrap')) return;
+
+    var anchorPoint = null;
+
+    // Case 1: character/blog pages — "← Return to Portal" link.
     var anchors = document.querySelectorAll('a');
-    var portalLink = null;
     for (var i = 0; i < anchors.length; i++) {
       if (anchors[i].textContent.indexOf('Return to Portal') !== -1) {
-        portalLink = anchors[i];
+        anchorPoint = anchors[i];
         break;
       }
     }
-    if (!portalLink) return;
 
-    // Avoid double-insertion if this script somehow runs twice.
-    if (document.querySelector('.tn-banner-wrap')) return;
+    // Case 2: reviews pages — breadcrumb bar.
+    if (!anchorPoint) {
+      anchorPoint = document.querySelector('.breadcrumb');
+    }
+
+    if (!anchorPoint) return;
 
     var style = document.createElement('style');
     style.textContent =
@@ -43,7 +52,7 @@
       '</a>' +
       '</div>';
 
-    portalLink.insertAdjacentElement('afterend', wrap);
+    anchorPoint.insertAdjacentElement('afterend', wrap);
   }
 
   if (document.readyState === 'loading') {
