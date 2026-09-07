@@ -52,6 +52,7 @@
           '</div>';
         anchorPoint.insertAdjacentElement('afterend', wrap);
       }
+    }
   }
 
   if (document.readyState === 'loading') {
