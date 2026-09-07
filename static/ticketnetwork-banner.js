@@ -18,7 +18,8 @@
       '.tn-banner-wrap .tn-banner-item{margin:0 auto 16px;}' +
       '.tn-banner-wrap .tn-banner-item:last-child{margin-bottom:0;}' +
       '.tn-banner-wrap-bottom{text-align:center;margin:32px auto;max-width:1200px;width:100%;overflow:hidden;}' +
-      '.tn-banner-wrap-bottom img{max-width:100%;height:auto;display:inline-block;}';
+      '.tn-banner-wrap-bottom img{max-width:100%;height:auto;display:inline-block;}' +
+      '.tn-caption{display:inline-block;text-align:center;font-size:0.95rem;font-weight:700;color:#333;background:#fff;padding:6px 16px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.15);margin:8px 0 0;font-family:sans-serif;}';
     document.head.appendChild(style);
 
     // Top pair (Marshmello + iHeartRadio)
@@ -44,11 +45,13 @@
           '<a href="https://www.anrdoezrs.net/click-101731483-12680682" target="_top">' +
           '<img src="https://www.lduhtrp.net/image-101731483-12680682" width="728" height="90" alt="Marshmello Tickets" border="0"/>' +
           '</a>' +
+          '<br><p class="tn-caption">🎧 Marshmello Live — Tap for Tickets</p>' +
           '</div>' +
           '<div class="tn-banner-item">' +
           '<a href="https://www.jdoqocy.com/click-101731483-12652557" target="_top">' +
           '<img src="https://www.tqlkg.com/image-101731483-12652557" width="300" height="250" alt="iHeartRadio Music Festival" border="0"/>' +
           '</a>' +
+          '<br><p class="tn-caption">Biggest Stars, 2 Nights in Vegas — Tap for Tickets</p>' +
           '</div>';
         anchorPoint.insertAdjacentElement('afterend', wrap);
       }
