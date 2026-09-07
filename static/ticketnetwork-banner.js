@@ -5,11 +5,6 @@
 // "← Return to Portal" link (character/blog pages) or after the
 // breadcrumb bar (reviews pages), before the main content.
 //
-// Bottom banner (Jonas Brothers): inserted directly before the page
-// footer, so it doesn't stack on top of the other two and bloat the
-// top of the page — it only shows once a reader has reached the end
-// of the content.
-//
 // NOTE: The affiliate <a><img> markup below (href, src, width, height,
 // alt, border) is the exact code provided by the affiliate program and
 // must not be altered. Only the surrounding wrapper/CSS may be adjusted
@@ -57,21 +52,6 @@
           '</div>';
         anchorPoint.insertAdjacentElement('afterend', wrap);
       }
-    }
-
-    // Bottom banner (Jonas Brothers) — before the footer, on any page type.
-    if (!document.querySelector('.tn-banner-wrap-bottom')) {
-      var footer = document.querySelector('footer');
-      if (footer) {
-        var bottomWrap = document.createElement('div');
-        bottomWrap.className = 'tn-banner-wrap-bottom';
-        bottomWrap.innerHTML =
-          '<a href="https://www.tkqlhce.com/click-101731483-15525563" target="_top">' +
-          '<img src="https://www.tqlkg.com/image-101731483-15525563" width="1200" height="628" alt="Jonas Brothers Tickets" border="0"/>' +
-          '</a>';
-        footer.insertAdjacentElement('beforebegin', bottomWrap);
-      }
-    }
   }
 
   if (document.readyState === 'loading') {
