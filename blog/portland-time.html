@@ -68,5 +68,6 @@ function utcOffsetMinutes(zone){const d=new Date();const f=new Intl.DateTimeForm
 function update(){const p=parts('America/Los_Angeles');document.getElementById('clock').textContent=`${p.hour}:${p.minute}:${p.second} ${p.dayPeriod}`;document.getElementById('date').textContent=`${p.weekday}, ${p.month}/${p.day}/${p.year}`;document.getElementById('abbr').textContent=p.timeZoneName||'Pacific Time';const off=utcOffsetMinutes('America/Los_Angeles');document.getElementById('offset').textContent=`UTC ${off<0?'−':'+'}${Math.floor(Math.abs(off)/60)}${Math.abs(off)%60?':'+String(Math.abs(off)%60).padStart(2,'0'):''}`;const b=document.getElementById('cityB').value;const diff=utcOffsetMinutes(b)-off;const h=Math.floor(Math.abs(diff)/60),m=Math.abs(diff)%60;const dir=diff>0?'ahead':diff<0?'behind':'the same as';document.getElementById('difference').textContent=diff===0?`${zones[b]} is currently on the same time as Portland.`:`${zones[b]} is currently ${h}${m?` hours ${m} minutes`:h===1?' hour':' hours'} ${dir} Portland.`;}
 document.getElementById('cityB').addEventListener('change',update);update();setInterval(update,1000);
 </script>
+<script src="../static/ticketnetwork-banner.js" defer></script>
 </body>
 </html>
