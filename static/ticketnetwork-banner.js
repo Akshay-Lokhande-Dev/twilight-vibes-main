@@ -1,7 +1,7 @@
 // TicketNetwork affiliate banners — shared component.
 // Injected on every page that includes this script.
 //
-// Top banners (Marshmello + iHeartRadio): inserted directly after the
+// Top banners (Ed Sheeran + Marshmello): inserted directly after the
 // "← Return to Portal" link (character/blog pages) or after the
 // breadcrumb bar (reviews pages), before the main content.
 //
@@ -42,22 +42,16 @@
         wrap.className = 'tn-banner-wrap';
         wrap.innerHTML =
           '<div class="tn-banner-item">' +
-          '<a href="https://www.anrdoezrs.net/click-101731483-12680682" target="_top">' +
-          '<img src="https://www.lduhtrp.net/image-101731483-12680682" width="728" height="90" alt="Marshmello Tickets" border="0"/>' +
-          '</a>' +
-          '<br><p class="tn-caption">🎧 Marshmello Live — Tap for Tickets</p>' +
-          '</div>' +
-          '<div class="tn-banner-item">' +
-          '<a href="https://www.jdoqocy.com/click-101731483-12652557" target="_top">' +
-          '<img src="https://www.tqlkg.com/image-101731483-12652557" width="300" height="250" alt="iHeartRadio Music Festival" border="0"/>' +
-          '</a>' +
-          '<br><p class="tn-caption">Biggest Stars, 2 Nights in Vegas — Tap for Tickets</p>' +
-          '</div>' +
-          '<div class="tn-banner-item">' +
           '<a href="https://www.tkqlhce.com/click-101731483-12834266" target="_top">' +
           '<img src="https://www.tqlkg.com/image-101731483-12834266" width="728" height="90" alt="Ed Sheeran Tickets" border="0"/>' +
           '</a>' +
-          '<br><p class="tn-caption">🎤 Ed Sheeran\'s Loop Tour 2026 — Tap for Tickets</p>' +
+          '<br><p class="tn-caption">🎤 Ed Sheeran\'s Loop Tour 2026 — Tap Image for Tickets</p>' +
+          '</div>' +
+          '<div class="tn-banner-item">' +
+          '<a href="https://www.anrdoezrs.net/click-101731483-12680682" target="_top">' +
+          '<img src="https://www.lduhtrp.net/image-101731483-12680682" width="728" height="90" alt="Marshmello Tickets" border="0"/>' +
+          '</a>' +
+          '<br><p class="tn-caption">🎧 Marshmello Live — Tap Image for Tickets</p>' +
           '</div>';
         anchorPoint.insertAdjacentElement('afterend', wrap);
       }
