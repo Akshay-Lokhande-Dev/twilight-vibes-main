@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- Core pages -->
   <url><loc>https://twilightvibes.com/</loc><lastmod>2026-07-04</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
@@ -14,7 +14,38 @@
   <url><loc>https://twilightvibes.com/disclaimer</loc><lastmod>2026-07-04</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
 
   <!-- High-priority blog posts -->
-  <url><loc>https://twilightvibes.com/blog/twilight-cast</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url>
+  <loc>https://twilightvibes.com/blog/twilight-cast</loc>
+  <lastmod>2026-09-13</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.95</priority>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/TwilightatMTV2009.JPG</image:loc><image:caption>Kristen Stewart as Bella Swan in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Kristen%20Stewart%202008%2C%202.jpg</image:loc><image:caption>Kristen Stewart as Bella Swan in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Pattinson%202009%20Oscars.jpg</image:loc><image:caption>Robert Pattinson as Edward Cullen in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Taylor%20Lautner%20Comic-Con%202012.jpg</image:loc><image:caption>Taylor Lautner as Jacob Black in Twilight New Moon</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Facinelli%20Comic-Con%202012.jpg</image:loc><image:caption>Peter Facinelli as Dr Carlisle Cullen in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth%20Reaser%20Comic-Con%202011.jpg</image:loc><image:caption>Elizabeth Reaser as Esme Cullen in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Ashley%20Greene%202012.jpg</image:loc><image:caption>Ashley Greene as Alice Cullen in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Kellan%20Lutz.jpg</image:loc><image:caption>Kellan Lutz as Emmett Cullen in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Nikki%20Reed%202%20by%20David%20Shankbone.jpg</image:loc><image:caption>Nikki Reed as Rosalie Hale in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Chaske%20Spencer%20with%20Lets%20Move%20(cropped).JPG</image:loc><image:caption>Chaske Spencer as Sam Uley in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Paparazzo%20Presents%20Alex%20Meraz.jpg</image:loc><image:caption>Alex Meraz as Paul in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Paparazzo%20Presents%20Kiowa%20Gordon%20in%202009%20(cropped).jpg</image:loc><image:caption>Kiowa Gordon as Embry Call in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Tyson%20Wiki.JPG</image:loc><image:caption>Tyson Houseman as Quil Ateara in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Booboo%20Stewart%202012%20(cropped).jpg</image:loc><image:caption>BooBoo Stewart as Seth Clearwater in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Billy%20Burke.jpg</image:loc><image:caption>Billy Burke as Charlie Swan in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Anna%20Kendrick%20%2828485134925%29.jpg</image:loc><image:caption>Anna Kendrick as Jessica Stanley in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Welch%20%2820386431519%29.jpg</image:loc><image:caption>Michael Welch as Mike Newton in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Christian%20Serratos%20%28cropped%29.jpg</image:loc><image:caption>Christian Serratos as Angela Weber in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Justin%20Chon.jpg</image:loc><image:caption>Justin Chon as Eric Yorkie in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Sheen%20%284840394562%29.jpg</image:loc><image:caption>Michael Sheen as Aro of the Volturi in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Dakota%20Fanning%202012.jpg</image:loc><image:caption>Dakota Fanning as Jane of the Volturi in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Jamie%20Campbell%20Bower.jpg</image:loc><image:caption>Jamie Campbell Bower as a Volturi guard in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Cameron%20Bright.jpg</image:loc><image:caption>Cameron Bright as Alec of the Volturi in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Cam%20Gigandet%202008.jpg</image:loc><image:caption>Cam Gigandet as James the Tracker in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Rachelle%20Lefevre.jpg</image:loc><image:caption>Rachelle Lefevre as Victoria in Twilight</image:caption></image:image>
+    <image:image><image:loc>https://commons.wikimedia.org/wiki/Special:FilePath/Xavier%20Samuel.jpg</image:loc><image:caption>Xavier Samuel as Riley Biers in Twilight Eclipse</image:caption></image:image>
+</url>
   <url><loc>https://twilightvibes.com/blog/twilight-filming-locations</loc><lastmod>2026-07-04</lastmod><changefreq>monthly</changefreq><priority>0.92</priority></url>
   <url><loc>https://twilightvibes.com/blog/twilight-new-movie-2026</loc><lastmod>2026-07-04</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://twilightvibes.com/blog/midnight-sun-netflix</loc><lastmod>2026-07-04</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>
