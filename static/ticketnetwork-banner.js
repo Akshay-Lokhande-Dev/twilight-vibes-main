@@ -22,17 +22,25 @@
       '.tn-caption{display:inline-block;text-align:center;font-size:0.95rem;font-weight:700;color:#333;background:#fff;padding:6px 16px;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.15);margin:8px 0 0;font-family:sans-serif;}';
     document.head.appendChild(style);
 
-    // Top pair (Marshmello + iHeartRadio)
+    // Top pair (Ed Sheeran + Marshmello)
     if (!document.querySelector('.tn-banner-wrap')) {
-      var anchorPoint = null;
+      // Priority 1: explicit per-page placement marker, if present —
+      // lets a specific page control exactly where the banner lands
+      // (e.g. after intro content instead of before it).
+      var anchorPoint = document.querySelector('#tn-banner-anchor');
 
-      var anchors = document.querySelectorAll('a');
-      for (var i = 0; i < anchors.length; i++) {
-        if (anchors[i].textContent.indexOf('Return to Portal') !== -1) {
-          anchorPoint = anchors[i];
-          break;
+      // Priority 2: "← Return to Portal" link (character/blog pages).
+      if (!anchorPoint) {
+        var anchors = document.querySelectorAll('a');
+        for (var i = 0; i < anchors.length; i++) {
+          if (anchors[i].textContent.indexOf('Return to Portal') !== -1) {
+            anchorPoint = anchors[i];
+            break;
+          }
         }
       }
+
+      // Priority 3: breadcrumb bar (reviews pages).
       if (!anchorPoint) {
         anchorPoint = document.querySelector('.breadcrumb');
       }
