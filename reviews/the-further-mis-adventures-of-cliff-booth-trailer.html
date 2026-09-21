@@ -79,7 +79,7 @@
 html,body{width:100%;max-width:100%;overflow-x:hidden}
 body{font-family:'Lora',Georgia,serif;background:#f8f7f4;color:#1a1a2e;line-height:1.9;font-size:1.08rem;font-weight:500}
 img,iframe,video{max-width:100%}
- .site-header,.hero-banner,.breadcrumb,.site-footer{max-width:100%;overflow-x:hidden}
+.site-header,.hero-banner,.breadcrumb,.site-footer{max-width:100%;overflow-x:hidden}
 .site-header{background:#0d1525;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;position:sticky;top:0;z-index:100}
 .site-header a.logo{color:#a8c4d8;font-family:'Playfair Display',serif;font-size:1.1rem;text-decoration:none;letter-spacing:1px}
 .site-header nav{display:flex;gap:18px;flex-wrap:wrap}
@@ -94,6 +94,7 @@ img,iframe,video{max-width:100%}
 .breadcrumb a{color:#5a8ab0;text-decoration:none}
 .page-layout{max-width:1220px;margin:0 auto;padding:0 20px;display:flex;gap:32px;align-items:flex-start;overflow:visible}
 .main-container{max-width:880px;margin:0;padding:40px 0 80px;flex:1;min-width:0}
+.article-body section[id]{scroll-margin-top:92px}
 .article-body h2{font-family:'Playfair Display',serif;color:#0d1525;font-size:1.55rem;margin:44px 0 14px;padding-bottom:8px;border-bottom:2px solid #e8e4de}
 .article-body h3{font-family:'Playfair Display',serif;color:#1c2e44;font-size:1.15rem;margin:28px 0 8px}
 .article-body p{color:#2a2a3e;margin-bottom:16px;line-height:1.9;font-size:1.05rem}
@@ -111,7 +112,7 @@ img,iframe,video{max-width:100%}
 .faq-block{background:#fff;border:1px solid #e0dbd4;border-radius:10px;padding:18px 22px;margin:14px 0}
 .faq-block .q{font-family:'Playfair Display',serif;color:#0d1525;font-size:1rem;margin:0 0 7px;font-weight:700}
 .faq-block .a{color:#444;font-size:.95rem;margin:0;line-height:1.75}
-.sidebar-col{width:300px;flex-shrink:0;position:sticky;top:76px;align-self:flex-start;max-height:calc(100vh - 96px);overflow-y:auto;overflow-x:hidden}
+.sidebar-col{width:300px;flex-shrink:0;position:sticky;top:76px;align-self:flex-start;max-height:calc(100vh - 96px);overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain}
 .sidebar-box{background:#fff;border:1px solid #e0dbd4;border-radius:14px;padding:22px 20px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .sidebar-heading{font-family:'Playfair Display',serif;color:#0d1525;font-weight:700;font-size:1.05rem;margin:0 0 14px;padding-bottom:12px;border-bottom:2px solid #e8e4de}
 .sidebar-review-card{display:flex;gap:10px;text-decoration:none;padding:12px 0;border-bottom:1px solid #eee}
