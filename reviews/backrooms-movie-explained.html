@@ -120,6 +120,31 @@ body{font-family:'Lora',Georgia,serif;background:#f8f7f4;color:#1a1a2e;line-heig
 .sidebar-review-card .srr-tag{font-size:0.68rem;letter-spacing:1px;text-transform:uppercase;color:#5a6a7f;font-family:sans-serif;}
 .sidebar-review-card:hover .srr-title{text-decoration:underline;}
 @media(max-width:960px){.page-layout{flex-direction:column;}.sidebar-col{width:100%;position:static;}}
+
+/* Mobile responsiveness fix */
+html,body{width:100%;max-width:100%;overflow-x:hidden;}
+img,iframe,video{max-width:100%;}
+@media(max-width:960px){
+  .page-layout{width:100%;padding:0 16px;flex-direction:column;gap:0;}
+  .main-container{width:100%;max-width:none;min-width:0;padding:32px 0 60px;}
+  .sidebar-col{width:100%;max-width:none;position:static;}
+}
+@media(max-width:640px){
+  .site-header{padding:12px 14px;align-items:flex-start;}
+  .site-header nav{width:100%;gap:10px 14px;}
+  .site-header nav a{font-size:.7rem;}
+  .hero-banner{padding:22px 14px 20px;}
+  .hero-banner h1{font-size:clamp(1.35rem,7vw,1.8rem);overflow-wrap:anywhere;}
+  .breadcrumb{padding:9px 14px;font-size:.76rem;line-height:1.5;overflow-wrap:anywhere;}
+  .page-layout{padding:0 14px;}
+  .main-container{padding:24px 0 50px;}
+  .article-body{width:100%;max-width:100%;overflow-wrap:anywhere;}
+  .article-body h2{font-size:1.3rem;line-height:1.35;}
+  .article-body p{font-size:1rem;line-height:1.8;}
+  .toc{padding:16px 18px;}
+  .video-embed{margin:20px 0 26px;}
+  .sidebar-box{width:100%;padding:18px 16px;}
+}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2743583142044678" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="48x48" href="../static/favicon.png">
