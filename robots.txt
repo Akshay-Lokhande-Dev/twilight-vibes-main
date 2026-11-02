@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /quiz-result.html
+Disallow: /quiz-result
 
 Sitemap: https://twilightvibes.com/sitemap.xml

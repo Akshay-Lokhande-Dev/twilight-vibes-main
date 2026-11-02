@@ -1,0 +1,9 @@
+_worker.js
+~/
+worker.js
+wrangler.jsonc
+README.md
+Verify.html
+patches/
+scripts/
+.github/
