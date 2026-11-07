@@ -2,3 +2,8 @@
 # www → non-www is handled by worker.js
 /blog/twilight-cast-where-are-they-now /blog/twilight-cast 301
 /blog/twilight-cast-where-are-they-now.html /blog/twilight-cast 301
+
+# Standard favicon aliases
+/favicon.ico /static/favicon.png 200
+/apple-touch-icon.png /static/favicon.png 200
+/apple-touch-icon-precomposed.png /static/favicon.png 200
